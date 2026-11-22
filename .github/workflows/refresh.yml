@@ -48,6 +48,9 @@ jobs:
           MAX_POSTS: ${{ vars.MAX_POSTS || '5' }}
         run: |
           if [ -n "$DRY" ]; then
+            if [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHANNEL_ID" ]; then
+              echo "Telegram secrets not set - a real run would skip posting."
+            fi
             python tools/refresh_content.py post --dry-run | head -n 60
           elif [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHANNEL_ID" ]; then
             echo "Telegram secrets not set - skipping post step."

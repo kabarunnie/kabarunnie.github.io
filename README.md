@@ -6,6 +6,11 @@ Static site (no server, no database) hosted free on GitHub Pages, refreshed by G
 *Mini App Telegram + channel: berita girl group dan hiburan Korea dalam Bahasa Indonesia.
 Situs statis, gratis di GitHub Pages, diperbarui otomatis oleh GitHub Actions.*
 
+## Live
+
+- Site: https://kabarunnie.github.io/ (user site repo `kabarunnie.github.io`, Pages source = GitHub Actions, deploys `./app`)
+- Repo variable `APP_URL` is currently `https://kabarunnie.github.io/`; switch it to `https://t.me/<bot>/app` after the bot and Mini App exist.
+
 ## Layout / Struktur
 
 ```
