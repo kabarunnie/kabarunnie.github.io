@@ -1,0 +1,354 @@
+{
+  "brand": "Kabar Unnie",
+  "handle": "@kabarunnie",
+  "channelUrl": "https://t.me/kabarunnie",
+  "channelStatus": "planned",
+  "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
+  "updatedAt": "2026-11-22T18:50:00+09:00",
+  "todayLabel": "Minggu, 22 Nov 2026",
+  "news": [
+    {
+      "id": "n-mama-ive",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "IVE",
+      "color": "#C45B7A",
+      "initial": "IV",
+      "title": "IVE meraih Best Female Group di MAMA 2026",
+      "hook": "Penghargaan diberikan pada Chapter 1 di Kyocera Dome Osaka, 20 November.",
+      "body": [
+        "Pada malam pertama 2026 MAMA Awards, 20 November di Kyocera Dome Osaka, IVE dinobatkan sebagai Best Female Group.",
+        "Acara dibagi dua hari: Chapter 1 berfokus pada kategori artis, lalu Chapter 2 keesokan harinya menampilkan kategori lagu dan album.",
+        "Daftar pemenang Chapter 1 dipublikasikan media musik, termasuk allkpop dan Billboard."
+      ],
+      "sourceName": "allkpop; Billboard",
+      "sourceUrl": "https://www.allkpop.com/article/2026/11/here-are-all-the-winners-from-day-1-of-the-2026-mama-awards",
+      "time": "20 Nov 2026",
+      "publishedAt": "2026-11-20",
+      "media": {
+        "type": "youtube",
+        "id": "oRA3eTWh5Jk",
+        "url": "https://www.youtube.com/watch?v=oRA3eTWh5Jk",
+        "channel": "Mnet K-POP",
+        "official": true,
+        "thumb": "https://i.ytimg.com/vi/oRA3eTWh5Jk/maxresdefault.jpg",
+        "thumbFallback": "https://i.ytimg.com/vi/oRA3eTWh5Jk/hqdefault.jpg"
+      },
+      "xPost": {
+        "url": "https://x.com/IVEstarship/status/2124073388805333238",
+        "handle": "@IVEstarship"
+      }
+    },
+    {
+      "id": "n-mama-ch2",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "ILLIT · LE SSERAFIM",
+      "color": "#5B6CC4",
+      "initial": "IL",
+      "title": "ILLIT dan LE SSERAFIM menang di MAMA Chapter 2",
+      "hook": "ILLIT meraih Best Dance Performance Female Group; LE SSERAFIM meraih Best Collaboration.",
+      "body": [
+        "Chapter 2 MAMA 2026 digelar 21 November di venue yang sama di Osaka.",
+        "ILLIT memenangkan Best Dance Performance Female Group untuk “It’s Me”. LE SSERAFIM memenangkan Best Collaboration untuk “SPAGHETTI (Feat. j-hope)”.",
+        "Keduanya juga masuk Best Song Top 10, bersama IVE (“BANG BANG”), aespa (“LEMONADE”), Hearts2Hearts, dan NMIXX."
+      ],
+      "sourceName": "Soompi; Billboard",
+      "sourceUrl": "https://www.soompi.com/article/1889392wpp/winners-of-2026-mama-awards-chapter-2",
+      "time": "21 Nov 2026",
+      "publishedAt": "2026-11-21",
+      "media": {
+        "type": "youtube",
+        "id": "a7xzBj-vYQ8",
+        "url": "https://www.youtube.com/watch?v=a7xzBj-vYQ8",
+        "channel": "Mnet K-POP",
+        "official": true,
+        "thumb": "https://i.ytimg.com/vi/a7xzBj-vYQ8/maxresdefault.jpg",
+        "thumbFallback": "https://i.ytimg.com/vi/a7xzBj-vYQ8/hqdefault.jpg"
+      },
+      "xPost": {
+        "url": "https://x.com/ILLIT_official/status/2124089878619254833",
+        "handle": "@ILLIT_official"
+      }
+    },
+    {
+      "id": "n-nayeon",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "Nayeon",
+      "color": "#E31B5C",
+      "initial": "NY",
+      "title": "Nayeon rilis NA-sty dan tampil solo di MAMA",
+      "hook": "Single album dirilis 20 November; babak live “BABY ANGEL” menyusul di Osaka.",
+      "body": [
+        "JYP merilis single album solo Nayeon, “NA-sty”, pada 20 November 2026 pukul 14.00 KST (12.00 WIB), dengan judul “BABY ANGEL” serta lagu “SHiVER” dan “BOY”.",
+        "Ini comeback solo pertamanya dalam sekitar dua tahun lima bulan. Nayeon ikut menulis dan menggubah “SHiVER”.",
+        "Keesokan harinya ia tampil di MAMA Chapter 2 dengan medley yang memuat “BABY ANGEL”."
+      ],
+      "sourceName": "JYP Entertainment; The Korea Times; The Korea Herald/ANN",
+      "sourceUrl": "https://twice.jype.com/discography/uw12l6ud",
+      "time": "20–21 Nov 2026",
+      "publishedAt": "2026-11-20",
+      "media": {
+        "type": "youtube",
+        "id": "0JQ9k6kcKVs",
+        "url": "https://www.youtube.com/watch?v=0JQ9k6kcKVs",
+        "channel": "JYP Entertainment",
+        "official": true,
+        "thumb": "https://i.ytimg.com/vi/0JQ9k6kcKVs/maxresdefault.jpg",
+        "thumbFallback": "https://i.ytimg.com/vi/0JQ9k6kcKVs/hqdefault.jpg"
+      },
+      "xPost": {
+        "url": "https://x.com/JYPETWICE/status/2124074086544613390",
+        "handle": "@JYPETWICE"
+      }
+    },
+    {
+      "id": "n-mma-ive",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "IVE",
+      "color": "#C45B7A",
+      "initial": "IV",
+      "title": "IVE raih daesang di Melon Music Awards untuk “BANG BANG”",
+      "hook": "Best Song of the Year diumumkan pada hari kedua MMA, 15 November di Seoul.",
+      "body": [
+        "Pada MMA 2026 hari kedua, 15 November di Gocheok Sky Dome, “BANG BANG” milik IVE dinobatkan sebagai Best Song of the Year.",
+        "Grup yang sama juga meraih Best Female Group dan Best Music Video untuk lagu itu, serta masuk Top 10 dan Global Top 10.",
+        "Anggota IVE berterima kasih kepada DIVE saat menerima daesang lagu."
+      ],
+      "sourceName": "allkpop",
+      "sourceUrl": "https://www.allkpop.com/article/2026/11/bts-cortis-and-ive-win-grand-prizes-on-day-2-of-mma-2026",
+      "time": "15 Nov 2026",
+      "publishedAt": "2026-11-15",
+      "media": {
+        "type": "youtube",
+        "id": "tVzFbxTKaDI",
+        "url": "https://www.youtube.com/watch?v=tVzFbxTKaDI",
+        "channel": "멜론 Melon",
+        "official": true,
+        "thumb": "https://i.ytimg.com/vi/tVzFbxTKaDI/maxresdefault.jpg",
+        "thumbFallback": "https://i.ytimg.com/vi/tVzFbxTKaDI/hqdefault.jpg"
+      }
+    },
+    {
+      "id": "n-aespa-remix",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "aespa",
+      "color": "#6B4C9A",
+      "initial": "ae",
+      "title": "aespa rilis remix resmi “KISS N TELL”",
+      "hook": "Versi ☆Taku Takahashi terbit 20 November di saluran resmi Jepang grup ini.",
+      "body": [
+        "Situs resmi Jepang aespa mengumumkan rilis digital “KISS N TELL (☆Taku Takahashi Remix)” pada 20 November 2026.",
+        "Remix ini merombak lagu utama mini album Jepang pertama mereka, “KISS N TELL”.",
+        "Tautan streaming resmi tersedia di aespa.lnk.to; undian event Jepang terpisah dibuka hingga 25 November."
+      ],
+      "sourceName": "aespa Japan Official",
+      "sourceUrl": "https://aespa-official.jp/news/kissntell-remix-release/",
+      "time": "20 Nov 2026",
+      "publishedAt": "2026-11-20",
+      "media": {
+        "type": "youtube",
+        "id": "inxzQt78lOk",
+        "url": "https://www.youtube.com/watch?v=inxzQt78lOk",
+        "channel": "SMTOWN",
+        "official": true,
+        "thumb": "https://i.ytimg.com/vi/inxzQt78lOk/maxresdefault.jpg",
+        "thumbFallback": "https://i.ytimg.com/vi/inxzQt78lOk/hqdefault.jpg"
+      }
+    },
+    {
+      "id": "n-aespa-mma",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "aespa",
+      "color": "#6B4C9A",
+      "initial": "ae",
+      "title": "aespa meraih Global K-Artist of the Year di MMA",
+      "hook": "Penghargaan diterima 14 November, menjelang ulang tahun debut keenam grup ini.",
+      "body": [
+        "Pada MMA 2026 hari pertama, 14 November di Gocheok Sky Dome, aespa memenangkan Global K-Artist of the Year.",
+        "Mereka juga masuk daftar Global Top 10, sehingga pulang dengan dua penghargaan.",
+        "Winter berterima kasih kepada fandom MY; Karina menyebut penghargaan itu sebagai hadiah menjelang anniversary keenam grup."
+      ],
+      "sourceName": "allkpop",
+      "sourceUrl": "https://www.allkpop.com/article/2026/11/aespa-wins-global-k-artist-of-the-year-at-mma2026-ahead-of-sixth-anniversary",
+      "time": "14 Nov 2026",
+      "publishedAt": "2026-11-14",
+      "media": {
+        "type": "youtube",
+        "id": "nuILO6CWrkc",
+        "url": "https://www.youtube.com/watch?v=nuILO6CWrkc",
+        "channel": "멜론 Melon",
+        "official": true,
+        "thumb": "https://i.ytimg.com/vi/nuILO6CWrkc/maxresdefault.jpg",
+        "thumbFallback": "https://i.ytimg.com/vi/nuILO6CWrkc/hqdefault.jpg"
+      }
+    },
+    {
+      "id": "n-kiof",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "KISS OF LIFE",
+      "color": "#C45B2A",
+      "initial": "KL",
+      "title": "KISS OF LIFE umumkan single musim dingin “Greedy”",
+      "hook": "Agensi S2 menegaskan rilis 25 November, disertai teaser “KIOF is Coming to Town”.",
+      "body": [
+        "Pada 16 November, Korea JoongAng Daily memberitakan KISS OF LIFE akan merilis single digital “Greedy” pada 25 November.",
+        "S2 Entertainment menyebut ini comeback musim dingin pertama grup itu, dengan bunyi yang lebih hangat daripada rilis bertema musim panas sebelumnya.",
+        "Teaser resmi di media sosial menampilkan manekin era “Sweat” yang berubah menjadi keempat member berpakaian musim dingin."
+      ],
+      "sourceName": "Korea JoongAng Daily (mengutip S2 Entertainment)",
+      "sourceUrl": "https://www.koreajoongangdaily.com/entertainment/kiss-of-life-to-make-first-winter-comeback-with-greedy/12974448",
+      "time": "16 Nov 2026",
+      "publishedAt": "2026-11-16",
+      "media": {
+        "type": "youtube",
+        "id": "n9D7lzNr_2Y",
+        "url": "https://www.youtube.com/watch?v=n9D7lzNr_2Y",
+        "channel": "KISS OF LIFE",
+        "official": true,
+        "thumb": "https://i.ytimg.com/vi/n9D7lzNr_2Y/maxresdefault.jpg",
+        "thumbFallback": "https://i.ytimg.com/vi/n9D7lzNr_2Y/hqdefault.jpg"
+      }
+    }
+  ],
+  "schedule": [
+    {
+      "id": "s-wendy",
+      "date": "23 Nov 2026",
+      "when": "Senin",
+      "group": "Wendy",
+      "color": "#2A6F7F",
+      "initial": "WD",
+      "title": "Mini album Gleam Hour",
+      "meta": "Judul “Before Sunrise” · 18.00 KST / 16.00 WIB",
+      "note": "Mini album solo keempat Wendy. Tanggal diumumkan di jadwal resmi yang dilaporkan Soompi, dan The Korea Times menuliskan rilis pukul 18.00 hari Senin.",
+      "sourceName": "Soompi; The Korea Times",
+      "sourceUrl": "https://www.soompi.com/article/1885066wpp/red-velvets-wendy-announces-november-comeback-with-schedule-for-gleam-hour"
+    },
+    {
+      "id": "s-kiof",
+      "date": "25 Nov 2026",
+      "when": "Rabu",
+      "group": "KISS OF LIFE",
+      "color": "#C45B2A",
+      "initial": "KL",
+      "title": "Single digital “Greedy”",
+      "meta": "Comeback musim dingin pertama · jam rilis belum dicantumkan sumber",
+      "note": "S2 Entertainment, sebagaimana dilaporkan Korea JoongAng Daily pada 16 November, menetapkan tanggal 25 November. Waktu jam tidak disebutkan di artikel itu.",
+      "sourceName": "Korea JoongAng Daily",
+      "sourceUrl": "https://www.koreajoongangdaily.com/entertainment/kiss-of-life-to-make-first-winter-comeback-with-greedy/12974448"
+    },
+    {
+      "id": "s-taeyeon",
+      "date": "30 Nov 2026",
+      "when": "Senin",
+      "group": "Taeyeon",
+      "color": "#8A6914",
+      "initial": "TY",
+      "title": "Album penuh keempat Unspecial",
+      "meta": "12 lagu · 18.00 KST / 16.00 WIB",
+      "note": "SM Entertainment mengumumkan LP keempat Taeyeon, album penuh pertamanya dalam hampir lima tahun sejak INVU. The Korea Herald memuat pengumuman itu; The Korea Times menuliskan pukul 18.00 pada 30 November.",
+      "sourceName": "The Korea Herald; The Korea Times",
+      "sourceUrl": "https://www.koreaherald.com/article/10930623"
+    }
+  ],
+  "quiz": {
+    "title": "Kuis harian Unnie",
+    "subtitle": "5 soal fakta publik: agensi, debut, dan berita minggu ini.",
+    "questions": [
+      {
+        "q": "Pada tahun berapa BLACKPINK debut?",
+        "choices": [
+          "2014",
+          "2016",
+          "2018",
+          "2020"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "aespa berada di agensi mana?",
+        "choices": [
+          "JYP Entertainment",
+          "YG Entertainment",
+          "SM Entertainment",
+          "Starship Entertainment"
+        ],
+        "answer": 2
+      },
+      {
+        "q": "Berapa jumlah member IVE saat debut?",
+        "choices": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "answer": 2
+      },
+      {
+        "q": "Siapa pemenang Best Female Group di MAMA 2026?",
+        "choices": [
+          "aespa",
+          "IVE",
+          "LE SSERAFIM",
+          "ILLIT"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Wendy merilis mini album Gleam Hour sebagai member grup mana?",
+        "choices": [
+          "f(x)",
+          "Red Velvet",
+          "Girls' Generation",
+          "TWICE"
+        ],
+        "answer": 1
+      }
+    ],
+    "comments": [
+      "Masih pemanasan. Coba lagi, ya.",
+      "Lumayan! Kamu sudah cukup update minggu ini.",
+      "Wah, Unnie sejati. Bagikan skornya ke teman."
+    ]
+  },
+  "vote": {
+    "id": "v-mama-2026",
+    "title": "Panggung wanita MAMA 2026 paling berkesan?",
+    "subtitle": "Pilih satu. Hasilnya tersimpan di perangkatmu — belum ada hitungan global.",
+    "options": [
+      {
+        "id": "o1",
+        "label": "IVE",
+        "color": "#C45B7A"
+      },
+      {
+        "id": "o2",
+        "label": "LE SSERAFIM",
+        "color": "#5B6CC4"
+      },
+      {
+        "id": "o3",
+        "label": "ILLIT",
+        "color": "#7A4CA0"
+      },
+      {
+        "id": "o4",
+        "label": "Nayeon",
+        "color": "#E31B5C"
+      },
+      {
+        "id": "o5",
+        "label": "BABYMONSTER",
+        "color": "#C43C2C"
+      }
+    ]
+  },
+  "mediaPolicy": "Gambar = thumbnail video resmi YouTube (dimuat langsung dari YouTube, tidak di-host ulang). Ketuk untuk menonton di kanal resmi."
+}

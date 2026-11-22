@@ -1,0 +1,100 @@
+name: Refresh content
+
+on:
+  schedule:
+    # 07:00, 12:00 and 19:00 WIB (UTC+7)
+    - cron: "0 0 * * *"
+    - cron: "0 5 * * *"
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Dry run (no commit, no Telegram post)
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      site_changed: ${{ steps.commit.outputs.site_changed }}
+    env:
+      DRY: ${{ inputs.dry_run && '--dry-run' || '' }}
+      KU_BANNED_WORDS: ${{ secrets.KU_BANNED_WORDS }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+
+      - name: Refresh and validate content
+        run: python tools/refresh_content.py refresh $DRY
+
+      - name: Post new items to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          APP_URL: ${{ vars.APP_URL }}
+          MAX_POSTS: ${{ vars.MAX_POSTS || '5' }}
+        run: |
+          if [ -n "$DRY" ]; then
+            python tools/refresh_content.py post --dry-run | head -n 60
+          elif [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHANNEL_ID" ]; then
+            echo "Telegram secrets not set - skipping post step."
+          else
+            python tools/refresh_content.py post
+          fi
+
+      - name: Commit changes
+        id: commit
+        run: |
+          if [ -n "$DRY" ]; then echo "site_changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git config user.name "kabar-unnie-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A app/data data
+          if git diff --cached --quiet; then
+            echo "No changes."
+            echo "site_changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if git diff --cached --quiet -- app; then
+            echo "site_changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "site_changed=true" >> "$GITHUB_OUTPUT"
+          fi
+          git commit -m "chore: refresh content [skip ci]"
+          git push origin HEAD:main
+
+  # Pushes made with GITHUB_TOKEN do not trigger other workflows,
+  # so redeploy Pages here when the site data changed.
+  deploy:
+    needs: refresh
+    if: needs.refresh.outputs.site_changed == 'true'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/pages.yml
+    with:
+      ref: main
+
+  lint:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python -c "import yaml,glob; [yaml.safe_load(open(f)) for f in glob.glob('.github/workflows/*.yml')]; print('yaml ok')"
