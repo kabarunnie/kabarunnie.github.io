@@ -4,9 +4,73 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-23T10:50+07:00",
+  "updatedAt": "2026-11-23T12:52+07:00",
   "todayLabel": "Senin, 23 Nov 2026",
   "news": [
+    {
+      "id": "n-karina-gayo-daejejeon",
+      "badge": "rumor",
+      "badgeLabel": "Belum dikonfirmasi",
+      "group": "aespa",
+      "color": "#6B4C9A",
+      "initial": "ae",
+      "title": "Karina aespa dilaporkan jadi MC “2026 MBC Gayo Daejejeon”",
+      "hook": "Media Korea Sports Chosun melaporkan secara eksklusif; MBC belum mengumumkan resmi daftar MC.",
+      "body": [
+        "Sports Chosun melaporkan pada 23 November bahwa Karina akan memandu “2026 MBC Gayo Daejejeon” pada 31 Desember bersama Minho (SHINee) dan Dohoon (TWS).",
+        "Jika benar, ini jadi pertama kalinya Karina memandu festival musik akhir tahun TV nasional, setelah sebelumnya menjadi MC spesial “Show! Music Core” dan “Music Bank”.",
+        "Pengumuman resmi dari MBC atau SM Entertainment belum kami temukan saat tulisan ini dibuat.",
+        "Kata Unnie: Kita tunggu konfirmasi resminya dulu ya, tapi malam tahun baru bareng Karina kedengarannya seru."
+      ],
+      "sourceName": "Sports Chosun; Topstarnews (Korea)",
+      "sourceUrl": "https://www.sportschosun.com/entertainment/2026-11-23/202611230100141240013202",
+      "time": "23 Nov 2026",
+      "publishedAt": "2026-11-23",
+      "image": {
+        "url": "https://www.sportschosun.com/article/html/2026/11/23/2026112301001412400132021.jpg",
+        "credit": "Sports Chosun DB",
+        "source": "https://www.sportschosun.com/entertainment/2026-11-23/202611230100141240013202"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=83C3TZ4Zm_o",
+        "title": "aespa 에스파 'LEMONADE' MV",
+        "channel": "SMTOWN",
+        "official": true,
+        "relation": "MV resmi aespa “LEMONADE” (bukan acara ini)"
+      }
+    },
+    {
+      "id": "n-niziu-jolly-jolly",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "NiziU",
+      "color": "#D94A4A",
+      "initial": "NZ",
+      "title": "NiziU rilis lagu Natal pertama “Jolly Jolly” pada 2 Desember",
+      "hook": "Single digital ini keluar tepat di hari ulang tahun ke-6 debut Jepang NiziU; versi pendeknya dibuka 24 November pukul 00.00 KST (23 November 22.00 WIB).",
+      "body": [
+        "Lewat SNS resmi pada 21 November, NiziU (JYP Entertainment) membuka teaser MV dan foto grup untuk “Jolly Jolly”, lagu liburan pertama mereka, yang dirilis sebagai single digital pada 2 Desember.",
+        "Versi pendek lagunya diputar lebih dulu di SNS resmi pada 24 November pukul 00.00 KST (23 November 22.00 WIB).",
+        "Menurut media Korea, “Jolly Jolly” juga masuk EP Jepang ketiga “You’re the best” (3 lagu) yang dijadwalkan rilis 17 Maret 2027.",
+        "Kata Unnie: Malam ini jam 22.00 WIB ada cuplikan lagu Natal — pas buat mulai playlist Desember."
+      ],
+      "sourceName": "Ilgan Sports; OSEN (Korea)",
+      "sourceUrl": "https://isplus.com/article/view/isp202611230015",
+      "time": "23 Nov 2026",
+      "publishedAt": "2026-11-23",
+      "image": {
+        "url": "https://isplus.com/data/isp/image/2026/11/23/isp20261123000013.800x.0.jpg",
+        "credit": "JYP Entertainment via Ilgan Sports",
+        "source": "https://isplus.com/article/view/isp202611230015"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=CEcKVKaVslk",
+        "title": "NiziU(니쥬) \"Jolly Jolly\" M/V Teaser 1",
+        "channel": "JYP Entertainment",
+        "official": true,
+        "relation": "Teaser MV resmi “Jolly Jolly” (lagu ini)"
+      }
+    },
     {
       "id": "n-h2h-ready-s2u",
       "badge": "resmi",
@@ -313,34 +377,6 @@
         "official": true,
         "thumb": "https://i.ytimg.com/vi/nuILO6CWrkc/maxresdefault.jpg",
         "thumbFallback": "https://i.ytimg.com/vi/nuILO6CWrkc/hqdefault.jpg"
-      }
-    },
-    {
-      "id": "n-kiof",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "KISS OF LIFE",
-      "color": "#C45B2A",
-      "initial": "KL",
-      "title": "KISS OF LIFE umumkan single musim dingin “Greedy”",
-      "hook": "Agensi S2 menegaskan rilis 25 November, disertai teaser “KIOF is Coming to Town”.",
-      "body": [
-        "Pada 16 November, Korea JoongAng Daily memberitakan KISS OF LIFE akan merilis single digital “Greedy” pada 25 November.",
-        "S2 Entertainment menyebut ini comeback musim dingin pertama grup itu, dengan bunyi yang lebih hangat daripada rilis bertema musim panas sebelumnya.",
-        "Teaser resmi di media sosial menampilkan manekin era “Sweat” yang berubah menjadi keempat member berpakaian musim dingin."
-      ],
-      "sourceName": "Korea JoongAng Daily (mengutip S2 Entertainment)",
-      "sourceUrl": "https://www.koreajoongangdaily.com/entertainment/kiss-of-life-to-make-first-winter-comeback-with-greedy/12974448",
-      "time": "16 Nov 2026",
-      "publishedAt": "2026-11-16",
-      "media": {
-        "type": "youtube",
-        "id": "n9D7lzNr_2Y",
-        "url": "https://www.youtube.com/watch?v=n9D7lzNr_2Y",
-        "channel": "KISS OF LIFE",
-        "official": true,
-        "thumb": "https://i.ytimg.com/vi/n9D7lzNr_2Y/maxresdefault.jpg",
-        "thumbFallback": "https://i.ytimg.com/vi/n9D7lzNr_2Y/hqdefault.jpg"
       }
     }
   ],
