@@ -4,9 +4,41 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-23T18:46+07:00",
+  "updatedAt": "2026-11-23T19:53+07:00",
   "todayLabel": "Senin, 23 Nov 2026",
   "news": [
+    {
+      "id": "n-zena-love-again",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "RESCENE",
+      "color": "#D9779B",
+      "initial": "ZN",
+      "title": "Zena RESCENE ikut lagu musim dingin “Love Again” bersama Hanhae & Moon Se-yoon",
+      "hook": "Featuring pertama Zena sejak debut, rilis 23 November pukul 18.00 KST (16.00 WIB).",
+      "body": [
+        "Menurut agensi Brand New Music, rapper Hanhae dan komedian Moon Se-yoon merilis single baru “Love Again (feat. Zena of RESCENE)” pada 23 November pukul 18.00 KST (16.00 WIB).",
+        "Ini proyek duet kelima mereka, dan untuk pertama kalinya sejak debut Zena tampil sebagai featuring; trio ini dijuluki media Korea “Han-Mun-Je”.",
+        "Lagunya bercerita tentang dua orang yang tak sengaja bertemu lagi di suatu hari musim dingin dan merasakan debaran lama kembali.",
+        "Kata Unnie: Habis RESCENE menang lagi dengan “With”, sekarang Zena coba warna duet ala grup campuran 2000-an — cocok buat playlist hujan Desember."
+      ],
+      "sourceName": "Newsis; Yonhap (Korea)",
+      "sourceUrl": "https://www.newsis.com/view/NISX20261123_0003879479",
+      "time": "23 Nov 2026",
+      "publishedAt": "2026-11-23",
+      "image": {
+        "url": "https://img1.newsis.com/2026/11/23/NISI20261123_0002299818_web.jpg",
+        "credit": "Brand New Music via Newsis",
+        "source": "https://www.newsis.com/view/NISX20261123_0003879479"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=mXveasS7ZRY",
+        "title": "한해, 문세윤 - Love Again (feat. 제나 of RESCENE)｜야외녹음실｜Beyond the Studio｜LIVE",
+        "channel": "1theK Live - 원더케이 라이브",
+        "official": true,
+        "relation": "Live resmi “Love Again” (lagu ini) di kanal 1theK Live"
+      }
+    },
     {
       "id": "n-illit-japan-record-kohaku",
       "badge": "resmi",
@@ -357,38 +389,6 @@
         "channel": "Apink (에이핑크)",
         "official": true,
         "relation": "MV resmi Apink “Love Me More” (bukan lagu Natal ini)"
-      }
-    },
-    {
-      "id": "n-wendy-gleam-hour",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "WENDY (Red Velvet)",
-      "color": "#D9534F",
-      "initial": "WD",
-      "title": "Wendy rilis mini album ke-4 “Gleam Hour” hari ini",
-      "hook": "Album dirilis 23 November pukul 18.00 KST (16.00 WIB) dengan lagu utama “Before Sunrise”.",
-      "body": [
-        "Wendy Red Velvet merilis mini album keempatnya, “Gleam Hour”, pada 23 November pukul 18.00 KST (16.00 WIB) di berbagai platform musik online.",
-        "Album berisi 6 lagu, dengan lagu utama “Before Sunrise”, lagu pop bertempo sedang yang menonjolkan melodi piano.",
-        "Menurut media Korea, Wendy ikut menulis lirik semua lagu dan ikut menggubah “Before Sunrise”, “Special Dust”, serta “Golden Hour”.",
-        "Kata Unnie: Rilisnya 16.00 WIB — pas buat didengar sambil pulang sekolah atau kantor."
-      ],
-      "sourceName": "Topstarnews (Korea)",
-      "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16283308",
-      "time": "23 Nov 2026",
-      "publishedAt": "2026-11-23",
-      "image": {
-        "url": "https://cdn.topstarnews.net/news/photo/202611/16283308_2096155_2626_crop.jpg",
-        "credit": "ASND via Topstarnews",
-        "source": "https://www.topstarnews.net/news/articleView.html?idxno=16283308"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=017LrmENTBI",
-        "title": "WENDY [Gleam Hour] Highlight Medley",
-        "channel": "웬디 WENDY",
-        "official": true,
-        "relation": "Highlight Medley resmi album “Gleam Hour”"
       }
     }
   ],
