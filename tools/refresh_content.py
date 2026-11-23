@@ -8,8 +8,10 @@ Commands:
              app), promote editor-approved items from data/approved/*.json
              into app/data/content.json, then validate.
   post       Post news items not yet in data/posted.json to the Telegram
-             channel via the Bot API. Text + links only; the official video
-             appears through Telegram's own link preview (nothing re-hosted).
+             channel via the Bot API as a photo post: sendPhoto with the
+             official image *URL* (Telegram fetches it; nothing is stored or
+             re-hosted here) + an HTML caption (<=1024 chars) that carries the
+             official YouTube video link and the source link.
              Skips cleanly when TELEGRAM_BOT_TOKEN / TELEGRAM_CHANNEL_ID are
              missing.
   seed       Mark every current news item as already posted.
@@ -70,6 +72,125 @@ SCHED_FIELDS = (
 )
 
 
+# Every NEW channel post must carry an official image + an official video.
+#   "image": {"url": "https://...jpg|png", "credit": "Instagram @official", "source": "https://page-where-it-is-published"}
+#   "video": {"url": "https://www.youtube.com/watch?v=ID", "title": "...", "channel": "SMTOWN",
+#             "official": true, "relation": "MV terbaru Hearts2Hearts"}
+# Images are passed to Telegram by URL only; never downloaded into the repo.
+IMAGE_FIELDS = ("url", "credit", "source")
+VIDEO_FIELDS = ("url", "title", "channel", "relation")
+IMAGE_TYPES = ("image/jpeg", "image/png")
+TG_PHOTO_URL_MAX = 5 * 1024 * 1024  # Bot API limit for photos sent by URL
+CAPTION_MAX = 1024
+UA = "KabarUnnieBot/1.0 (+https://t.me/kabarunnie)"
+
+
+def youtube_id(url: str) -> str:
+    u = urllib.parse.urlparse(str(url or ""))
+    host = (u.hostname or "").lower()
+    if host in ("youtu.be",):
+        return u.path.strip("/").split("/")[0]
+    if host in ("www.youtube.com", "youtube.com", "m.youtube.com", "music.youtube.com"):
+        if u.path == "/watch":
+            return (urllib.parse.parse_qs(u.query).get("v") or [""])[0]
+        parts = [x for x in u.path.split("/") if x]
+        if len(parts) >= 2 and parts[0] in ("shorts", "embed", "live"):
+            return parts[1]
+    return ""
+
+
+def media_errors(item: dict) -> list[str]:
+    """Offline schema check for the required image + video (no network)."""
+    errs = []
+    img = item.get("image")
+    if not isinstance(img, dict):
+        errs.append("missing image {url, credit, source}")
+    else:
+        for k in IMAGE_FIELDS:
+            if not str(img.get(k) or "").strip():
+                errs.append(f"image.{k} missing")
+        for k in ("url", "source"):
+            if img.get(k) and not str(img[k]).startswith("https://"):
+                errs.append(f"image.{k} must be https")
+        if "i.ytimg.com" in str(img.get("url", "")) or "img.youtube.com" in str(img.get("url", "")):
+            errs.append("image.url must be an official photo, not the video thumbnail")
+    vid = item.get("video")
+    if not isinstance(vid, dict):
+        errs.append("missing video {url, title, channel, relation}")
+    else:
+        for k in VIDEO_FIELDS:
+            if not str(vid.get(k) or "").strip():
+                errs.append(f"video.{k} missing")
+        if not youtube_id(vid.get("url", "")):
+            errs.append("video.url must be a YouTube video link")
+        if vid.get("official") is not True:
+            errs.append("video.official must be true (official agency/artist/broadcaster channel)")
+    return errs
+
+
+def _open(url: str, method: str = "GET", timeout: int = 20):
+    req = urllib.request.Request(url, method=method, headers={"User-Agent": UA, "Accept": "*/*"})
+    return urllib.request.urlopen(req, timeout=timeout, context=_ssl_ctx())
+
+
+def check_image_url(url: str) -> str:
+    """'' if Telegram should be able to fetch it as a photo, else the reason."""
+    try:
+        with _open(url) as resp:
+            ctype = (resp.headers.get("Content-Type") or "").split(";")[0].strip().lower()
+            size = int(resp.headers.get("Content-Length") or 0)
+            if resp.status != 200:
+                return f"HTTP {resp.status}"
+            if ctype not in IMAGE_TYPES:
+                return f"content-type {ctype or '?'} (need jpeg/png)"
+            if not size:
+                size = len(resp.read(TG_PHOTO_URL_MAX + 1))
+            if size > TG_PHOTO_URL_MAX:
+                return f"too large ({size} bytes > 5 MB)"
+    except urllib.error.HTTPError as exc:
+        return f"HTTP {exc.code}"
+    except Exception as exc:
+        return f"fetch failed: {exc}"
+    return ""
+
+
+def check_video_url(video: dict) -> str:
+    """'' if YouTube oEmbed resolves and the uploader matches video.channel."""
+    vid = youtube_id(video.get("url", ""))
+    if not vid:
+        return "not a YouTube link"
+    q = urllib.parse.quote(f"https://www.youtube.com/watch?v={vid}", safe="")
+    try:
+        with _open(f"https://www.youtube.com/oembed?format=json&url={q}") as resp:
+            meta = json.load(resp)
+    except urllib.error.HTTPError as exc:
+        return f"oEmbed HTTP {exc.code} (private/removed/not embeddable?)"
+    except Exception as exc:
+        return f"oEmbed failed: {exc}"
+    author = str(meta.get("author_name") or "").strip()
+    if author.casefold() != str(video.get("channel") or "").strip().casefold():
+        return f"uploader is {author!r}, not {video.get('channel')!r}"
+    return ""
+
+
+def media_live_errors(item: dict) -> list[str]:
+    errs = media_errors(item)
+    if errs:
+        return errs
+    r = check_image_url(item["image"]["url"])
+    if r:
+        errs.append(f"image.url not usable: {r}")
+    r = check_video_url(item["video"])
+    if r:
+        errs.append(f"video.url not usable: {r}")
+    return errs
+
+
+def _warn(msg: str) -> None:
+    # ::warning:: shows up as an annotation on the Actions run page.
+    print(f"::warning::{msg}" if os.environ.get("GITHUB_ACTIONS") else f"warn: {msg}", file=sys.stderr)
+
+
 # Anonymity guard (lower-case fragments that must never appear in published data).
 BANNED = tuple(w for w in os.environ.get("KU_BANNED_WORDS", "").lower().split(",") if w.strip())
 
@@ -90,7 +211,12 @@ def validate(path: Path = CONTENT) -> int:
     if data.get("channelStatus") not in ("planned", "live", None):
         errors.append("channelStatus must be planned or live")
 
+    posted_ids = set(_read_json(POSTED, {"posted": []}).get("posted", []))
     for i, item in enumerate(data.get("news") or []):
+        if item.get("id") not in posted_ids or "image" in item or "video" in item:
+            # Not yet on the channel (or already carries media): image + video required.
+            for err in media_errors(item):
+                errors.append(f"news[{i}] {item.get('id')}: {err}")
         for field in NEWS_FIELDS:
             if field not in item:
                 errors.append(f"news[{i}] missing {field}")
@@ -263,6 +389,12 @@ def refresh(dry: bool) -> int:
         if missing or not str(item.get("sourceUrl", "")).startswith("https://"):
             print(f"skip {f.name}: missing {missing or 'https sourceUrl'}", file=sys.stderr)
             continue
+        if item["id"] not in ids:
+            merrs = media_live_errors(item)
+            if merrs:
+                # Held: the file stays in data/approved/ until image + video are fixed.
+                _warn(f"HOLD {f.name}: " + "; ".join(merrs))
+                continue
         if item["id"] in ids:
             print(f"skip {f.name}: id {item['id']} already in content.json")
         else:
@@ -322,31 +454,55 @@ def _app_link(app_url: str, item_id: str) -> str:
     return f"{app_url}{sep}screen=detail&id={urllib.parse.quote(item_id)}"
 
 
+def _visible_len(html: str) -> int:
+    """Caption length as Telegram counts it (text after entity parsing, UTF-16)."""
+    import html as _h
+    import re
+    text = _h.unescape(re.sub(r"<[^>]+>", "", html))
+    return len(text.encode("utf-16-le")) // 2
+
+
 def build_message(n: dict, chat_id: str, app_url: str, handle: str) -> dict:
+    """sendPhoto payload: official image by URL + caption with video + source links."""
     label = "Belum dikonfirmasi" if n.get("badge") == "rumor" else "Sumber resmi"
-    lines = [f"<b>{_esc(n['title'])}</b>", "", _esc(n["hook"]), ""]
-    lines.append(f"<i>{label}</i> · <a href=\"{_esc(n['sourceUrl'])}\">{_esc(n['sourceName'])}</a>")
-    media = n.get("media") or {}
-    if media.get("url"):
-        lines.append(f"▶ <a href=\"{_esc(media['url'])}\">Video resmi · {_esc(media.get('channel', 'YouTube'))}</a>")
-    xp = n.get("xPost") or {}
-    if xp.get("url"):
-        lines.append(f"𝕏 <a href=\"{_esc(xp['url'])}\">{_esc(xp.get('handle', 'Post resmi'))}</a>")
-    lines += ["", _esc(handle)]
-    payload = {"chat_id": chat_id, "text": "\n".join(lines), "parse_mode": "HTML"}
-    if media.get("url"):
-        # Telegram renders the official video's own preview; nothing is uploaded.
-        payload["link_preview_options"] = {"url": media["url"], "prefer_large_media": True, "show_above_text": True}
-    else:
-        payload["link_preview_options"] = {"is_disabled": True}
+    img = n["image"]
+    vid = n["video"]
+    vurl = f"https://www.youtube.com/watch?v={youtube_id(vid['url'])}"
+
+    def caption(title: str, hook: str) -> str:
+        lines = [f"<b>{_esc(title)}</b>"]
+        if hook:
+            lines += ["", _esc(hook)]
+        lines += [
+            "",
+            f"▶ <a href=\"{_esc(vurl)}\">{_esc(vid['relation'])}</a> · {_esc(vid['channel'])} (YouTube resmi)",
+            f"<i>{label}</i> · <a href=\"{_esc(n['sourceUrl'])}\">{_esc(n['sourceName'])}</a>",
+            f"📷 <a href=\"{_esc(img['source'])}\">Foto: {_esc(img['credit'])}</a>",
+        ]
+        xp = n.get("xPost") or {}
+        if xp.get("url"):
+            lines.append(f"𝕏 <a href=\"{_esc(xp['url'])}\">{_esc(xp.get('handle', 'Post resmi'))}</a>")
+        if handle:
+            lines += ["", _esc(handle)]
+        return "\n".join(lines)
+
+    title, hook = n["title"], n.get("hook", "")
+    cap = caption(title, hook)
+    while _visible_len(cap) > CAPTION_MAX and hook:
+        words = hook.split()
+        hook = " ".join(words[:-3]) + "…" if len(words) > 3 else ""
+        cap = caption(title, hook)
+    while _visible_len(cap) > CAPTION_MAX and len(title) > 40:
+        title = title[: len(title) - 20].rstrip() + "…"
+        cap = caption(title, hook)
+
+    payload = {"chat_id": chat_id, "photo": img["url"], "caption": cap, "parse_mode": "HTML"}
     row = []
     link = _app_link(app_url, n["id"])
     if link:
         row.append({"text": "Buka App", "url": link})
-    if media.get("url"):
-        row.append({"text": "▶ Tonton", "url": media["url"]})
-    if row:
-        payload["reply_markup"] = {"inline_keyboard": [row]}
+    row.append({"text": "▶ Tonton", "url": vurl})
+    payload["reply_markup"] = {"inline_keyboard": [row]}
     return payload
 
 
@@ -367,25 +523,40 @@ def post(dry: bool) -> int:
     if not todo:
         print("nothing new to post")
         return 0
+    held = 0
     for n in todo:
+        # Hard gate: no photo + official video, no post (item stays unposted).
+        merrs = media_live_errors(n)
+        if merrs:
+            _warn(f"HOLD {n['id']} (not posted): " + "; ".join(merrs))
+            held += 1
+            continue
         payload = build_message(n, chat_id or "@channel", app_url, data.get("handle", ""))
         if dry:
-            print(f"[dry-run] would post {n['id']}:")
+            print(f"[dry-run] would sendPhoto {n['id']} (caption {_visible_len(payload['caption'])}/{CAPTION_MAX}):")
             print(json.dumps(payload, ensure_ascii=False, indent=2))
             continue
-        res = _tg(token, "sendMessage", payload)
+        res = _tg(token, "sendPhoto", payload)
         if not res.get("ok") and res.get("error_code") == 429:
             wait = int((res.get("parameters") or {}).get("retry_after", 5))
             time.sleep(min(wait, 60))
-            res = _tg(token, "sendMessage", payload)
+            res = _tg(token, "sendPhoto", payload)
         if not res.get("ok"):
-            print(f"post failed for {n['id']}: {res.get('error_code')} {res.get('description')}", file=sys.stderr)
+            _warn(f"post failed for {n['id']}: {res.get('error_code')} {res.get('description')}")
+            if res.get("error_code") == 400:
+                held += 1
+                continue  # e.g. Telegram could not fetch the photo URL: hold this one only
             break  # keep remaining items for the next run
+        msg = res.get("result") or {}
+        if not msg.get("photo"):
+            _warn(f"{n['id']}: Telegram accepted the post but returned no photo")
         done.add(n["id"])
         posted["posted"] = sorted(done)
         _write_json(POSTED, posted, False)  # save after each success: never double-post
-        print(f"posted {n['id']}")
+        print(f"posted {n['id']} (photo + video link)")
         time.sleep(3)
+    if held:
+        print(f"{held} item(s) held: need a working official image URL + official YouTube video")
     return 0
 
 

@@ -25,7 +25,19 @@
       "sourceName": "Topstarnews (Korea); Hearts2Hearts Japan Official",
       "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16276683",
       "time": "23 Nov 2026",
-      "publishedAt": "2026-11-23"
+      "publishedAt": "2026-11-23",
+      "image": {
+        "url": "https://cdn.topstarnews.net/news/photo/202611/16276683_2088628_2940_crop.jpg",
+        "credit": "Topstarnews",
+        "source": "https://www.topstarnews.net/news/articleView.html?idxno=16276683"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=chl0R8C4NJ8",
+        "title": "Hearts2Hearts 하츠투하츠 'ICONIC HEART' MV",
+        "channel": "SMTOWN",
+        "official": true,
+        "relation": "MV resmi Hearts2Hearts “ICONIC HEART” (bukan rekaman fan event)"
+      }
     },
     {
       "id": "n-withus-christmas-recipe",
@@ -45,7 +57,19 @@
       "sourceName": "bntnews; Newsculture (Korea)",
       "sourceUrl": "https://www.bntnews.co.kr/article/view/bnt202611170115",
       "time": "17 Nov 2026",
-      "publishedAt": "2026-11-17"
+      "publishedAt": "2026-11-17",
+      "image": {
+        "url": "https://cdn.topstarnews.net/news/photo/202611/16283396_2096344_5049_crop.jpg",
+        "credit": "WITH US Entertainment via Topstarnews",
+        "source": "https://www.topstarnews.net/news/articleView.html?idxno=16283396"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=y2os26sMjOg",
+        "title": "Apink (에이핑크) 'Love Me More' M/V",
+        "channel": "Apink (에이핑크)",
+        "official": true,
+        "relation": "MV resmi Apink “Love Me More” (bukan lagu Natal ini)"
+      }
     },
     {
       "id": "n-wendy-gleam-hour",
@@ -65,7 +89,19 @@
       "sourceName": "Topstarnews (Korea)",
       "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16283308",
       "time": "23 Nov 2026",
-      "publishedAt": "2026-11-23"
+      "publishedAt": "2026-11-23",
+      "image": {
+        "url": "https://cdn.topstarnews.net/news/photo/202611/16283308_2096155_2626_crop.jpg",
+        "credit": "ASND via Topstarnews",
+        "source": "https://www.topstarnews.net/news/articleView.html?idxno=16283308"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=017LrmENTBI",
+        "title": "WENDY [Gleam Hour] Highlight Medley",
+        "channel": "웬디 WENDY",
+        "official": true,
+        "relation": "Highlight Medley resmi album “Gleam Hour”"
+      }
     },
     {
       "id": "n-kiiras-over-u",
@@ -85,7 +121,19 @@
       "sourceName": "Sports World (Korea)",
       "sourceUrl": "https://www.sportsworldi.com/newsView/20261122500417",
       "time": "22 Nov 2026",
-      "publishedAt": "2026-11-22"
+      "publishedAt": "2026-11-22",
+      "image": {
+        "url": "https://www.sportsworldi.com/content/image/2026/11/22/20261122500416.jpg",
+        "credit": "Sportsworld",
+        "source": "https://www.sportsworldi.com/newsView/20261122500417"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=QEKyInP9cqM",
+        "title": "KIIRAS (키라스) Second Digital Single Album Highlight medley",
+        "channel": "KIIRAS",
+        "official": true,
+        "relation": "Highlight medley resmi single digital kedua KIIRAS"
+      }
     },
     {
       "id": "n-mama-ive",
@@ -430,5 +478,5 @@
       }
     ]
   },
-  "mediaPolicy": "Gambar = thumbnail video resmi YouTube (dimuat langsung dari YouTube, tidak di-host ulang). Ketuk untuk menonton di kanal resmi."
+  "mediaPolicy": "Foto dimuat langsung dari sumber resmi/aslinya (tidak di-host ulang), dengan kredit. Video = YouTube resmi agensi/artis/stasiun TV."
 }

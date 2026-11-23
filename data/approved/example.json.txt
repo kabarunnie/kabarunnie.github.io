@@ -16,17 +16,20 @@
   "sourceUrl": "https://www.allkpop.com/article/2026/11/here-are-all-the-winners-from-day-1-of-the-2026-mama-awards",
   "time": "20 Nov 2026",
   "publishedAt": "2026-11-20",
-  "media": {
-    "type": "youtube",
-    "id": "oRA3eTWh5Jk",
-    "url": "https://www.youtube.com/watch?v=oRA3eTWh5Jk",
-    "channel": "Mnet K-POP",
-    "official": true,
-    "thumb": "https://i.ytimg.com/vi/oRA3eTWh5Jk/maxresdefault.jpg",
-    "thumbFallback": "https://i.ytimg.com/vi/oRA3eTWh5Jk/hqdefault.jpg"
-  },
   "xPost": {
     "url": "https://x.com/IVEstarship/status/2124073388805333238",
     "handle": "@IVEstarship"
+  },
+  "image": {
+    "url": "https://cdn.topstarnews.net/news/photo/202611/16276683_2088628_2940_crop.jpg",
+    "credit": "Topstarnews",
+    "source": "https://www.topstarnews.net/news/articleView.html?idxno=16276683"
+  },
+  "video": {
+    "url": "https://www.youtube.com/watch?v=oRA3eTWh5Jk",
+    "title": "(judul asli di YouTube)",
+    "channel": "Mnet K-POP",
+    "official": true,
+    "relation": "Video resmi MAMA 2026 (acara ini)"
   }
 }

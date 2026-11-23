@@ -29,8 +29,9 @@ All paths in the app are relative, so it works at `https://<user>.github.io/<rep
 
 ## Images / Gambar
 
-No photos are stored or uploaded. The app shows the **official YouTube thumbnail loaded directly from YouTube** and opens the official video; channel posts are text + links, and Telegram renders the official video's own link preview.
-*Tidak ada foto yang disimpan atau diunggah ulang. Thumbnail dimuat langsung dari YouTube resmi; post channel berupa teks + tautan.*
+Every new news item **must** have `image` (official/original photo URL + credit + source page) and `video` (official YouTube link from the agency/artist/broadcaster channel, with `relation`). Items without them are held: `refresh` keeps them in `data/approved/`, `validate` fails, and `post` skips them.
+No photos are stored or uploaded: channel posts use `sendPhoto` with the image **URL** (Telegram fetches it), a caption (≤1024 chars) with the video link and source link, and the app loads the image directly from its original host with credit.
+*Setiap kabar baru wajib punya foto (URL sumber asli + kredit) dan video YouTube resmi. Tidak ada foto yang disimpan atau diunggah ulang.*
 
 ## Setup (one time / sekali saja)
 
@@ -64,7 +65,7 @@ Without the Telegram secrets the workflow still refreshes and deploys; the post 
    **08:00 / 10:00 / 12:00 / 14:00 / 16:00 / 18:00 / 20:00 / 21:00 / 22:00 / 23:00 KST**,
    which is **06:00 / 08:00 / 10:00 / 12:00 / 14:00 / 16:00 / 18:00 / 19:00 / 20:00 / 21:00 WIB**).
 2. Rewrite one item in Bahasa Indonesia (max 3 sentences), add the source link and label
-   *Sumber resmi* or *Belum dikonfirmasi*, optionally `media` (official YouTube link) and `xPost` (official X post link).
+   *Sumber resmi* or *Belum dikonfirmasi*, **required** `image` + `video` (see `data/approved/README.md`), optionally `xPost` (official X post link).
    Save as `data/approved/<id>.json` (template: `data/approved/example.json.txt`).
 3. Commit. The next refresh run promotes it into `app/data/content.json`, deploys Pages, and posts it to the channel once.
 

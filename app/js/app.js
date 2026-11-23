@@ -329,7 +329,48 @@
       "</p></div></section>";
   }
 
+  function ytId(url) {
+    const m = String(url || "").match(/(?:youtu\.be\/|[?&]v=|\/(?:shorts|embed|live)\/)([A-Za-z0-9_-]{11})/);
+    return m ? m[1] : "";
+  }
+
+  // New items carry `video` {url,title,channel,relation} + `image` {url,credit,source}.
+  // Map `video` onto the older `media` shape so the YouTube hero/embed keeps working.
+  function normalizeMedia(n) {
+    if (n.media || !n.video) return;
+    const id = ytId(n.video.url);
+    if (!id) return;
+    n.media = {
+      type: "youtube", id: id, url: "https://www.youtube.com/watch?v=" + id,
+      channel: n.video.channel, title: n.video.title, relation: n.video.relation, official: true,
+      thumb: "https://i.ytimg.com/vi/" + id + "/maxresdefault.jpg",
+      thumbFallback: "https://i.ytimg.com/vi/" + id + "/hqdefault.jpg"
+    };
+  }
+
+  function photo(n, size) {
+    const im = n.image;
+    if (!im || !im.url) return "";
+    const fb = n.media ? n.media.thumbFallback : "";
+    const tap = size === "big"
+      ? ' role="button" tabindex="0" data-act="open-source" data-url="' + escapeHtml(im.source || n.sourceUrl) + '"'
+      : ' role="button" tabindex="0" data-news="' + escapeHtml(n.id) + '"';
+    return (
+      '<div class="hero hero-' + size + ' is-photo"' + tap + ' aria-label="Foto: ' + escapeHtml(im.credit) + '">' +
+      '<img src="' + escapeHtml(im.url) + '"' + (fb ? ' data-fallback="' + escapeHtml(fb) + '"' : "") +
+      ' alt="Foto ' + escapeHtml(n.group) + '" loading="lazy" referrerpolicy="no-referrer">' +
+      '<span class="hero-shade"></span>' +
+      '<span class="hero-src">📷 ' + escapeHtml(im.credit) + "</span>" +
+      "</div>"
+    );
+  }
+
   function hero(n, size) {
+    if (n.image && size !== "big") return photo(n, size);
+    return videoHero(n, size);
+  }
+
+  function videoHero(n, size) {
     const m = n.media;
     if (!m) return "";
     if (state.playing === n.id && size === "big") {
@@ -347,7 +388,7 @@
       '" alt="Thumbnail video resmi ' + escapeHtml(n.group) + '" loading="lazy" referrerpolicy="no-referrer">' +
       '<span class="hero-shade"></span>' +
       '<span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>' +
-      '<span class="hero-src">▶ YouTube · ' + escapeHtml(m.channel) + ' (resmi)</span>' +
+      '<span class="hero-src">▶ ' + (m.relation ? escapeHtml(m.relation) + " · " : "YouTube · ") + escapeHtml(m.channel) + ' (resmi)</span>' +
       "</div>"
     );
   }
@@ -355,6 +396,7 @@
   function officialLinks(n) {
     let h = '<div class="off-links">';
     if (n.media) h += '<a href="' + escapeHtml(n.media.url) + '" data-act="open-source" data-url="' + escapeHtml(n.media.url) + '">▶ Video resmi · ' + escapeHtml(n.media.channel) + "</a>";
+    if (n.image && n.image.source) h += '<a href="' + escapeHtml(n.image.source) + '" data-act="open-source" data-url="' + escapeHtml(n.image.source) + '">📷 Foto · ' + escapeHtml(n.image.credit) + "</a>";
     if (n.xPost) h += '<a href="' + escapeHtml(n.xPost.url) + '" data-act="open-source" data-url="' + escapeHtml(n.xPost.url) + '">𝕏 Post resmi · ' + escapeHtml(n.xPost.handle) + "</a>";
     return h + "</div>";
   }
@@ -400,7 +442,7 @@
     const paras = n.body.map(function (p) { return "<p>" + escapeHtml(p) + "</p>"; }).join("");
     root.innerHTML =
       '<div class="screen-fade"><div class="back-row"><button type="button" data-act="back" aria-label="Kembali">←</button><span class="label">Berita</span></div>' +
-      '<div class="detail-hero">' + hero(n, "big") + "</div>" +
+      '<div class="detail-hero">' + (n.image ? photo(n, "big") : "") + videoHero(n, "big") + "</div>" +
       '<article class="detail">' +
       '<div class="detail-kicker"><span class="group-tag">' + escapeHtml(n.group) + "</span>" + badge(n) +
       '<span class="time">' + escapeHtml(n.time) + "</span></div>" +
@@ -409,7 +451,7 @@
       '<div class="body">' + paras + "</div>" +
       officialLinks(n) +
       '<div class="source-box"><strong>Sumber berita: ' + escapeHtml(n.sourceName) +
-      "</strong>Ditulis ulang singkat. Artikel utuh tidak disalin. Gambar dari pratinjau video resmi.</div>" +
+      "</strong>Ditulis ulang singkat. Artikel utuh tidak disalin. " + (n.image ? "Foto dimuat langsung dari sumber aslinya (tidak di-host ulang)." : "Gambar dari pratinjau video resmi.") + "</div>" +
       '<div class="actions">' +
       '<button class="btn btn-primary" data-act="share-news" data-title="' + escapeHtml(n.title) + '">Bagikan</button>' +
       '<button class="btn btn-ghost" data-act="open-source" data-url="' + escapeHtml(n.sourceUrl) + '">Baca sumber</button>' +
@@ -875,6 +917,7 @@
     })
     .then(function (data) {
       S = data;
+      (S.news || []).forEach(normalizeMedia);
       if (!state.newsId && S.news[0]) state.newsId = S.news[0].id;
       if (!state.schedId && S.schedule[0]) state.schedId = S.schedule[0].id;
       initVoteFromStorage();

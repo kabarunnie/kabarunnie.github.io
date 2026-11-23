@@ -661,3 +661,5 @@ html.dark .choice.good { background: #12382B; } html.dark .choice.bad { backgrou
 .tab.on { color: var(--violet); }
 .tab .ico svg { width: 24px; height: 24px; }
 .loading, .error-box { font-size: 16px; }
+.hero.is-photo img { object-position: center 25%; }
+.detail-hero .hero + .hero { margin-top: 8px; }
