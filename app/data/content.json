@@ -4,9 +4,41 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-23T19:53+07:00",
+  "updatedAt": "2026-11-23T21:10+07:00",
   "todayLabel": "Senin, 23 Nov 2026",
   "news": [
+    {
+      "id": "n-taeyeon-unspecial-preview",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "TAEYEON",
+      "color": "#8FA8C8",
+      "initial": "TY",
+      "title": "Taeyeon bocorkan 12 lagu album “Unspecial”, plus pop-up Seongsu dan konser KSPO DOME",
+      "hook": "Album penuh keempat rilis 30 November 18.00 KST (16.00 WIB); title track bergenre R&B.",
+      "body": [
+        "SM Entertainment merilis pratinjau 12 lagu album penuh keempat Taeyeon “Unspecial”, dengan title track senama bergenre R&B yang bercerita tentang debar cinta yang memudar jadi rutinitas.",
+        "Albumnya rilis 30 November pukul 18.00 KST (16.00 WIB), lalu ada pop-up “MM Seongsu” di Seoul pada 1–7 Desember.",
+        "Taeyeon juga akan menggelar konser solo ketujuh “TAEYEON CONCERT - F.L.Y. in Seoul” pada 15–17 Januari 2027 di KSPO DOME, Olympic Park.",
+        "Kata Unnie: Satu minggu lagi! Siapkan tisu buat lagu-lagu galaunya, ya."
+      ],
+      "sourceName": "Newsculture (Korea); OSEN",
+      "sourceUrl": "https://www.nc.press/news/articleView.html?idxno=631679",
+      "time": "23 Nov 2026",
+      "publishedAt": "2026-11-23",
+      "image": {
+        "url": "https://cdn.nc.press/news/photo/202611/631679_872144_5616.jpg",
+        "credit": "SM Entertainment via Newsculture",
+        "source": "https://www.nc.press/news/articleView.html?idxno=631679"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=8h2mkPn7-pA",
+        "title": "TAEYEON 태연 Album Trailer : 'The Unspecial'",
+        "channel": "TAEYEON Official",
+        "official": true,
+        "relation": "Trailer resmi album “Unspecial” (album ini)"
+      }
+    },
     {
       "id": "n-zena-love-again",
       "badge": "resmi",
@@ -357,38 +389,6 @@
         "channel": "SMTOWN",
         "official": true,
         "relation": "MV resmi Hearts2Hearts “ICONIC HEART” (bukan rekaman fan event)"
-      }
-    },
-    {
-      "id": "n-withus-christmas-recipe",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "Apink · Whee In (MAMAMOO)",
-      "color": "#E86A92",
-      "initial": "AP",
-      "title": "Apink dan Whee In ikut album Natal “Christmas Recipe”, rilis 1 Desember",
-      "hook": "Album proyek agensi WITH US berisi 4 lagu, dirilis 1 Desember pukul 18.00 KST (16.00 WIB).",
-      "body": [
-        "Empat member Apink (Chorong, Bomi, Namjoo, Hayoung), Whee In, dan HUI merilis album proyek Natal pertama agensi WITH US Entertainment, “2026 Winter With US : Christmas Recipe”, pada 1 Desember pukul 18.00 KST (16.00 WIB).",
-        "Album berisi 4 lagu: lagu utama bersama “Christmas Recipe” yang ditulis dan digubah JeA (Brown Eyed Girls), “Christmas Candlelight” dari Apink, “Close To Midnight (23:59)” dari Whee In, dan “My Winter” dari HUI.",
-        "Menurut media Korea, lirik “Christmas Candlelight” ditulis sendiri oleh Chorong, dan foto konsep serta teaser MV akan dibuka bertahap sebelum rilis.",
-        "Kata Unnie: Suara Apink dan Whee In di satu album Natal? Playlist Desember aman nih."
-      ],
-      "sourceName": "bntnews; Newsculture (Korea)",
-      "sourceUrl": "https://www.bntnews.co.kr/article/view/bnt202611170115",
-      "time": "17 Nov 2026",
-      "publishedAt": "2026-11-17",
-      "image": {
-        "url": "https://cdn.topstarnews.net/news/photo/202611/16283396_2096344_5049_crop.jpg",
-        "credit": "WITH US Entertainment via Topstarnews",
-        "source": "https://www.topstarnews.net/news/articleView.html?idxno=16283396"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=y2os26sMjOg",
-        "title": "Apink (에이핑크) 'Love Me More' M/V",
-        "channel": "Apink (에이핑크)",
-        "official": true,
-        "relation": "MV resmi Apink “Love Me More” (bukan lagu Natal ini)"
       }
     }
   ],
