@@ -140,6 +140,52 @@
       .replace(/"/g, "&quot;");
   }
 
+  // WIB (Asia/Jakarta, UTC+7) civil date. More reliable than content.json
+  // todayLabel, which only changes when a refresh run commits.
+  const HARI_WIB = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+  const BULAN_WIB = ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agu", "Sep", "Okt", "Nov", "Des"];
+
+  function wibParts(date) {
+    const parts = {};
+    new Intl.DateTimeFormat("en-US", {
+      timeZone: "Asia/Jakarta",
+      day: "numeric",
+      month: "numeric",
+      year: "numeric"
+    }).formatToParts(date || new Date()).forEach(function (p) {
+      if (p.type !== "literal") parts[p.type] = p.value;
+    });
+    const y = Number(parts.year);
+    const m = Number(parts.month);
+    const d = Number(parts.day);
+    const dow = new Date(Date.UTC(y, m - 1, d, 5, 0, 0)).getUTCDay();
+    return { y: y, m: m, d: d, dow: dow };
+  }
+
+  function todayLabelWib(date) {
+    const p = wibParts(date);
+    return HARI_WIB[p.dow] + ", " + p.d + " " + BULAN_WIB[p.m - 1] + " " + p.y;
+  }
+
+  function parseSchedDate(str) {
+    const m = String(str || "").trim().match(/^(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})$/);
+    if (!m) return null;
+    const month = BULAN_WIB.indexOf(m[2]);
+    if (month < 0) return null;
+    return { d: Number(m[1]), m: month + 1, y: Number(m[3]) };
+  }
+
+  function schedDayStatus(dateStr) {
+    const p = parseSchedDate(dateStr);
+    if (!p) return "";
+    const t = wibParts();
+    const diff = (Date.UTC(p.y, p.m - 1, p.d) - Date.UTC(t.y, t.m - 1, t.d)) / 86400000;
+    if (diff === 0) return "today";
+    if (diff > 0 && diff <= 7) return "soon";
+    if (diff < 0) return "past";
+    return "";
+  }
+
   function toast(msg) {
     toastEl.textContent = msg;
     toastEl.classList.remove("hidden");
@@ -336,7 +382,7 @@
       joinChip() +
       "</div>" +
       '<div class="section-title"><h2>Hari ini di Korea</h2><span>' +
-      escapeHtml(S.todayLabel.replace(/^[^,]+, /, "")) +
+      escapeHtml(todayLabelWib()) +
       "</span></div>" +
       '<div class="cards">' + cards + "</div>" +
       '<div class="cta-row">' + ctaSubscribe() +
@@ -405,12 +451,24 @@
       "</div>";
     let last = "";
     items.forEach(function (s) {
+      const status = schedDayStatus(s.date);
       if (s.date !== last) {
-        html += '<div class="day-label">' + escapeHtml(s.date) + " · " + escapeHtml(s.when) + "</div>";
+        const tag = status === "today" ? "Hari ini · " : status === "soon" ? "Minggu ini · " : "";
+        html +=
+          '<div class="day-label' +
+          (status ? " is-" + status : "") +
+          '">' +
+          tag +
+          escapeHtml(s.date) +
+          " · " +
+          escapeHtml(s.when) +
+          "</div>";
         last = s.date;
       }
       html +=
-        '<button class="sched" data-sched="' +
+        '<button class="sched' +
+        (status ? " is-" + status : "") +
+        '" data-sched="' +
         escapeHtml(s.id) +
         '">' +
         avatar(s) +

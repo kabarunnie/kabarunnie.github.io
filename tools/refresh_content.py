@@ -270,16 +270,24 @@ def refresh(dry: bool) -> int:
             ids.add(item["id"])
         if not dry:
             f.unlink()
+    now = datetime.now(timezone.utc)
+    today = _label_wib(now)
     if added:
         added.sort(key=lambda n: n.get("publishedAt", ""), reverse=True)
         data["news"] = (added + data["news"])[:MAX_NEWS]
-        now = datetime.now(timezone.utc)
         data["updatedAt"] = now.astimezone(WIB).isoformat(timespec="minutes")
-        data["todayLabel"] = _label_wib(now)
+        data["todayLabel"] = today
         print(f"promoted {len(added)} item(s): {', '.join(n['id'] for n in added)}")
         _write_json(CONTENT, data, dry)
     else:
         print("no approved items to promote")
+        # Always stamp today's WIB label so the JSON date does not go stale
+        # when there is nothing new to publish. The app also computes this
+        # client-side; this keeps content.json in sync after each run.
+        if data.get("todayLabel") != today:
+            data["todayLabel"] = today
+            print(f"todayLabel -> {today}")
+            _write_json(CONTENT, data, dry)
     if dry and added:
         return 0
     return validate()

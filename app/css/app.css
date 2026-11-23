@@ -363,6 +363,8 @@ button { border: 0; background: none; cursor: pointer; color: inherit; }
   text-transform: uppercase;
   color: var(--muted);
 }
+.day-label.is-today { color: var(--violet); }
+.day-label.is-soon { color: var(--ink); }
 .sched {
   margin: 0 20px 10px;
   background: #fff;
@@ -386,6 +388,11 @@ button { border: 0; background: none; cursor: pointer; color: inherit; }
 .sched .info .grp { font-size: 11px; font-weight: 800; color: var(--pink); }
 .sched .info h3 { font-size: 15px; line-height: 1.25; }
 .sched .info p { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.sched.is-today {
+  border: 2px solid var(--yellow);
+  box-shadow: 0 8px 18px rgba(91, 43, 214, 0.14);
+}
+.sched.is-past { opacity: 0.55; }
 
 /* Quiz / vote */
 .hero-card {
@@ -628,7 +635,10 @@ html.dark .off-links a { color: #CDBDFF; }
 .chip { height: 40px; font-size: 15px; padding: 0 16px; background: var(--card); color: var(--ink); }
 .chip.on { background: var(--violet); border-color: var(--violet); color: #fff; }
 .day-label { font-size: 13px; }
+.day-label.is-today { color: var(--yellow); }
+.day-label.is-soon { color: var(--ink); }
 .sched { background: var(--card); color: var(--ink); }
+.sched.is-today { border-color: var(--yellow); }
 .sched .when b { font-size: 16px; }
 .sched .when span { font-size: 13px; }
 .sched .info .grp { font-size: 14px; color: var(--violet); }

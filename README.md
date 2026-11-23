@@ -21,7 +21,7 @@ data/inbox.json       ← raw RSS headlines for editors (not shown in the app)
 data/approved/        ← editor-approved items waiting to be published
 tools/refresh_content.py
 .github/workflows/pages.yml    ← deploy ./app on push to main
-.github/workflows/refresh.yml  ← 3× daily refresh + Telegram post
+.github/workflows/refresh.yml  ← 10× daily refresh + Telegram post
 ```
 
 All paths in the app are relative, so it works at `https://<user>.github.io/<repo>/` and at a domain root.
@@ -60,7 +60,9 @@ Without the Telegram secrets the workflow still refreshes and deploys; the post 
 
 ## Daily editing / Alur harian
 
-1. Read `data/inbox.json` (raw headlines, refreshed 07:00 / 12:00 / 19:00 WIB).
+1. Read `data/inbox.json` (raw headlines, refreshed 10× daily:
+   **08:00 / 10:00 / 12:00 / 14:00 / 16:00 / 18:00 / 20:00 / 21:00 / 22:00 / 23:00 KST**,
+   which is **06:00 / 08:00 / 10:00 / 12:00 / 14:00 / 16:00 / 18:00 / 19:00 / 20:00 / 21:00 WIB**).
 2. Rewrite one item in Bahasa Indonesia (max 3 sentences), add the source link and label
    *Sumber resmi* or *Belum dikonfirmasi*, optionally `media` (official YouTube link) and `xPost` (official X post link).
    Save as `data/approved/<id>.json` (template: `data/approved/example.json.txt`).
