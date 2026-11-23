@@ -4,9 +4,41 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-23T15:29+07:00",
+  "updatedAt": "2026-11-23T17:06+07:00",
   "todayLabel": "Senin, 23 Nov 2026",
   "news": [
+    {
+      "id": "n-girls-planet-universal-league",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "Girls Planet (Mnet)",
+      "color": "#3E7CB1",
+      "initial": "GP",
+      "title": "Mnet umumkan “Girls Planet: Universal League”, survival girl group baru untuk 2027",
+      "hook": "Formatnya adu K Group vs E Group; pendaftar global sudah lebih dari 63.000 orang.",
+      "body": [
+        "Pada 23 November, Mnet menetapkan judul resmi proyek debut girl group “Girls Planet 2027” (judul sementara) menjadi “GIRLS PLANET : UNIVERSAL LEAGUE” dan merilis teaser pertamanya, yang lebih dulu diputar di 2026 MAMA Awards di Kyocera Dome Osaka; acaranya dijadwalkan tayang pada 2027.",
+        "Musim ini mempertemukan “K Group” yang berpusat di Korea dan “E Group” dari wilayah berbahasa Inggris, sementara detail misinya akan diumumkan kemudian.",
+        "Menurut Mnet, pendaftar global sudah melewati sekitar 63.000 orang per 23 November, dan pendaftaran online lewat Mnet Plus dibuka sampai 14 Desember pukul 23.59 KST (21.59 WIB).",
+        "Kata Unnie: Seri sebelumnya, “Girls Planet 999” (2021), melahirkan Kep1er — siapa tahu ada trainee Indonesia yang ikut kali ini!"
+      ],
+      "sourceName": "Tenasia (Korea)",
+      "sourceUrl": "https://www.tenasia.co.kr/article/2026112331014",
+      "time": "23 Nov 2026",
+      "publishedAt": "2026-11-23",
+      "image": {
+        "url": "https://img.tenasia.co.kr/photo/202611/BF.46513700.1.jpg",
+        "credit": "Mnet via Tenasia",
+        "source": "https://www.tenasia.co.kr/article/2026112331014"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=apUTPIqhEts",
+        "title": "[GIRLS PLANET : UNIVERSAL LEAGUE] GIRLS NEVER STOP I TEASER",
+        "channel": "Mnet K-POP",
+        "official": true,
+        "relation": "Teaser resmi “GIRLS PLANET : UNIVERSAL LEAGUE” (acara ini)"
+      }
+    },
     {
       "id": "n-aespa-disney-holiday",
       "badge": "resmi",
@@ -357,34 +389,6 @@
       "xPost": {
         "url": "https://x.com/JYPETWICE/status/2124074086544613390",
         "handle": "@JYPETWICE"
-      }
-    },
-    {
-      "id": "n-mma-ive",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "IVE",
-      "color": "#C45B7A",
-      "initial": "IV",
-      "title": "IVE raih daesang di Melon Music Awards untuk “BANG BANG”",
-      "hook": "Best Song of the Year diumumkan pada hari kedua MMA, 15 November di Seoul.",
-      "body": [
-        "Pada MMA 2026 hari kedua, 15 November di Gocheok Sky Dome, “BANG BANG” milik IVE dinobatkan sebagai Best Song of the Year.",
-        "Grup yang sama juga meraih Best Female Group dan Best Music Video untuk lagu itu, serta masuk Top 10 dan Global Top 10.",
-        "Anggota IVE berterima kasih kepada DIVE saat menerima daesang lagu."
-      ],
-      "sourceName": "allkpop",
-      "sourceUrl": "https://www.allkpop.com/article/2026/11/bts-cortis-and-ive-win-grand-prizes-on-day-2-of-mma-2026",
-      "time": "15 Nov 2026",
-      "publishedAt": "2026-11-15",
-      "media": {
-        "type": "youtube",
-        "id": "tVzFbxTKaDI",
-        "url": "https://www.youtube.com/watch?v=tVzFbxTKaDI",
-        "channel": "멜론 Melon",
-        "official": true,
-        "thumb": "https://i.ytimg.com/vi/tVzFbxTKaDI/maxresdefault.jpg",
-        "thumbFallback": "https://i.ytimg.com/vi/tVzFbxTKaDI/hqdefault.jpg"
       }
     }
   ],
