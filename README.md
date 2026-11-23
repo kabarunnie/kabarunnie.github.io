@@ -77,12 +77,30 @@ python3 tools/refresh_content.py validate
 python3 tools/refresh_content.py refresh --dry-run
 python3 tools/refresh_content.py post --dry-run     # prints the Bot API payloads, sends nothing
 python3 tools/refresh_content.py seed               # mark all current items as already posted
+python3 tools/app_stats.py                          # app users (GA4) + channel members
 python3 -m http.server 8000 --directory app         # open http://localhost:8000/
 ```
 
 `data/posted.json` is pre-seeded with the current items so the first run does not flood the channel.
 To announce them on launch, set it to `{"posted": []}`.
 *`posted.json` sudah berisi item saat ini; kosongkan bila ingin mempostingnya saat peluncuran.*
+
+
+## App users / Pengguna aplikasi
+
+Anonymous usage is counted with a free Google Analytics 4 property (no ads, no paid plan).
+The Mini App sends `page_view` and `app_open` on load, plus an `in_telegram` flag and a
+SHA-256 hash of the Telegram user id (never the raw id). Tracking is best-effort and
+cannot break the app if it is blocked.
+
+- Property: `properties/565453562` (display name: Kabar Unnie, timezone Asia/Jakarta)
+- Measurement ID: `G-SYRMSWQCHQ`
+- Query hourly / daily / total users with `python3 tools/app_stats.py`, or the GA4
+  Data API / connected Analytics MCP (`run_realtime_report` for the last 30 minutes,
+  `run_report` with dimension `hour` for today's hours). Standard GA4 realtime
+  covers 30 minutes, not 60.
+
+*Pengguna dihitung lewat Google Analytics 4 (gratis). ID Telegram tidak pernah dikirim mentah.*
 
 ## Free tier only / Hanya fitur gratis
 

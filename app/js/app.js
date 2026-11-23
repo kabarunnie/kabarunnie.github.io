@@ -788,6 +788,75 @@
     if (el && el.tagName === "IMG" && el.dataset.fallback && el.src !== el.dataset.fallback) el.src = el.dataset.fallback;
   }, true);
 
+
+  function sha256Hex(text) {
+    if (!window.crypto || !crypto.subtle) return Promise.resolve(null);
+    return crypto.subtle.digest("SHA-256", new TextEncoder().encode(text)).then(function (buf) {
+      return Array.from(new Uint8Array(buf)).map(function (b) {
+        return b.toString(16).padStart(2, "0");
+      }).join("");
+    }).catch(function () { return null; });
+  }
+
+  function analyticsClientId() {
+    try {
+      const key = "ku_cid";
+      let val = localStorage.getItem(key);
+      if (val && /^[0-9]+\.[0-9]+$/.test(val)) return val;
+      val = String(Math.floor(Date.now() / 1000)) + "." + String(Math.floor(Math.random() * 1e9));
+      localStorage.setItem(key, val);
+      return val;
+    } catch (e) {
+      return undefined;
+    }
+  }
+
+  function trackAppOpen() {
+    try {
+      const MID = "G-SYRMSWQCHQ";
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      window.gtag = window.gtag || gtag;
+      const script = document.createElement("script");
+      script.async = true;
+      script.src = "https://www.googletagmanager.com/gtag/js?id=" + MID;
+      script.onerror = function () {};
+      document.head.appendChild(script);
+      gtag("js", new Date());
+
+      const inTelegram = !!(tg && tg.initData);
+      let rawId = "";
+      try {
+        if (tg && tg.initDataUnsafe && tg.initDataUnsafe.user && tg.initDataUnsafe.user.id) {
+          rawId = String(tg.initDataUnsafe.user.id);
+        }
+      } catch (e) {}
+
+      const clientId = analyticsClientId();
+
+      function send(userId) {
+        const cfg = {
+          anonymize_ip: true,
+          send_page_view: false
+        };
+        if (clientId) cfg.client_id = clientId;
+        if (userId) cfg.user_id = userId;
+        gtag("config", MID, cfg);
+        const params = { in_telegram: inTelegram ? "1" : "0" };
+        gtag("event", "page_view", params);
+        gtag("event", "app_open", params);
+      }
+
+      if (rawId) {
+        sha256Hex("kabarunnie:tg:" + rawId).then(function (hash) {
+          send(hash || null);
+        });
+      } else {
+        send(null);
+      }
+    } catch (e) {}
+  }
+
   function showBootError(msg) {
     hideTabs();
     root.className = "screen";
@@ -795,6 +864,7 @@
   }
 
   setupTelegram();
+  trackAppOpen();
   applyParams();
   root.innerHTML = '<div class="loading">Memuat kabar…</div>';
 
