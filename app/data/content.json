@@ -4,9 +4,72 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-23T21:10+07:00",
-  "todayLabel": "Senin, 23 Nov 2026",
+  "updatedAt": "2026-11-24T06:47+07:00",
+  "todayLabel": "Selasa, 24 Nov 2026",
   "news": [
+    {
+      "id": "n-jeongyeon-sinbyeong-movie",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "TWICE",
+      "color": "#FF5FA2",
+      "initial": "TW",
+      "title": "Jeongyeon TWICE debut layar lebar lewat film “Sinbyeong The Movie”, tayang 30 Desember",
+      "hook": "Ia berperan sebagai perwira perawat di rumah sakit militer dalam film horor-komedi ini.",
+      "body": [
+        "Jeongyeon tampil dengan nama asli Yoo Jeong-yeon sebagai perwira perawat bernama sama di “Sinbyeong The Movie: Gunbyeongwone Gwisini Sanda”, versi layar lebar dari serial komedi militer Korea “Sinbyeong”.",
+        "Distributor KT Studio Genie sudah merilis still foto (18 November) dan teaser trailer (19 November); filmnya tayang di bioskop Korea mulai 30 Desember.",
+        "Kata Unnie: Penasaran lihat Jeongyeon pakai seragam perawat di film horor-komedi? Tonton teasernya dulu, yuk."
+      ],
+      "sourceName": "Sports Donga (Korea); Moviepress",
+      "sourceUrl": "https://sports.donga.com/ent/article/all/20261118/135043501/1",
+      "time": "24 Nov 2026",
+      "publishedAt": "2026-11-24",
+      "image": {
+        "url": "https://dimg.donga.com/wps/SPORTS/IMAGE/2026/11/18/135043502.1.jpg",
+        "credit": "KT Studio Genie via Sports Donga",
+        "source": "https://sports.donga.com/ent/article/all/20261118/135043501/1"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=b6PQL1MT_9k",
+        "title": "올겨울 추위보다 서늘한 블록버스터급 호러 코미디 [신병 더 무비: 군병원에 귀신이 산다] 티저 예고편",
+        "channel": "스튜디오지니",
+        "official": true,
+        "relation": "Teaser trailer resmi film “Sinbyeong The Movie” (film ini)"
+      }
+    },
+    {
+      "id": "n-rbw-family-concert-taipei",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "OH MY GIRL",
+      "color": "#E58FB0",
+      "initial": "OM",
+      "title": "OH MY GIRL, Kwon Eunbi, dan YOUNG POSSE tampil di “2027 RBW Family Concert in Taipei”, 13 Februari",
+      "hook": "Konser keluarga RBW pertama sejak Mei 2023, digelar di Linkou Arena, Taipei.",
+      "body": [
+        "RBW menggelar “2027 RBW Family Concert in Taipei” pada 13 Februari 2027 di Linkou Arena, Taipei, dengan Solar dan Moonbyul MAMAMOO, Kwon Eunbi, ONEWE, OH MY GIRL, YOUNG POSSE, dan XLOV.",
+        "Menurut poster resmi, konser mulai pukul 17.00 waktu Taipei (18.00 KST, 16.00 WIB).",
+        "Tiket dijual lewat Kham Ticket mulai 26 November pukul 12.00 waktu Taipei (11.00 WIB).",
+        "Kata Unnie: Satu panggung isinya OH MY GIRL, Kwon Eunbi, sampai YOUNG POSSE — yang mau ke Taipei, pasang alarm 26 November jam 11.00 WIB."
+      ],
+      "sourceName": "Singlelist (Korea); Kham Ticket",
+      "sourceUrl": "https://www.slist.kr/news/articleView.html?idxno=784194",
+      "time": "24 Nov 2026",
+      "publishedAt": "2026-11-24",
+      "image": {
+        "url": "https://cdn.slist.kr/news/photo/202611/784194_1197289_75.jpg",
+        "credit": "RBW via Singlelist",
+        "source": "https://www.slist.kr/news/articleView.html?idxno=784194"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=VPg-HtAUeRQ",
+        "title": "오마이걸(OH MY GIRL) 'Classified' MV",
+        "channel": "OH MY GIRL",
+        "official": true,
+        "relation": "MV resmi OH MY GIRL “Classified” (bukan rekaman konser ini)"
+      }
+    },
     {
       "id": "n-taeyeon-unspecial-preview",
       "badge": "resmi",
@@ -325,70 +388,6 @@
         "channel": "SMTOWN",
         "official": true,
         "relation": "MV resmi aespa “LEMONADE” (bukan acara ini)"
-      }
-    },
-    {
-      "id": "n-niziu-jolly-jolly",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "NiziU",
-      "color": "#D94A4A",
-      "initial": "NZ",
-      "title": "NiziU rilis lagu Natal pertama “Jolly Jolly” pada 2 Desember",
-      "hook": "Single digital ini keluar tepat di hari ulang tahun ke-6 debut Jepang NiziU; versi pendeknya dibuka 24 November pukul 00.00 KST (23 November 22.00 WIB).",
-      "body": [
-        "Lewat SNS resmi pada 21 November, NiziU (JYP Entertainment) membuka teaser MV dan foto grup untuk “Jolly Jolly”, lagu liburan pertama mereka, yang dirilis sebagai single digital pada 2 Desember.",
-        "Versi pendek lagunya diputar lebih dulu di SNS resmi pada 24 November pukul 00.00 KST (23 November 22.00 WIB).",
-        "Menurut media Korea, “Jolly Jolly” juga masuk EP Jepang ketiga “You’re the best” (3 lagu) yang dijadwalkan rilis 17 Maret 2027.",
-        "Kata Unnie: Malam ini jam 22.00 WIB ada cuplikan lagu Natal — pas buat mulai playlist Desember."
-      ],
-      "sourceName": "Ilgan Sports; OSEN (Korea)",
-      "sourceUrl": "https://isplus.com/article/view/isp202611230015",
-      "time": "23 Nov 2026",
-      "publishedAt": "2026-11-23",
-      "image": {
-        "url": "https://isplus.com/data/isp/image/2026/11/23/isp20261123000013.800x.0.jpg",
-        "credit": "JYP Entertainment via Ilgan Sports",
-        "source": "https://isplus.com/article/view/isp202611230015"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=CEcKVKaVslk",
-        "title": "NiziU(니쥬) \"Jolly Jolly\" M/V Teaser 1",
-        "channel": "JYP Entertainment",
-        "official": true,
-        "relation": "Teaser MV resmi “Jolly Jolly” (lagu ini)"
-      }
-    },
-    {
-      "id": "n-h2h-ready-s2u",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "Hearts2Hearts",
-      "color": "#7A9CE0",
-      "initial": "H2",
-      "title": "Hearts2Hearts tutup fan event pertama di Jepang “READY! S2U” hari ini",
-      "hook": "Hari kedua di Ariake Arena, Tokyo, mulai 16.00 waktu Jepang (14.00 WIB).",
-      "body": [
-        "Hearts2Hearts menggelar fan event resmi pertamanya di Jepang, “READY! S2U”, di Ariake Arena, Tokyo, pada 22 dan 23 November.",
-        "Pertunjukan hari ini (23 November, hari libur di Jepang) dimulai pukul 16.00 waktu Jepang atau 14.00 WIB, setelah sebelumnya grup tampil di MAMA Awards Osaka (20/11) dan ANIMAX MUSIX Yokohama (21/11).",
-        "Menurut media Korea yang mengutip jadwal resmi, Hearts2Hearts juga dijadwalkan tampil di “Winter Special Live 2026” Universal Studios Japan, Osaka, pada 28 November.",
-        "Kata Unnie: Empat kota-acara dalam empat hari — Carmen dan kawan-kawan benar-benar ngebut akhir pekan ini!"
-      ],
-      "sourceName": "Topstarnews (Korea); Hearts2Hearts Japan Official",
-      "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16276683",
-      "time": "23 Nov 2026",
-      "publishedAt": "2026-11-23",
-      "image": {
-        "url": "https://cdn.topstarnews.net/news/photo/202611/16276683_2088628_2940_crop.jpg",
-        "credit": "Topstarnews",
-        "source": "https://www.topstarnews.net/news/articleView.html?idxno=16276683"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=chl0R8C4NJ8",
-        "title": "Hearts2Hearts 하츠투하츠 'ICONIC HEART' MV",
-        "channel": "SMTOWN",
-        "official": true,
-        "relation": "MV resmi Hearts2Hearts “ICONIC HEART” (bukan rekaman fan event)"
       }
     }
   ],
