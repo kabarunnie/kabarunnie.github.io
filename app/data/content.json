@@ -4,9 +4,49 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-22T18:50:00+09:00",
+  "updatedAt": "2026-11-23T09:04+07:00",
   "todayLabel": "Senin, 23 Nov 2026",
   "news": [
+    {
+      "id": "n-wendy-gleam-hour",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "WENDY (Red Velvet)",
+      "color": "#D9534F",
+      "initial": "WD",
+      "title": "Wendy rilis mini album ke-4 “Gleam Hour” hari ini",
+      "hook": "Album dirilis 23 November pukul 18.00 KST (16.00 WIB) dengan lagu utama “Before Sunrise”.",
+      "body": [
+        "Wendy Red Velvet merilis mini album keempatnya, “Gleam Hour”, pada 23 November pukul 18.00 KST (16.00 WIB) di berbagai platform musik online.",
+        "Album berisi 6 lagu, dengan lagu utama “Before Sunrise”, lagu pop bertempo sedang yang menonjolkan melodi piano.",
+        "Menurut media Korea, Wendy ikut menulis lirik semua lagu dan ikut menggubah “Before Sunrise”, “Special Dust”, serta “Golden Hour”.",
+        "Kata Unnie: Rilisnya 16.00 WIB — pas buat didengar sambil pulang sekolah atau kantor."
+      ],
+      "sourceName": "Topstarnews (Korea)",
+      "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16283308",
+      "time": "23 Nov 2026",
+      "publishedAt": "2026-11-23"
+    },
+    {
+      "id": "n-kiiras-over-u",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "KIIRAS",
+      "color": "#E8A33D",
+      "initial": "KI",
+      "title": "KIIRAS comeback dengan konsep cheerleading lewat “OVER U”",
+      "hook": "Single digital kedua KIIRAS dirilis 26 November pukul 18.00 KST (16.00 WIB).",
+      "body": [
+        "Girl group KIIRAS akan merilis single digital kedua mereka, “OVER U”, pada 26 November pukul 18.00 KST (16.00 WIB).",
+        "Album ini mengusung konsep cheerleading dengan pesan saling menyemangati, berisi lagu utama “OVER U” serta “3-5-4-6” dan “Wanna dance all night?”.",
+        "Foto konsep kedua yang dirilis 20 November menampilkan enam member dengan gaya cheerleader di latar ruang loker.",
+        "Kata Unnie: Grup yang belum banyak dibahas di sini — catat 26 November, 16.00 WIB, kalau suka lagu yang bikin semangat."
+      ],
+      "sourceName": "Sports World (Korea)",
+      "sourceUrl": "https://www.sportsworldi.com/newsView/20261122500417",
+      "time": "22 Nov 2026",
+      "publishedAt": "2026-11-22"
+    },
     {
       "id": "n-mama-ive",
       "badge": "resmi",
