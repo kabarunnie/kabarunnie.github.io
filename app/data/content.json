@@ -4,9 +4,137 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-23T17:06+07:00",
+  "updatedAt": "2026-11-23T18:46+07:00",
   "todayLabel": "Senin, 23 Nov 2026",
   "news": [
+    {
+      "id": "n-illit-japan-record-kohaku",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "ILLIT",
+      "color": "#7A4CA0",
+      "initial": "IL",
+      "title": "ILLIT raih Excellent Work Award di Japan Record Awards ke-68 dan tampil lagi di Kohaku 2026",
+      "hook": "Menurut BELIFT LAB, ILLIT jadi grup K-pop pertama yang menang di Japan Record Awards tiga tahun berturut-turut.",
+      "body": [
+        "Menurut BELIFT LAB (20 November), ILLIT meraih Excellent Work Award di Japan Record Awards ke-68 lewat “It’s Me”, satu-satunya lagu artis luar Jepang di kategori ini, setelah Best New Artist 2024 (“Magnetic”) dan Excellent Work Award 2025 (“Almond Chocolate”).",
+        "Pemenang Grand Prix diumumkan di acara utama yang disiarkan langsung TBS pada 30 Desember.",
+        "ILLIT juga masuk daftar Tim Merah “NHK Kohaku Uta Gassen” ke-77 pada 31 Desember (19.20–23.45 waktu Jepang, 17.20–21.45 WIB) sebagai satu-satunya artis K-pop tahun ini, penampilan ketiga berturut-turut.",
+        "Kata Unnie: Akhir Desember ILLIT padat banget di TV Jepang — catat 30 dan 31 Desember, GLLIT!"
+      ],
+      "sourceName": "OSEN; Newsis (Korea)",
+      "sourceUrl": "https://www.osen.co.kr/article/G1112913123",
+      "time": "23 Nov 2026",
+      "publishedAt": "2026-11-23",
+      "image": {
+        "url": "https://file.osen.co.kr/article/2026/11/21/202611210817771011_6b00d53755216.jpg",
+        "credit": "BELIFT LAB via OSEN",
+        "source": "https://www.osen.co.kr/article/G1112913123"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=bMhDJ0S0OBA",
+        "title": "ILLIT (아일릿) ‘It’s Me’ Official MV",
+        "channel": "HYBE LABELS",
+        "official": true,
+        "relation": "MV resmi ILLIT “It’s Me” (lagu pemenang penghargaan ini)"
+      }
+    },
+    {
+      "id": "n-ive-encore-kspo",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "IVE",
+      "color": "#C45B7A",
+      "initial": "IV",
+      "title": "IVE gelar konser encore “SHOW WHAT I AM” di KSPO DOME Seoul, 29–31 Januari 2027",
+      "hook": "Presale fanclub 16–17 Desember, penjualan umum 18 Desember pukul 20.00 KST (18.00 WIB) lewat Melon Ticket.",
+      "body": [
+        "Starship Entertainment mengumumkan pada 20 November bahwa IVE akan menggelar “IVE WORLD TOUR ‘SHOW WHAT I AM’ ENCORE” pada 29–31 Januari 2027 di KSPO DOME, Olympic Park, Seoul — tempat yang sama dengan pembukaan tur dunia kedua mereka pada 31 Oktober–2 November 2025.",
+        "Tiket dijual lewat Melon Ticket: presale fanclub 16 dan 17 Desember, lalu penjualan umum 18 Desember, masing-masing pukul 20.00 KST (18.00 WIB).",
+        "Menurut media Korea, tur ini sudah singgah di Asia, Oseania, dan Amerika Utara, termasuk Kyocera Dome Osaka dan Tokyo Dome.",
+        "Kata Unnie: Tur dibuka dan ditutup di kota yang sama — DIVE yang sempat ke Seoul akhir Januari, siapkan jari buat war tiket!"
+      ],
+      "sourceName": "Tenasia; Yonhap (Korea)",
+      "sourceUrl": "https://www.tenasia.co.kr/article/2026112004584",
+      "time": "23 Nov 2026",
+      "publishedAt": "2026-11-23",
+      "image": {
+        "url": "https://img.tenasia.co.kr/photo/202611/BF.46494722.1.jpg",
+        "credit": "Starship Entertainment via Tenasia",
+        "source": "https://www.tenasia.co.kr/article/2026112004584"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=rsNhWkC4neE",
+        "title": "IVE 아이브 'Looks Can Kill' MV",
+        "channel": "STARSHIP",
+        "official": true,
+        "relation": "MV resmi IVE “Looks Can Kill” (bukan video konser ini)"
+      }
+    },
+    {
+      "id": "n-ohmygirl-codename-omg",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "OH MY GIRL",
+      "color": "#E58FB0",
+      "initial": "OM",
+      "title": "OH MY GIRL buka fanmeeting “CODE NAME: OMG” di Seoul, lanjut ke Tokyo, Hong Kong, dan Taipei",
+      "hook": "Fanmeeting solo digelar 22 November di Kwangwoon University, Seoul.",
+      "body": [
+        "OH MY GIRL menggelar fanmeeting solo “2026 OH MY GIRL FANMEETING ‘CODE NAME: OMG’” pada 22 November di aula Donghae Culture & Arts Center, Kwangwoon University, Seoul.",
+        "Mereka membuka acara dengan “BUNGEE (Fall in Love)” dan “LIAR LIAR”, menampilkan panggung unit seperti cover “Hoot” milik Girls’ Generation, serta memainkan kuis dan misi bertema agen rahasia bersama fandom Miracle.",
+        "Setelah Seoul, fanmeeting yang sama dijadwalkan berlanjut ke Tokyo, Hong Kong, dan Taipei.",
+        "Kata Unnie: Belum ada kabar mampir ke Jakarta, tapi Miracle Indonesia boleh terus berharap ya!"
+      ],
+      "sourceName": "Tenasia (Korea)",
+      "sourceUrl": "https://www.tenasia.co.kr/article/2026112347514",
+      "time": "23 Nov 2026",
+      "publishedAt": "2026-11-23",
+      "image": {
+        "url": "https://img.tenasia.co.kr/photo/202611/BF.46519218.1.jpg",
+        "credit": "RBW, DSP Media via Tenasia",
+        "source": "https://www.tenasia.co.kr/article/2026112347514"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=iKSo8shldrI",
+        "title": "오마이걸(OH MY GIRL) 'Oh My' MV",
+        "channel": "OH MY GIRL",
+        "official": true,
+        "relation": "MV resmi OH MY GIRL “Oh My” (bukan rekaman fanmeeting ini)"
+      }
+    },
+    {
+      "id": "n-rescene-with-5-wins",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "RESCENE",
+      "color": "#D9779B",
+      "initial": "RS",
+      "title": "RESCENE menang di Inkigayo lagi dengan “With”, total 5 trofi acara musik",
+      "hook": "Kemenangan 22 November ini diraih tanpa tampil, setelah promosi resmi album mini ke-4 “PULSE” selesai.",
+      "body": [
+        "RESCENE (Wonee, Liv, Minami, May, Zena) meraih posisi 1 di SBS “Inkigayo” 22 November dengan “With”, dua minggu berturut-turut, sehingga total menang di The Show, Show Champion, Show! Music Core, dan Inkigayo menjadi 5 trofi — rekor tertinggi mereka.",
+        "Menurut media Korea, “With” menduduki puncak Melon TOP100 dan masuk Billboard Global Excl. US (#22) serta Global 200 (#58).",
+        "Album mini ke-4 “PULSE” terjual lebih dari 600.000 kopi di minggu pertama, half-million seller pertama mereka.",
+        "Kata Unnie: Menang tanpa tampil itu tanda lagunya beneran didengar — kalau belum kenal RESCENE, “With” pas jadi pintu masuk."
+      ],
+      "sourceName": "Hankyung; Singlelist (Korea)",
+      "sourceUrl": "https://www.hankyung.com/article/202611234859H",
+      "time": "23 Nov 2026",
+      "publishedAt": "2026-11-23",
+      "image": {
+        "url": "https://img.hankyung.com/photo/202611/01.46519265.1.jpg",
+        "credit": "THE MUZE Entertainment via Hankyung",
+        "source": "https://www.hankyung.com/article/202611234859H"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=pey3E47eSc8",
+        "title": "RESCENE (리센느) 'With' Official MV",
+        "channel": "RESCENE",
+        "official": true,
+        "relation": "MV resmi RESCENE “With” (lagu pemenang ini)"
+      }
+    },
     {
       "id": "n-girls-planet-universal-league",
       "badge": "resmi",
@@ -261,134 +389,6 @@
         "channel": "웬디 WENDY",
         "official": true,
         "relation": "Highlight Medley resmi album “Gleam Hour”"
-      }
-    },
-    {
-      "id": "n-kiiras-over-u",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "KIIRAS",
-      "color": "#E8A33D",
-      "initial": "KI",
-      "title": "KIIRAS comeback dengan konsep cheerleading lewat “OVER U”",
-      "hook": "Single digital kedua KIIRAS dirilis 26 November pukul 18.00 KST (16.00 WIB).",
-      "body": [
-        "Girl group KIIRAS akan merilis single digital kedua mereka, “OVER U”, pada 26 November pukul 18.00 KST (16.00 WIB).",
-        "Album ini mengusung konsep cheerleading dengan pesan saling menyemangati, berisi lagu utama “OVER U” serta “3-5-4-6” dan “Wanna dance all night?”.",
-        "Foto konsep kedua yang dirilis 20 November menampilkan enam member dengan gaya cheerleader di latar ruang loker.",
-        "Kata Unnie: Grup yang belum banyak dibahas di sini — catat 26 November, 16.00 WIB, kalau suka lagu yang bikin semangat."
-      ],
-      "sourceName": "Sports World (Korea)",
-      "sourceUrl": "https://www.sportsworldi.com/newsView/20261122500417",
-      "time": "22 Nov 2026",
-      "publishedAt": "2026-11-22",
-      "image": {
-        "url": "https://www.sportsworldi.com/content/image/2026/11/22/20261122500416.jpg",
-        "credit": "Sportsworld",
-        "source": "https://www.sportsworldi.com/newsView/20261122500417"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=QEKyInP9cqM",
-        "title": "KIIRAS (키라스) Second Digital Single Album Highlight medley",
-        "channel": "KIIRAS",
-        "official": true,
-        "relation": "Highlight medley resmi single digital kedua KIIRAS"
-      }
-    },
-    {
-      "id": "n-mama-ive",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "IVE",
-      "color": "#C45B7A",
-      "initial": "IV",
-      "title": "IVE meraih Best Female Group di MAMA 2026",
-      "hook": "Penghargaan diberikan pada Chapter 1 di Kyocera Dome Osaka, 20 November.",
-      "body": [
-        "Pada malam pertama 2026 MAMA Awards, 20 November di Kyocera Dome Osaka, IVE dinobatkan sebagai Best Female Group.",
-        "Acara dibagi dua hari: Chapter 1 berfokus pada kategori artis, lalu Chapter 2 keesokan harinya menampilkan kategori lagu dan album.",
-        "Daftar pemenang Chapter 1 dipublikasikan media musik, termasuk allkpop dan Billboard."
-      ],
-      "sourceName": "allkpop; Billboard",
-      "sourceUrl": "https://www.allkpop.com/article/2026/11/here-are-all-the-winners-from-day-1-of-the-2026-mama-awards",
-      "time": "20 Nov 2026",
-      "publishedAt": "2026-11-20",
-      "media": {
-        "type": "youtube",
-        "id": "oRA3eTWh5Jk",
-        "url": "https://www.youtube.com/watch?v=oRA3eTWh5Jk",
-        "channel": "Mnet K-POP",
-        "official": true,
-        "thumb": "https://i.ytimg.com/vi/oRA3eTWh5Jk/maxresdefault.jpg",
-        "thumbFallback": "https://i.ytimg.com/vi/oRA3eTWh5Jk/hqdefault.jpg"
-      },
-      "xPost": {
-        "url": "https://x.com/IVEstarship/status/2124073388805333238",
-        "handle": "@IVEstarship"
-      }
-    },
-    {
-      "id": "n-mama-ch2",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "ILLIT · LE SSERAFIM",
-      "color": "#5B6CC4",
-      "initial": "IL",
-      "title": "ILLIT dan LE SSERAFIM menang di MAMA Chapter 2",
-      "hook": "ILLIT meraih Best Dance Performance Female Group; LE SSERAFIM meraih Best Collaboration.",
-      "body": [
-        "Chapter 2 MAMA 2026 digelar 21 November di venue yang sama di Osaka.",
-        "ILLIT memenangkan Best Dance Performance Female Group untuk “It’s Me”. LE SSERAFIM memenangkan Best Collaboration untuk “SPAGHETTI (Feat. j-hope)”.",
-        "Keduanya juga masuk Best Song Top 10, bersama IVE (“BANG BANG”), aespa (“LEMONADE”), Hearts2Hearts, dan NMIXX."
-      ],
-      "sourceName": "Soompi; Billboard",
-      "sourceUrl": "https://www.soompi.com/article/1889392wpp/winners-of-2026-mama-awards-chapter-2",
-      "time": "21 Nov 2026",
-      "publishedAt": "2026-11-21",
-      "media": {
-        "type": "youtube",
-        "id": "a7xzBj-vYQ8",
-        "url": "https://www.youtube.com/watch?v=a7xzBj-vYQ8",
-        "channel": "Mnet K-POP",
-        "official": true,
-        "thumb": "https://i.ytimg.com/vi/a7xzBj-vYQ8/maxresdefault.jpg",
-        "thumbFallback": "https://i.ytimg.com/vi/a7xzBj-vYQ8/hqdefault.jpg"
-      },
-      "xPost": {
-        "url": "https://x.com/ILLIT_official/status/2124089878619254833",
-        "handle": "@ILLIT_official"
-      }
-    },
-    {
-      "id": "n-nayeon",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "Nayeon",
-      "color": "#E31B5C",
-      "initial": "NY",
-      "title": "Nayeon rilis NA-sty dan tampil solo di MAMA",
-      "hook": "Single album dirilis 20 November; babak live “BABY ANGEL” menyusul di Osaka.",
-      "body": [
-        "JYP merilis single album solo Nayeon, “NA-sty”, pada 20 November 2026 pukul 14.00 KST (12.00 WIB), dengan judul “BABY ANGEL” serta lagu “SHiVER” dan “BOY”.",
-        "Ini comeback solo pertamanya dalam sekitar dua tahun lima bulan. Nayeon ikut menulis dan menggubah “SHiVER”.",
-        "Keesokan harinya ia tampil di MAMA Chapter 2 dengan medley yang memuat “BABY ANGEL”."
-      ],
-      "sourceName": "JYP Entertainment; The Korea Times; The Korea Herald/ANN",
-      "sourceUrl": "https://twice.jype.com/discography/uw12l6ud",
-      "time": "20–21 Nov 2026",
-      "publishedAt": "2026-11-20",
-      "media": {
-        "type": "youtube",
-        "id": "0JQ9k6kcKVs",
-        "url": "https://www.youtube.com/watch?v=0JQ9k6kcKVs",
-        "channel": "JYP Entertainment",
-        "official": true,
-        "thumb": "https://i.ytimg.com/vi/0JQ9k6kcKVs/maxresdefault.jpg",
-        "thumbFallback": "https://i.ytimg.com/vi/0JQ9k6kcKVs/hqdefault.jpg"
-      },
-      "xPost": {
-        "url": "https://x.com/JYPETWICE/status/2124074086544613390",
-        "handle": "@JYPETWICE"
       }
     }
   ],
