@@ -4,9 +4,73 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-23T12:52+07:00",
+  "updatedAt": "2026-11-23T15:29+07:00",
   "todayLabel": "Senin, 23 Nov 2026",
   "news": [
+    {
+      "id": "n-aespa-disney-holiday",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "aespa",
+      "color": "#6B4C9A",
+      "initial": "ae",
+      "title": "aespa tampil di acara spesial Natal Disney di ABC, 30 November",
+      "hook": "aespa akan membawakan “Santa Baby” dan “KISS N TELL” versi bahasa Inggris di “The Wonderful World of Disney: Holiday Spectacular”.",
+      "body": [
+        "Menurut SM Entertainment (20 November), aespa tampil di “The Wonderful World of Disney: Holiday Spectacular” yang tayang di ABC, Amerika Serikat, pada 30 November waktu setempat, berlatar Walt Disney World Resort di Orlando.",
+        "Di acara itu mereka membawakan lagu Natal “Santa Baby” dan “KISS N TELL” versi bahasa Inggris, bersama penampil lain seperti Kelly Clarkson dan Madison Beer.",
+        "Sebelum itu, aespa akan menggelar fan meeting ulang tahun debut ke-6 di Seoul pada 28–29 November.",
+        "Kata Unnie: Tayangnya pakai waktu AS, jadi cek jam WIB-nya mendekati hari-H dan pantau akun resmi untuk klip resminya ya."
+      ],
+      "sourceName": "Newsis; Sports Donga; MBC News (Korea)",
+      "sourceUrl": "https://www.newsis.com/view/NISX20261120_0003876906",
+      "time": "23 Nov 2026",
+      "publishedAt": "2026-11-23",
+      "image": {
+        "url": "https://img1.newsis.com/2026/11/20/NISI20261120_0002297970_web.jpg",
+        "credit": "SM Entertainment via Newsis",
+        "source": "https://www.newsis.com/view/NISX20261120_0003876906"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=inxzQt78lOk",
+        "title": "aespa エスパ 'KISS N TELL' MV",
+        "channel": "SMTOWN",
+        "official": true,
+        "relation": "MV resmi aespa “KISS N TELL” (lagu yang akan dibawakan; bukan rekaman acara ini)"
+      }
+    },
+    {
+      "id": "n-h2h-rude-spotify-200m",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "Hearts2Hearts",
+      "color": "#7A9CE0",
+      "initial": "H2",
+      "title": "“RUDE!” jadi lagu pertama Hearts2Hearts yang tembus 200 juta stream di Spotify",
+      "hook": "Menurut SM Entertainment, per 19 November “RUDE!” sudah diputar lebih dari 200 juta kali di Spotify.",
+      "body": [
+        "SM Entertainment mengumumkan pada 23 November bahwa single Hearts2Hearts “RUDE!” melewati 200 juta stream kumulatif di Spotify per 19 November, menjadikannya lagu pertama grup ini yang mencapai angka tersebut.",
+        "Dengan ini, Hearts2Hearts kini punya empat lagu yang sudah lewat 100 juta stream di Spotify: “The Chase”, “STYLE”, “RUDE!”, dan “FOCUS”.",
+        "Media Korea juga mencatat “RUDE!” pernah tiga minggu berturut-turut di puncak chart mingguan Spotify Korea dan meraih lima trofi di acara musik.",
+        "Kata Unnie: Carmen dan kawan-kawan baru saja tampil di fan event Jepang, eh rekor baru datang juga — yuk putar lagi “RUDE!” buat merayakannya."
+      ],
+      "sourceName": "Topstarnews; Singlelist (Korea)",
+      "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16283821",
+      "time": "23 Nov 2026",
+      "publishedAt": "2026-11-23",
+      "image": {
+        "url": "https://cdn.topstarnews.net/news/photo/202611/16283821_2096697_118_crop.jpg",
+        "credit": "SM Entertainment via Topstarnews",
+        "source": "https://www.topstarnews.net/news/articleView.html?idxno=16283821"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=F7sGJVUrkjQ",
+        "title": "Hearts2Hearts 하츠투하츠 'RUDE!' MV",
+        "channel": "SMTOWN",
+        "official": true,
+        "relation": "MV resmi Hearts2Hearts “RUDE!” (lagu ini)"
+      }
+    },
     {
       "id": "n-karina-gayo-daejejeon",
       "badge": "rumor",
@@ -321,62 +385,6 @@
         "official": true,
         "thumb": "https://i.ytimg.com/vi/tVzFbxTKaDI/maxresdefault.jpg",
         "thumbFallback": "https://i.ytimg.com/vi/tVzFbxTKaDI/hqdefault.jpg"
-      }
-    },
-    {
-      "id": "n-aespa-remix",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "aespa",
-      "color": "#6B4C9A",
-      "initial": "ae",
-      "title": "aespa rilis remix resmi “KISS N TELL”",
-      "hook": "Versi ☆Taku Takahashi terbit 20 November di saluran resmi Jepang grup ini.",
-      "body": [
-        "Situs resmi Jepang aespa mengumumkan rilis digital “KISS N TELL (☆Taku Takahashi Remix)” pada 20 November 2026.",
-        "Remix ini merombak lagu utama mini album Jepang pertama mereka, “KISS N TELL”.",
-        "Tautan streaming resmi tersedia di aespa.lnk.to; undian event Jepang terpisah dibuka hingga 25 November."
-      ],
-      "sourceName": "aespa Japan Official",
-      "sourceUrl": "https://aespa-official.jp/news/kissntell-remix-release/",
-      "time": "20 Nov 2026",
-      "publishedAt": "2026-11-20",
-      "media": {
-        "type": "youtube",
-        "id": "inxzQt78lOk",
-        "url": "https://www.youtube.com/watch?v=inxzQt78lOk",
-        "channel": "SMTOWN",
-        "official": true,
-        "thumb": "https://i.ytimg.com/vi/inxzQt78lOk/maxresdefault.jpg",
-        "thumbFallback": "https://i.ytimg.com/vi/inxzQt78lOk/hqdefault.jpg"
-      }
-    },
-    {
-      "id": "n-aespa-mma",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "aespa",
-      "color": "#6B4C9A",
-      "initial": "ae",
-      "title": "aespa meraih Global K-Artist of the Year di MMA",
-      "hook": "Penghargaan diterima 14 November, menjelang ulang tahun debut keenam grup ini.",
-      "body": [
-        "Pada MMA 2026 hari pertama, 14 November di Gocheok Sky Dome, aespa memenangkan Global K-Artist of the Year.",
-        "Mereka juga masuk daftar Global Top 10, sehingga pulang dengan dua penghargaan.",
-        "Winter berterima kasih kepada fandom MY; Karina menyebut penghargaan itu sebagai hadiah menjelang anniversary keenam grup."
-      ],
-      "sourceName": "allkpop",
-      "sourceUrl": "https://www.allkpop.com/article/2026/11/aespa-wins-global-k-artist-of-the-year-at-mma2026-ahead-of-sixth-anniversary",
-      "time": "14 Nov 2026",
-      "publishedAt": "2026-11-14",
-      "media": {
-        "type": "youtube",
-        "id": "nuILO6CWrkc",
-        "url": "https://www.youtube.com/watch?v=nuILO6CWrkc",
-        "channel": "멜론 Melon",
-        "official": true,
-        "thumb": "https://i.ytimg.com/vi/nuILO6CWrkc/maxresdefault.jpg",
-        "thumbFallback": "https://i.ytimg.com/vi/nuILO6CWrkc/hqdefault.jpg"
       }
     }
   ],
