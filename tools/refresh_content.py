@@ -15,6 +15,12 @@ Commands:
              Skips cleanly when TELEGRAM_BOT_TOKEN / TELEGRAM_CHANNEL_ID are
              missing.
   seed       Mark every current news item as already posted.
+  poll       Post at most one native Telegram poll or quiz (sendPoll) to the
+             channel per WIB day. Uses content.json channelPoll if present,
+             otherwise a quiz question from the daily kuis. Skips cleanly when
+             a poll was already sent today or Telegram secrets are missing.
+             Optional 'Buka App' button on the poll, or a single follow-up
+             message if the API rejects reply_markup on sendPoll.
 
 Raw RSS headlines are never written into content.json automatically: a
 person rewrites them in Bahasa Indonesia, adds the source link and the
@@ -247,6 +253,31 @@ def validate(path: Path = CONTENT) -> int:
         ans = q.get("answer")
         if len(choices) != 4 or not isinstance(ans, int) or not 0 <= ans < 4:
             errors.append(f"quiz[{i}] needs 4 choices and a valid answer index")
+    bonus = quiz.get("bonus")
+    if bonus:
+        choices = bonus.get("choices") or []
+        ans = bonus.get("answer")
+        if not bonus.get("q") or len(choices) != 4 or not isinstance(ans, int) or not 0 <= ans < 4:
+            errors.append("quiz.bonus needs a question, 4 choices, and a valid answer index")
+
+    poll = data.get("channelPoll")
+    if poll:
+        opts = poll.get("options") or []
+        if not poll.get("id") or not poll.get("question"):
+            errors.append("channelPoll needs id and question")
+        if not (2 <= len(opts) <= 12):
+            errors.append("channelPoll needs 2–12 options")
+        if any(len(str(o)) < 1 or len(str(o)) > 100 for o in opts):
+            errors.append("channelPoll option must be 1–100 characters")
+        if len(str(poll.get("question") or "")) > 300:
+            errors.append("channelPoll question must be at most 300 characters")
+        kind = poll.get("type") or "regular"
+        if kind not in ("regular", "quiz"):
+            errors.append("channelPoll type must be regular or quiz")
+        if kind == "quiz":
+            ans = poll.get("correct")
+            if not isinstance(ans, int) or not 0 <= ans < len(opts):
+                errors.append("channelPoll quiz needs a valid correct index")
 
     vote = data.get("vote") or {}
     if not vote.get("id") or not vote.get("options"):
@@ -264,7 +295,9 @@ def validate(path: Path = CONTENT) -> int:
         return 1
 
     print(f"OK  {path}")
-    print(f"  news={len(data['news'])}  schedule={len(data['schedule'])}  quiz=5  vote_options={len(vote['options'])}")
+    bonus_n = 1 if (quiz.get("bonus") or {}).get("q") else 0
+    poll_n = 1 if (data.get("channelPoll") or {}).get("id") else 0
+    print(f"  news={len(data['news'])}  schedule={len(data['schedule'])}  quiz=5  bonus={bonus_n}  vote_options={len(vote['options'])}  channelPoll={poll_n}")
     print(f"  updatedAt={data['updatedAt']}")
     return 0
 
@@ -560,6 +593,166 @@ def post(dry: bool) -> int:
     return 0
 
 
+def _bot_token() -> str:
+    # Actions uses TELEGRAM_BOT_TOKEN; local ops may use KABARUNNIE_BOT_TOKEN.
+    # Never print either value.
+    return (
+        os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
+        or os.environ.get("KABARUNNIE_BOT_TOKEN", "").strip()
+    )
+
+
+def _poll_state(posted: dict) -> list:
+    polls = posted.get("polls")
+    return polls if isinstance(polls, list) else []
+
+
+def _today_wib(now: datetime | None = None) -> str:
+    return (now or datetime.now(timezone.utc)).astimezone(WIB).date().isoformat()
+
+
+def _build_daily_poll(data: dict, today: str, used_ids: set[str], used_questions: set[str]) -> dict | None:
+    """Pick today's sendPoll payload. Prefer a fresh channelPoll; else a kuis item."""
+    raw = data.get("channelPoll") or {}
+    cid = str(raw.get("id") or "")
+    if cid and cid not in used_ids and raw.get("question") and raw.get("options"):
+        return {
+            "id": cid,
+            "type": raw.get("type") or "regular",
+            "question": str(raw["question"]),
+            "options": [str(o) for o in raw["options"]],
+            "correct": raw.get("correct"),
+            "explanation": raw.get("explanation") or "",
+        }
+    qs = (data.get("quiz") or {}).get("questions") or []
+    if len(qs) >= 2:
+        start = datetime.fromisoformat(today).timetuple().tm_yday % len(qs)
+        for offset in range(len(qs)):
+            idx = (start + offset) % len(qs)
+            q = qs[idx]
+            question = str(q.get("q") or "")
+            if not question or question in used_questions:
+                continue
+            return {
+                "id": f"quiz-{today}-{idx}",
+                "type": "quiz",
+                "question": question,
+                "options": [str(o) for o in (q.get("choices") or [])],
+                "correct": q.get("answer"),
+                "explanation": "Sumber: fakta publik yang sudah dimuat di Kabar Unnie.",
+            }
+    return None
+
+
+def poll(dry: bool) -> int:
+    """At most one native poll/quiz per WIB day. No-op if already sent today."""
+    today = _today_wib()
+    posted = _read_json(POSTED, {"posted": []})
+    polls = _poll_state(posted)
+    if any(p.get("date") == today for p in polls if isinstance(p, dict)):
+        print(f"poll already sent today ({today}); skipping")
+        return 0
+
+    data = load_content()
+    used_ids = {str(p.get("id")) for p in polls if isinstance(p, dict) and p.get("id")}
+    used_questions = set()
+    cutoff = (datetime.fromisoformat(today) - timedelta(days=7)).date()
+    for pinfo in polls:
+        if not isinstance(pinfo, dict):
+            continue
+        if pinfo.get("question"):
+            used_questions.add(str(pinfo["question"]))
+        d = str(pinfo.get("date") or "")
+        try:
+            if d and datetime.fromisoformat(d).date() >= cutoff and pinfo.get("id"):
+                # Same quiz stem may be reused after the editor rotates questions.
+                pass
+        except ValueError:
+            pass
+    item = _build_daily_poll(data, today, used_ids, used_questions)
+    if not item or not item["question"] or len(item["options"]) < 2:
+        print("no new channelPoll or quiz available; skipping daily poll")
+        return 0
+
+    token = _bot_token()
+    chat_id = (os.environ.get("TELEGRAM_CHANNEL_ID", "").strip() or "@kabarunnie")
+    app_url = (os.environ.get("APP_URL", "").strip() or "https://t.me/Kabarunnie_bot/app")
+    if not dry and not token:
+        print("TELEGRAM_BOT_TOKEN / KABARUNNIE_BOT_TOKEN not set: skipping poll step.")
+        return 0
+
+    payload = {
+        "chat_id": chat_id,
+        "question": item["question"],
+        "options": item["options"],
+        "is_anonymous": True,
+        "type": "quiz" if item["type"] == "quiz" else "regular",
+        "allows_multiple_answers": False,
+    }
+    if payload["type"] == "quiz":
+        payload["correct_option_id"] = int(item["correct"])
+        if item.get("explanation"):
+            payload["explanation"] = item["explanation"][:200]
+    if app_url:
+        payload["reply_markup"] = {
+            "inline_keyboard": [[{"text": "Buka App", "url": app_url}]]
+        }
+
+    if dry:
+        kind = payload["type"]
+        print(f"[dry-run] would sendPoll ({kind}) {item['id']}: {item['question']}")
+        for i, opt in enumerate(item["options"]):
+            mark = " <<" if kind == "quiz" and i == item.get("correct") else ""
+            print(f"  {i}. {opt}{mark}")
+        return 0
+
+    res = _tg(token, "sendPoll", payload)
+    follow_id = None
+    if not res.get("ok") and app_url and "reply_markup" in payload:
+        # Some clients reject buttons on polls; send the poll alone, then one follow-up.
+        desc = str(res.get("description") or "")
+        if "reply_markup" in desc.lower() or res.get("error_code") == 400:
+            payload.pop("reply_markup", None)
+            res = _tg(token, "sendPoll", payload)
+            if res.get("ok"):
+                follow = _tg(
+                    token,
+                    "sendMessage",
+                    {
+                        "chat_id": chat_id,
+                        "text": "Lanjut di aplikasi: kuis, vote, dan Kata Unnie.",
+                        "reply_markup": {
+                            "inline_keyboard": [[{"text": "Buka App", "url": app_url}]]
+                        },
+                    },
+                )
+                if follow.get("ok"):
+                    follow_id = (follow.get("result") or {}).get("message_id")
+                else:
+                    _warn("poll follow-up with Buka App failed; poll itself was sent")
+
+    if not res.get("ok"):
+        _warn(f"poll failed: {res.get('error_code')} {res.get('description')}")
+        return 1
+
+    msg = res.get("result") or {}
+    mid = msg.get("message_id")
+    polls.append(
+        {
+            "id": item["id"],
+            "date": today,
+            "type": item["type"],
+            "question": item["question"],
+            "message_id": mid,
+            "followup_id": follow_id,
+        }
+    )
+    posted["polls"] = polls
+    _write_json(POSTED, posted, False)
+    print(f"posted poll {item['id']} message_id={mid}")
+    return 0
+
+
 def seed(dry: bool) -> int:
     data = load_content()
     posted = _read_json(POSTED, {"posted": []})
@@ -570,7 +763,7 @@ def seed(dry: bool) -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Kabar Unnie content helper")
-    parser.add_argument("command", choices=("validate", "headlines", "refresh", "post", "seed"))
+    parser.add_argument("command", choices=("validate", "headlines", "refresh", "post", "seed", "poll"))
     parser.add_argument("--dry-run", action="store_true", help="change nothing, send nothing")
     args = parser.parse_args()
     if args.command == "validate":
@@ -581,6 +774,8 @@ def main() -> int:
         return post(args.dry_run)
     if args.command == "seed":
         return seed(args.dry_run)
+    if args.command == "poll":
+        return poll(args.dry_run)
     return headlines()
 
 

@@ -490,7 +490,17 @@
       "Masih pemanasan. Coba lagi, ya.",
       "Lumayan! Kamu sudah cukup update minggu ini.",
       "Wah, Unnie sejati. Bagikan skornya ke teman."
-    ]
+    ],
+    "bonus": {
+      "q": "Konser encore IVE “SHOW WHAT I AM” di KSPO DOME Seoul dijadwalkan kapan?",
+      "choices": [
+        "30 November 2026",
+        "29–31 Desember 2026",
+        "29–31 Januari 2027",
+        "13 Februari 2027"
+      ],
+      "answer": 2
+    }
   },
   "vote": {
     "id": "v-mama-2026",
@@ -524,5 +534,16 @@
       }
     ]
   },
-  "mediaPolicy": "Foto dimuat langsung dari sumber resmi/aslinya (tidak di-host ulang), dengan kredit. Video = YouTube resmi agensi/artis/stasiun TV."
+  "mediaPolicy": "Foto dimuat langsung dari sumber resmi/aslinya (tidak di-host ulang), dengan kredit. Video = YouTube resmi agensi/artis/stasiun TV.",
+  "channelPoll": {
+    "id": "p-2026-11-24-tunggu",
+    "type": "regular",
+    "question": "Kabar girl group mana yang paling kamu tunggu?",
+    "options": [
+      "Film Jeongyeon (TWICE), 30 Des",
+      "Encore IVE di KSPO DOME",
+      "aespa di Disney Holiday, 30 Nov",
+      "ILLIT di Kohaku akhir tahun"
+    ]
+  }
 }

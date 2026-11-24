@@ -469,6 +469,21 @@ button { border: 0; background: none; cursor: pointer; color: inherit; }
 }
 .score span { font-size: 28px; color: var(--muted); }
 
+.unlock-card { margin-left: 0; margin-right: 0; }
+.unlock-card.is-locked { border: 1.5px dashed var(--violet); }
+.unlock-title {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.kata-body { color: var(--ink); font-size: 16px; line-height: 1.55; margin: 0; }
+.unlock-card .kata-body + .kata-body { margin-top: 10px; }
+.unlock-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 14px; }
+.unlock-actions .fineprint { margin-top: 0; }
+
 .option {
   width: calc(100% - 40px);
   margin: 0 20px 10px;
@@ -653,6 +668,8 @@ html.dark .off-links a { color: #CDBDFF; }
 .choice, .option { font-size: 17px; background: var(--card); color: var(--ink); border-color: var(--line); padding: 16px; }
 .choice.on, .option.on { border-color: var(--violet); background: var(--violet-soft); }
 html.dark .choice.good { background: #12382B; } html.dark .choice.bad { background: #3d1518; }
+html.dark .unlock-card.is-locked { border-color: #CDBDFF; }
+html.dark .kata-body { color: var(--ink); }
 .result-row .lab { font-size: 15px; }
 .result-track { background: var(--violet-soft); }
 .toast { font-size: 15px; }

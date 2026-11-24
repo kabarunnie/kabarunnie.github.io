@@ -14,8 +14,15 @@
     quizLocked: false,
     quizPicked: null,
     votePick: null,
-    voteDone: false
+    voteDone: false,
+    unlocked: false,
+    bonusPicked: null,
+    bonusLocked: false
   };
+
+  const APP_SHARE_URL = "https://t.me/Kabarunnie_bot/app";
+  const APP_SHARE_TEXT =
+    "Kabar girl group Korea dalam Bahasa Indonesia — kuis, vote, dan Kata Unnie di Kabar Unnie!";
 
   const ICO = {
     berita: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8M8 13h5"/></svg>',
@@ -124,6 +131,77 @@
         state.votePick = saved;
       }
     } catch (e) {}
+  }
+
+  function unlockKey() {
+    const p = wibParts();
+    const mm = String(p.m).padStart(2, "0");
+    const dd = String(p.d).padStart(2, "0");
+    return "kabarunnie-unlock-" + p.y + "-" + mm + "-" + dd;
+  }
+
+  function isUnlocked() {
+    try {
+      return localStorage.getItem(unlockKey()) === "1";
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function initUnlockFromStorage() {
+    state.unlocked = isUnlocked();
+  }
+
+  function markUnlocked() {
+    try {
+      localStorage.setItem(unlockKey(), "1");
+    } catch (e) {}
+    state.unlocked = true;
+  }
+
+  function splitKataUnnie(n) {
+    const body = [];
+    const kata = [];
+    (n.body || []).forEach(function (p) {
+      if (/^\s*Kata Unnie:/i.test(p)) kata.push(p);
+      else body.push(p);
+    });
+    return { body: body, kata: kata };
+  }
+
+  function shareApp(text) {
+    const shareUrl =
+      "https://t.me/share/url?url=" +
+      encodeURIComponent(APP_SHARE_URL) +
+      "&text=" +
+      encodeURIComponent(text || APP_SHARE_TEXT);
+    if (tg && tg.openTelegramLink) {
+      try {
+        tg.openTelegramLink(shareUrl);
+        return;
+      } catch (e) {}
+    }
+    openTelegramOrWeb(shareUrl);
+  }
+
+  function shareToUnlock() {
+    shareApp(APP_SHARE_TEXT);
+    markUnlocked();
+    toast("Terbuka untuk hari ini. Terima kasih sudah berbagi!");
+    render();
+  }
+
+  function unlockPrompt(kicker, lead) {
+    return (
+      '<div class="hero-card unlock-card is-locked">' +
+      '<div class="kicker">' + escapeHtml(kicker) + "</div>" +
+      '<h2 class="unlock-title">Bagikan untuk buka</h2>' +
+      "<p>" + escapeHtml(lead) + "</p>" +
+      '<div class="unlock-actions">' +
+      '<button class="btn btn-primary" data-act="share-unlock">Bagikan untuk buka</button>' +
+      '<p class="fineprint">Gratis. Cukup bagikan tautan aplikasi. Terbuka hari ini di perangkat ini.</p>' +
+      "</div></div>"
+    );
   }
 
   function go(screen, extra) {
@@ -439,7 +517,23 @@
       n.badge === "rumor"
         ? '<div class="warn-note">Label <strong>Belum dikonfirmasi</strong> berarti kabar ini belum diakui agensi atau sumber resmi. Jangan bagikan sebagai fakta.</div>'
         : "";
-    const paras = n.body.map(function (p) { return "<p>" + escapeHtml(p) + "</p>"; }).join("");
+    const parts = splitKataUnnie(n);
+    const paras = parts.body.map(function (p) { return "<p>" + escapeHtml(p) + "</p>"; }).join("");
+    let kataBlock = "";
+    if (parts.kata.length) {
+      if (state.unlocked) {
+        kataBlock =
+          '<div class="hero-card unlock-card is-open">' +
+          '<div class="kicker">Kata Unnie</div>' +
+          parts.kata.map(function (p) { return '<p class="kata-body">' + escapeHtml(p) + "</p>"; }).join("") +
+          "</div>";
+      } else {
+        kataBlock = unlockPrompt(
+          "Kata Unnie",
+          "Unnie punya komentar soal kabar ini. Bagikan aplikasinya ke teman untuk membacanya hari ini."
+        );
+      }
+    }
     root.innerHTML =
       '<div class="screen-fade"><div class="back-row"><button type="button" data-act="back" aria-label="Kembali">←</button><span class="label">Berita</span></div>' +
       '<div class="detail-hero">' + (n.image ? photo(n, "big") : "") + videoHero(n, "big") + "</div>" +
@@ -449,6 +543,7 @@
       "<h2>" + escapeHtml(n.title) + "</h2>" +
       rumor +
       '<div class="body">' + paras + "</div>" +
+      kataBlock +
       officialLinks(n) +
       '<div class="source-box"><strong>Sumber berita: ' + escapeHtml(n.sourceName) +
       "</strong>Ditulis ulang singkat. Artikel utuh tidak disalin. " + (n.image ? "Foto dimuat langsung dari sumber aslinya (tidak di-host ulang)." : "Gambar dari pratinjau video resmi.") + "</div>" +
@@ -579,7 +674,59 @@
       escapeHtml(S.quiz.subtitle) +
       "</p></div>" +
       '<div class="cta-row"><button class="btn btn-primary" data-act="quiz-start">Mulai kuis</button>' +
-      '<p class="fineprint">Fakta publik (debut, agensi, berita minggu ini).</p></div></div>';
+      '<p class="fineprint">Fakta publik (debut, agensi, berita minggu ini).</p></div>' +
+      bonusBlock() +
+      "</div>";
+  }
+
+  function bonusBlock() {
+    const bonus = S.quiz && S.quiz.bonus;
+    if (!bonus || !bonus.q) return "";
+    if (!state.unlocked) {
+      return unlockPrompt(
+        "Kuis bonus",
+        "Satu soal ekstra dari kabar minggu ini. Bagikan aplikasinya ke teman untuk membuka soal ini hari ini."
+      );
+    }
+    const choices = (bonus.choices || [])
+      .map(function (c, idx) {
+        let cls = "choice";
+        if (state.bonusLocked && idx === bonus.answer) cls += " good";
+        if (state.bonusLocked && state.bonusPicked === idx && idx !== bonus.answer) cls += " bad";
+        if (!state.bonusLocked && state.bonusPicked === idx) cls += " on";
+        return (
+          '<button class="' +
+          cls +
+          '" data-bonus-choice="' +
+          idx +
+          '"' +
+          (state.bonusLocked ? " disabled" : "") +
+          ">" +
+          escapeHtml(c) +
+          "</button>"
+        );
+      })
+      .join("");
+    let result = "";
+    if (state.bonusLocked) {
+      const ok = state.bonusPicked === bonus.answer;
+      result =
+        '<p class="fineprint">' +
+        (ok ? "Benar! " : "Belum tepat. ") +
+        "Terbuka hari ini di perangkat ini." +
+        "</p>";
+    }
+    return (
+      '<div class="hero-card unlock-card is-open">' +
+      '<div class="kicker">Kuis bonus hari ini</div>' +
+      '<h2 class="unlock-title">' +
+      escapeHtml(bonus.q) +
+      "</h2></div>" +
+      choices +
+      '<div class="cta-row">' +
+      result +
+      "</div>"
+    );
   }
 
   function renderKuisPlay() {
@@ -727,7 +874,7 @@
   }
 
   document.addEventListener("click", function (e) {
-    const t = e.target.closest("[data-go], [data-news], [data-act], [data-filter], [data-choice], [data-vote], [data-sched]");
+    const t = e.target.closest("[data-go], [data-news], [data-act], [data-filter], [data-choice], [data-bonus-choice], [data-vote], [data-sched]");
     if (!t) return;
 
     if (t.dataset.go) {
@@ -753,6 +900,14 @@
       state.quizPicked = idx;
       state.quizLocked = true;
       if (idx === S.quiz.questions[state.quizIndex].answer) state.quizScore += 1;
+      render();
+      return;
+    }
+    if (t.dataset.bonusChoice != null) {
+      if (!state.unlocked || state.bonusLocked) return;
+      const idx = parseInt(t.dataset.bonusChoice, 10);
+      state.bonusPicked = idx;
+      state.bonusLocked = true;
       render();
       return;
     }
@@ -795,6 +950,10 @@
     }
     if (act === "share-vote") {
       share("Aku sudah vote di Kabar Unnie: " + S.vote.title);
+      return;
+    }
+    if (act === "share-unlock") {
+      shareToUnlock();
       return;
     }
     if (act === "quiz-start") {
@@ -921,6 +1080,7 @@
       if (!state.newsId && S.news[0]) state.newsId = S.news[0].id;
       if (!state.schedId && S.schedule[0]) state.schedId = S.schedule[0].id;
       initVoteFromStorage();
+      initUnlockFromStorage();
       applyParams();
       render();
       window.__kabarReady = true;

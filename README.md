@@ -77,12 +77,17 @@ Without the Telegram secrets the workflow still refreshes and deploys; the post 
 python3 tools/refresh_content.py validate
 python3 tools/refresh_content.py refresh --dry-run
 python3 tools/refresh_content.py post --dry-run     # prints the Bot API payloads, sends nothing
+python3 tools/refresh_content.py poll --dry-run     # preview today's channel poll/quiz, send nothing
 python3 tools/refresh_content.py seed               # mark all current items as already posted
 python3 tools/app_stats.py                          # app users (GA4) + channel members
 python3 -m http.server 8000 --directory app         # open http://localhost:8000/
 ```
 
 `data/posted.json` is pre-seeded with the current items so the first run does not flood the channel.
+
+Each refresh run also calls `poll`: at most **one** anonymous Telegram poll or quiz (`sendPoll`) per WIB day, recorded in `posted.json` under `polls`. Set `channelPoll` in `content.json` for an editor-written question; otherwise a daily-kuis question is used. Do not change an already-sent poll.
+
+The Mini App can unlock an extra **Kata Unnie** comment and a bonus quiz after the user taps **Bagikan untuk buka** (Telegram share sheet to `t.me/Kabarunnie_bot/app`). Unlock is stored in `localStorage` for that WIB day only — no payment, no extra analytics.
 To announce them on launch, set it to `{"posted": []}`.
 *`posted.json` sudah berisi item saat ini; kosongkan bila ingin mempostingnya saat peluncuran.*
 

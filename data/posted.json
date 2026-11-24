@@ -26,5 +26,15 @@
     "n-wendy-gleam-hour",
     "n-withus-christmas-recipe",
     "n-zena-love-again"
+  ],
+  "polls": [
+    {
+      "id": "p-2026-11-24-tunggu",
+      "date": "2026-11-24",
+      "type": "regular",
+      "question": "Kabar girl group mana yang paling kamu tunggu?",
+      "message_id": 29,
+      "followup_id": null
+    }
   ]
 }

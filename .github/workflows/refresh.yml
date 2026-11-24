@@ -67,6 +67,20 @@ jobs:
             python tools/refresh_content.py post
           fi
 
+      - name: Daily channel poll or quiz
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          APP_URL: ${{ vars.APP_URL }}
+        run: |
+          if [ -n "$DRY" ]; then
+            python tools/refresh_content.py poll --dry-run
+          elif [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHANNEL_ID" ]; then
+            echo "Telegram secrets not set - skipping poll step."
+          else
+            python tools/refresh_content.py poll
+          fi
+
       - name: Commit changes
         id: commit
         run: |
