@@ -4,9 +4,72 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-24T06:47+07:00",
+  "updatedAt": "2026-11-24T09:02+07:00",
   "todayLabel": "Selasa, 24 Nov 2026",
   "news": [
+    {
+      "id": "n-hyolyn-my-santa",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "HYOLYN",
+      "color": "#C0392B",
+      "initial": "HY",
+      "title": "Hyolyn (SISTAR) rilis lagu Natal “My Santa” 30 November, 18.00 KST (16.00 WIB)",
+      "hook": "Single digital ini diumumkan lewat SNS resmi Hyolyn sejak 16 November.",
+      "body": [
+        "Hyolyn akan merilis single digital bernuansa Natal “My Santa” pada 30 November pukul 18.00 KST (16.00 WIB).",
+        "Sejak 16 November ia membagikan teaser, potongan lagu dengan lirik “Ring ring it’s snowin’ the night”, serta foto konsep bertema Santa dan kado Natal; foto terbaru dirilis 20 dan 23 November.",
+        "Kata Unnie: Si ‘summer queen’ SISTAR kini coba jadi ‘winter queen’—16.00 WIB pas buat diputar sepulang kerja."
+      ],
+      "sourceName": "Topstarnews (Korea)",
+      "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16284462",
+      "time": "24 Nov 2026",
+      "publishedAt": "2026-11-24",
+      "image": {
+        "url": "https://cdn.topstarnews.net/news/photo/202611/16284462_2097254_3234_crop.jpg",
+        "credit": "ReH Entertainment via Topstarnews",
+        "source": "https://www.topstarnews.net/news/articleView.html?idxno=16284462"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=QJa8TKXNavc",
+        "title": "HYOLYN (효린) 'ChecK' MV",
+        "channel": "HYOLYN 효린",
+        "official": true,
+        "relation": "MV resmi Hyolyn “ChecK” (bukan lagu “My Santa”)"
+      }
+    },
+    {
+      "id": "n-jisoo-sun-showers-angry-birds",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "JISOO",
+      "color": "#E86A92",
+      "initial": "JS",
+      "title": "Jisoo BLACKPINK isi OST “The Angry Birds Movie 3”, karakter buatannya “Shumon” muncul di MV",
+      "hook": "MV “Sun Showers” dirilis 20 November; filmnya tayang di bioskop Korea mulai 24 Desember.",
+      "body": [
+        "Jisoo ikut menulis lirik dan menyanyikan “Sun Showers”, lagu synth-pop ceria untuk film animasi “The Angry Birds Movie 3”.",
+        "Di MV-nya, Shumon—karakter gumpalan debu yang Jisoo gambar sendiri waktu SMP—tampil di panggung stadion, dan ada spanduk dukungan untuk Jisoo di bangku penonton.",
+        "Film ini dipastikan tayang di bioskop Korea mulai 24 Desember.",
+        "Kata Unnie: Lagunya cerah banget buat playlist akhir tahun—tonton MV-nya dan cari Shumon di atas panggung."
+      ],
+      "sourceName": "Sports Donga (Korea); Singlelist",
+      "sourceUrl": "https://sports.donga.com/ent/article/all/20261124/135078330/1",
+      "time": "24 Nov 2026",
+      "publishedAt": "2026-11-24",
+      "image": {
+        "url": "https://dimg.donga.com/wps/SPORTS/IMAGE/2026/11/24/135078343.1.jpg",
+        "credit": "Dior · Lotte Entertainment via Sports Donga",
+        "source": "https://sports.donga.com/ent/article/all/20261124/135078330/1"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=REUpBcmDbTE",
+        "title": "JISOO - SUN SHOWERS from THE ANGRY BIRDS MOVIE 3 (Official MV)",
+        "channel": "JISOO",
+        "official": true,
+        "relation": "MV resmi “Sun Showers” (lagu ini)"
+      }
+    },
     {
       "id": "n-jeongyeon-sinbyeong-movie",
       "badge": "resmi",
@@ -324,70 +387,6 @@
         "channel": "SMTOWN",
         "official": true,
         "relation": "MV resmi aespa “KISS N TELL” (lagu yang akan dibawakan; bukan rekaman acara ini)"
-      }
-    },
-    {
-      "id": "n-h2h-rude-spotify-200m",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "Hearts2Hearts",
-      "color": "#7A9CE0",
-      "initial": "H2",
-      "title": "“RUDE!” jadi lagu pertama Hearts2Hearts yang tembus 200 juta stream di Spotify",
-      "hook": "Menurut SM Entertainment, per 19 November “RUDE!” sudah diputar lebih dari 200 juta kali di Spotify.",
-      "body": [
-        "SM Entertainment mengumumkan pada 23 November bahwa single Hearts2Hearts “RUDE!” melewati 200 juta stream kumulatif di Spotify per 19 November, menjadikannya lagu pertama grup ini yang mencapai angka tersebut.",
-        "Dengan ini, Hearts2Hearts kini punya empat lagu yang sudah lewat 100 juta stream di Spotify: “The Chase”, “STYLE”, “RUDE!”, dan “FOCUS”.",
-        "Media Korea juga mencatat “RUDE!” pernah tiga minggu berturut-turut di puncak chart mingguan Spotify Korea dan meraih lima trofi di acara musik.",
-        "Kata Unnie: Carmen dan kawan-kawan baru saja tampil di fan event Jepang, eh rekor baru datang juga — yuk putar lagi “RUDE!” buat merayakannya."
-      ],
-      "sourceName": "Topstarnews; Singlelist (Korea)",
-      "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16283821",
-      "time": "23 Nov 2026",
-      "publishedAt": "2026-11-23",
-      "image": {
-        "url": "https://cdn.topstarnews.net/news/photo/202611/16283821_2096697_118_crop.jpg",
-        "credit": "SM Entertainment via Topstarnews",
-        "source": "https://www.topstarnews.net/news/articleView.html?idxno=16283821"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=F7sGJVUrkjQ",
-        "title": "Hearts2Hearts 하츠투하츠 'RUDE!' MV",
-        "channel": "SMTOWN",
-        "official": true,
-        "relation": "MV resmi Hearts2Hearts “RUDE!” (lagu ini)"
-      }
-    },
-    {
-      "id": "n-karina-gayo-daejejeon",
-      "badge": "rumor",
-      "badgeLabel": "Belum dikonfirmasi",
-      "group": "aespa",
-      "color": "#6B4C9A",
-      "initial": "ae",
-      "title": "Karina aespa dilaporkan jadi MC “2026 MBC Gayo Daejejeon”",
-      "hook": "Media Korea Sports Chosun melaporkan secara eksklusif; MBC belum mengumumkan resmi daftar MC.",
-      "body": [
-        "Sports Chosun melaporkan pada 23 November bahwa Karina akan memandu “2026 MBC Gayo Daejejeon” pada 31 Desember bersama Minho (SHINee) dan Dohoon (TWS).",
-        "Jika benar, ini jadi pertama kalinya Karina memandu festival musik akhir tahun TV nasional, setelah sebelumnya menjadi MC spesial “Show! Music Core” dan “Music Bank”.",
-        "Pengumuman resmi dari MBC atau SM Entertainment belum kami temukan saat tulisan ini dibuat.",
-        "Kata Unnie: Kita tunggu konfirmasi resminya dulu ya, tapi malam tahun baru bareng Karina kedengarannya seru."
-      ],
-      "sourceName": "Sports Chosun; Topstarnews (Korea)",
-      "sourceUrl": "https://www.sportschosun.com/entertainment/2026-11-23/202611230100141240013202",
-      "time": "23 Nov 2026",
-      "publishedAt": "2026-11-23",
-      "image": {
-        "url": "https://www.sportschosun.com/article/html/2026/11/23/2026112301001412400132021.jpg",
-        "credit": "Sports Chosun DB",
-        "source": "https://www.sportschosun.com/entertainment/2026-11-23/202611230100141240013202"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=83C3TZ4Zm_o",
-        "title": "aespa 에스파 'LEMONADE' MV",
-        "channel": "SMTOWN",
-        "official": true,
-        "relation": "MV resmi aespa “LEMONADE” (bukan acara ini)"
       }
     }
   ],
