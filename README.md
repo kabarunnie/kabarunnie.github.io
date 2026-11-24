@@ -61,9 +61,12 @@ Without the Telegram secrets the workflow still refreshes and deploys; the post 
 
 ## Daily editing / Alur harian
 
-1. Read `data/inbox.json` (raw headlines, refreshed 10× daily:
-   **08:00 / 10:00 / 12:00 / 14:00 / 16:00 / 18:00 / 20:00 / 21:00 / 22:00 / 23:00 KST**,
-   which is **06:00 / 08:00 / 10:00 / 12:00 / 14:00 / 16:00 / 18:00 / 19:00 / 20:00 / 21:00 WIB**).
+1. Read `data/inbox.json` (raw headlines, refreshed 10× daily; GitHub Actions
+   often starts 45–60 min after cron, so these are **expected post times**):
+   **09:00–09:15 / 10:45–11:00 / 14:00–14:15 / 15:00–15:15 / 18:00–18:15 /
+   21:00–21:15 / 21:45–22:00 / 22:30–22:45 / 23:15–23:30 / 00:00–00:15 KST**,
+   which is **07:00–07:15 / 08:45–09:00 / 12:00–12:15 / 13:00–13:15 / 16:00–16:15 /
+   19:00–19:15 / 19:45–20:00 / 20:30–20:45 / 21:15–21:30 / 22:00–22:15 WIB**).
 2. Rewrite one item in Bahasa Indonesia (max 3 sentences), add the source link and label
    *Sumber resmi* or *Belum dikonfirmasi*, **required** `image` + `video` (see `data/approved/README.md`), optionally `xPost` (official X post link).
    Save as `data/approved/<id>.json` (template: `data/approved/example.json.txt`).
