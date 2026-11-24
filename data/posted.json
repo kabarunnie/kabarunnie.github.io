@@ -28,6 +28,7 @@
     "n-rbw-family-concert-taipei",
     "n-rescene-notes-blooming",
     "n-rescene-with-5-wins",
+    "n-rescene-with-disney-hexed",
     "n-seunghee-science-club",
     "n-suzy-portraits-of-delusion",
     "n-taeyeon-unspecial-preview",
@@ -43,6 +44,14 @@
       "type": "regular",
       "question": "Kabar girl group mana yang paling kamu tunggu?",
       "message_id": 29,
+      "followup_id": null
+    },
+    {
+      "id": "quiz-2026-11-25-4",
+      "date": "2026-11-25",
+      "type": "quiz",
+      "question": "Wendy merilis mini album Gleam Hour sebagai member grup mana?",
+      "message_id": 40,
       "followup_id": null
     }
   ]
