@@ -4,9 +4,41 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-24T12:18+07:00",
+  "updatedAt": "2026-11-24T13:10+07:00",
   "todayLabel": "Selasa, 24 Nov 2026",
   "news": [
+    {
+      "id": "n-rescene-notes-blooming",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "RESCENE",
+      "color": "#9B8AD8",
+      "initial": "RS",
+      "title": "RESCENE gelar konser solo pertama “NOTES : Blooming” di Olympic Hall Seoul, 19–21 Februari 2027",
+      "hook": "Presale fanclub dibuka 10 Desember pukul 20.00 KST (18.00 WIB).",
+      "body": [
+        "RESCENE akan menggelar konser solo pertama sejak debut, “2027 RESCENE CONCERT IN SEOUL ‘NOTES : Blooming’”, pada 19–21 Februari 2027 di Olympic Hall, Olympic Park, Seoul.",
+        "Tiket hanya dijual lewat aplikasi mobile Coupang Play: presale fanclub REMINE 10 Desember pukul 20.00 KST (18.00 WIB), lalu penjualan umum 11 Desember pukul 20.00 KST, maksimal 2 tiket per orang per pertunjukan.",
+        "Pengumuman ini datang setelah album mini ke-4 “PULSE” (rilis 3 November) terjual lebih dari 600.000 kopi di minggu pertama, menurut media Korea.",
+        "Kata Unnie: Tiga hari di Olympic Hall untuk konser solo pertama itu langkah besar — semoga setelah Seoul ada kabar tur Asia juga."
+      ],
+      "sourceName": "Sports Donga; Financial News",
+      "sourceUrl": "https://sports.donga.com/ent/article/all/20261123/135073355/1",
+      "time": "23 Nov 2026",
+      "publishedAt": "2026-11-23",
+      "image": {
+        "url": "https://dimg.donga.com/wps/SPORTS/IMAGE/2026/11/23/135073372.1.jpg",
+        "credit": "Poster resmi THE MUZE Entertainment via Sports Donga",
+        "source": "https://sports.donga.com/ent/article/all/20261123/135073355/1"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=pey3E47eSc8",
+        "title": "RESCENE (리센느) 'With' Official MV",
+        "channel": "RESCENE",
+        "official": true,
+        "relation": "MV resmi RESCENE “With” (lagu kemenangan terbaru mereka)"
+      }
+    },
     {
       "id": "n-katseye-wildworld-asia-16",
       "badge": "resmi",
@@ -355,38 +387,6 @@
         "channel": "OH MY GIRL",
         "official": true,
         "relation": "MV resmi OH MY GIRL “Oh My” (bukan rekaman fanmeeting ini)"
-      }
-    },
-    {
-      "id": "n-rescene-with-5-wins",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "RESCENE",
-      "color": "#D9779B",
-      "initial": "RS",
-      "title": "RESCENE menang di Inkigayo lagi dengan “With”, total 5 trofi acara musik",
-      "hook": "Kemenangan 22 November ini diraih tanpa tampil, setelah promosi resmi album mini ke-4 “PULSE” selesai.",
-      "body": [
-        "RESCENE (Wonee, Liv, Minami, May, Zena) meraih posisi 1 di SBS “Inkigayo” 22 November dengan “With”, dua minggu berturut-turut, sehingga total menang di The Show, Show Champion, Show! Music Core, dan Inkigayo menjadi 5 trofi — rekor tertinggi mereka.",
-        "Menurut media Korea, “With” menduduki puncak Melon TOP100 dan masuk Billboard Global Excl. US (#22) serta Global 200 (#58).",
-        "Album mini ke-4 “PULSE” terjual lebih dari 600.000 kopi di minggu pertama, half-million seller pertama mereka.",
-        "Kata Unnie: Menang tanpa tampil itu tanda lagunya beneran didengar — kalau belum kenal RESCENE, “With” pas jadi pintu masuk."
-      ],
-      "sourceName": "Hankyung; Singlelist (Korea)",
-      "sourceUrl": "https://www.hankyung.com/article/202611234859H",
-      "time": "23 Nov 2026",
-      "publishedAt": "2026-11-23",
-      "image": {
-        "url": "https://img.hankyung.com/photo/202611/01.46519265.1.jpg",
-        "credit": "THE MUZE Entertainment via Hankyung",
-        "source": "https://www.hankyung.com/article/202611234859H"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=pey3E47eSc8",
-        "title": "RESCENE (리센느) 'With' Official MV",
-        "channel": "RESCENE",
-        "official": true,
-        "relation": "MV resmi RESCENE “With” (lagu pemenang ini)"
       }
     }
   ],
