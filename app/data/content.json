@@ -4,9 +4,41 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-24T16:23+07:00",
+  "updatedAt": "2026-11-24T19:06+07:00",
   "todayLabel": "Selasa, 24 Nov 2026",
   "news": [
+    {
+      "id": "n-seunghee-science-club",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "OH MY GIRL",
+      "color": "#E58FB0",
+      "initial": "OM",
+      "title": "Seunghee OH MY GIRL ikut variety sains “Gwamollip Club”, tayang perdana 28 Desember",
+      "hook": "Program 5 episode ini mulai 28 Desember pukul 21.00 KST (19.00 WIB) di YTN Science.",
+      "body": [
+        "Seunghee OH MY GIRL bergabung dengan komedian Lee Eun-ji serta dua komunikator sains, Heo Seong-beom dan Hangseong, di variety sains “Gwamollip Club” produksi J-Wonder.",
+        "Episode pertama membahas sains di balik “kal-gunmu”, koreografi idol yang super sinkron, dari sisi biomekanika tubuh dan teknologi kontrol gerak.",
+        "Acara 5 episode ini tayang perdana 28 Desember pukul 21.00 KST (19.00 WIB) di YTN Science, lalu pukul 22.00 KST di YTN2, dan disiarkan langsung juga lewat YouTube serta situs YTN Science.",
+        "Kata Unnie: Akhirnya ada yang jelasin kenapa dance K-pop bisa serapi itu — dan yang ikut membedah malah member girl group sendiri."
+      ],
+      "sourceName": "Tenasia; bnt News",
+      "sourceUrl": "https://www.tenasia.co.kr/article/2026112474354",
+      "time": "24 Nov 2026",
+      "publishedAt": "2026-11-24",
+      "image": {
+        "url": "https://img.tenasia.co.kr/photo/202611/BF.46530586.1.jpg",
+        "credit": "J-Wonder via Tenasia",
+        "source": "https://www.tenasia.co.kr/article/2026112474354"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=VPg-HtAUeRQ",
+        "title": "오마이걸(OH MY GIRL) 'Classified' MV",
+        "channel": "OH MY GIRL",
+        "official": true,
+        "relation": "MV resmi OH MY GIRL “Classified” (bukan cuplikan acara ini)"
+      }
+    },
     {
       "id": "n-jennie-ai-deepfake-legal",
       "badge": "resmi",
@@ -355,38 +387,6 @@
         "channel": "1theK Live - 원더케이 라이브",
         "official": true,
         "relation": "Live resmi “Love Again” (lagu ini) di kanal 1theK Live"
-      }
-    },
-    {
-      "id": "n-illit-japan-record-kohaku",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "ILLIT",
-      "color": "#7A4CA0",
-      "initial": "IL",
-      "title": "ILLIT raih Excellent Work Award di Japan Record Awards ke-68 dan tampil lagi di Kohaku 2026",
-      "hook": "Menurut BELIFT LAB, ILLIT jadi grup K-pop pertama yang menang di Japan Record Awards tiga tahun berturut-turut.",
-      "body": [
-        "Menurut BELIFT LAB (20 November), ILLIT meraih Excellent Work Award di Japan Record Awards ke-68 lewat “It’s Me”, satu-satunya lagu artis luar Jepang di kategori ini, setelah Best New Artist 2024 (“Magnetic”) dan Excellent Work Award 2025 (“Almond Chocolate”).",
-        "Pemenang Grand Prix diumumkan di acara utama yang disiarkan langsung TBS pada 30 Desember.",
-        "ILLIT juga masuk daftar Tim Merah “NHK Kohaku Uta Gassen” ke-77 pada 31 Desember (19.20–23.45 waktu Jepang, 17.20–21.45 WIB) sebagai satu-satunya artis K-pop tahun ini, penampilan ketiga berturut-turut.",
-        "Kata Unnie: Akhir Desember ILLIT padat banget di TV Jepang — catat 30 dan 31 Desember, GLLIT!"
-      ],
-      "sourceName": "OSEN; Newsis (Korea)",
-      "sourceUrl": "https://www.osen.co.kr/article/G1112913123",
-      "time": "23 Nov 2026",
-      "publishedAt": "2026-11-23",
-      "image": {
-        "url": "https://file.osen.co.kr/article/2026/11/21/202611210817771011_6b00d53755216.jpg",
-        "credit": "BELIFT LAB via OSEN",
-        "source": "https://www.osen.co.kr/article/G1112913123"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=bMhDJ0S0OBA",
-        "title": "ILLIT (아일릿) ‘It’s Me’ Official MV",
-        "channel": "HYBE LABELS",
-        "official": true,
-        "relation": "MV resmi ILLIT “It’s Me” (lagu pemenang penghargaan ini)"
       }
     }
   ],
