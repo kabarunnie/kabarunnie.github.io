@@ -4,9 +4,73 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-24T19:06+07:00",
+  "updatedAt": "2026-11-24T20:58+07:00",
   "todayLabel": "Selasa, 24 Nov 2026",
   "news": [
+    {
+      "id": "n-illit-show-kpop-triple-crown",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "ILLIT",
+      "color": "#7A4CA0",
+      "initial": "IL",
+      "title": "ILLIT raih triple crown pertama dalam sejarah “SHOW K-POP” lewat “You’re Under Arrest”",
+      "hook": "Menang 3 minggu berturut-turut di Arirang TV; episode 23 November unggul hanya 89 poin dari A2O LITE.",
+      "body": [
+        "Di episode ke-6 “SHOW K-POP” Arirang TV pada 23 November, ILLIT menempati posisi 1 dengan “You’re Under Arrest” (체포하겠어) dan total 8.064 poin, mengalahkan “NEON” milik A2O LITE (7.975 poin).",
+        "Ini kemenangan ketiga berturut-turut lagu tersebut di acara itu, sehingga ILLIT menjadi pemilik triple crown pertama “SHOW K-POP”; selisih 89 poin juga disebut yang terkecil antara dua kandidat sejauh ini.",
+        "Skor “SHOW K-POP Chart” menggabungkan streaming global, penjualan album, media sosial, dan voting fans global, dan voting fans menyumbang sekitar 37% dari total poin ILLIT.",
+        "Kata Unnie: Acara ini tayang tiap Senin 16.00 WIB lewat Arirang TV dan TikTok Live — vote fans benar-benar menentukan, jadi suara GLLIT Indonesia ikut dihitung."
+      ],
+      "sourceName": "SPOTV NEWS (Korea); bnt news",
+      "sourceUrl": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1021454",
+      "time": "24 Nov 2026",
+      "publishedAt": "2026-11-24",
+      "image": {
+        "url": "https://7lgigmttrjuyfehsudec15072.edge.naverncp.com/news/photo/202611/1021454_2045627_5278.jpg",
+        "credit": "BELIFT LAB via SPOTV NEWS",
+        "source": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1021454"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=V2V9-9VhYJo",
+        "title": "ILLIT (아일릿) '체포하겠어 (You’re Under Arrest)’ Official MV",
+        "channel": "HYBE LABELS",
+        "official": true,
+        "relation": "MV resmi ILLIT “You’re Under Arrest” (lagu yang menang; bukan rekaman acara SHOW K-POP)"
+      }
+    },
+    {
+      "id": "n-iu-world-tour-2027-jakarta",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "IU",
+      "color": "#9B7FD1",
+      "initial": "IU",
+      "title": "IU jadi solois perempuan Korea pertama yang konser tunggal di Tokyo Dome; tur 2027 berakhir di JIS Jakarta, 8–9 Mei",
+      "hook": "“2027 IU WORLD TOUR CONCERT”: 19 show di 10 kota, mulai Bangkok 16 Januari.",
+      "body": [
+        "EDAM Entertainment mengumumkan “2027 IU WORLD TOUR CONCERT” sebanyak 19 show di 10 kota, dimulai di Bangkok pada 16–17 Januari 2027.",
+        "IU akan tampil di Tokyo Dome pada 7–8 April 2027, menjadikannya solois perempuan Korea pertama yang menggelar konser tunggal di sana, menurut media Korea.",
+        "Jakarta menjadi kota terakhir leg pertama: 8–9 Mei 2027 di Jakarta International Stadium (JIS); harga dan jadwal tiket belum diumumkan.",
+        "Kata Unnie: UAENA Indonesia, kali ini stadion JIS dua hari — simpan tanggal 8–9 Mei dan tunggu pengumuman tiket resminya, ya."
+      ],
+      "sourceName": "Topstarnews (Korea); Fan cafe resmi IU (EDAM Entertainment)",
+      "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16284601",
+      "time": "24 Nov 2026",
+      "publishedAt": "2026-11-24",
+      "image": {
+        "url": "https://cdn.topstarnews.net/news/photo/202611/16284601_2097525_5412_crop.jpg",
+        "credit": "Topstarnews",
+        "source": "https://www.topstarnews.net/news/articleView.html?idxno=16284601"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=M1ijJUCcGmU",
+        "title": "아이유 밴드 드러머 찾기 #아이유 #IU  #2027_IU_WORLD_TOUR",
+        "channel": "이지금 [IU Official]",
+        "official": true,
+        "relation": "Video resmi kanal IU bertagar #2027_IU_WORLD_TOUR (bukan video pengumuman jadwal)"
+      }
+    },
     {
       "id": "n-seunghee-science-club",
       "badge": "resmi",
@@ -323,70 +387,6 @@
         "channel": "OH MY GIRL",
         "official": true,
         "relation": "MV resmi OH MY GIRL “Classified” (bukan rekaman konser ini)"
-      }
-    },
-    {
-      "id": "n-taeyeon-unspecial-preview",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "TAEYEON",
-      "color": "#8FA8C8",
-      "initial": "TY",
-      "title": "Taeyeon bocorkan 12 lagu album “Unspecial”, plus pop-up Seongsu dan konser KSPO DOME",
-      "hook": "Album penuh keempat rilis 30 November 18.00 KST (16.00 WIB); title track bergenre R&B.",
-      "body": [
-        "SM Entertainment merilis pratinjau 12 lagu album penuh keempat Taeyeon “Unspecial”, dengan title track senama bergenre R&B yang bercerita tentang debar cinta yang memudar jadi rutinitas.",
-        "Albumnya rilis 30 November pukul 18.00 KST (16.00 WIB), lalu ada pop-up “MM Seongsu” di Seoul pada 1–7 Desember.",
-        "Taeyeon juga akan menggelar konser solo ketujuh “TAEYEON CONCERT - F.L.Y. in Seoul” pada 15–17 Januari 2027 di KSPO DOME, Olympic Park.",
-        "Kata Unnie: Satu minggu lagi! Siapkan tisu buat lagu-lagu galaunya, ya."
-      ],
-      "sourceName": "Newsculture (Korea); OSEN",
-      "sourceUrl": "https://www.nc.press/news/articleView.html?idxno=631679",
-      "time": "23 Nov 2026",
-      "publishedAt": "2026-11-23",
-      "image": {
-        "url": "https://cdn.nc.press/news/photo/202611/631679_872144_5616.jpg",
-        "credit": "SM Entertainment via Newsculture",
-        "source": "https://www.nc.press/news/articleView.html?idxno=631679"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=8h2mkPn7-pA",
-        "title": "TAEYEON 태연 Album Trailer : 'The Unspecial'",
-        "channel": "TAEYEON Official",
-        "official": true,
-        "relation": "Trailer resmi album “Unspecial” (album ini)"
-      }
-    },
-    {
-      "id": "n-zena-love-again",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "RESCENE",
-      "color": "#D9779B",
-      "initial": "ZN",
-      "title": "Zena RESCENE ikut lagu musim dingin “Love Again” bersama Hanhae & Moon Se-yoon",
-      "hook": "Featuring pertama Zena sejak debut, rilis 23 November pukul 18.00 KST (16.00 WIB).",
-      "body": [
-        "Menurut agensi Brand New Music, rapper Hanhae dan komedian Moon Se-yoon merilis single baru “Love Again (feat. Zena of RESCENE)” pada 23 November pukul 18.00 KST (16.00 WIB).",
-        "Ini proyek duet kelima mereka, dan untuk pertama kalinya sejak debut Zena tampil sebagai featuring; trio ini dijuluki media Korea “Han-Mun-Je”.",
-        "Lagunya bercerita tentang dua orang yang tak sengaja bertemu lagi di suatu hari musim dingin dan merasakan debaran lama kembali.",
-        "Kata Unnie: Habis RESCENE menang lagi dengan “With”, sekarang Zena coba warna duet ala grup campuran 2000-an — cocok buat playlist hujan Desember."
-      ],
-      "sourceName": "Newsis; Yonhap (Korea)",
-      "sourceUrl": "https://www.newsis.com/view/NISX20261123_0003879479",
-      "time": "23 Nov 2026",
-      "publishedAt": "2026-11-23",
-      "image": {
-        "url": "https://img1.newsis.com/2026/11/23/NISI20261123_0002299818_web.jpg",
-        "credit": "Brand New Music via Newsis",
-        "source": "https://www.newsis.com/view/NISX20261123_0003879479"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=mXveasS7ZRY",
-        "title": "한해, 문세윤 - Love Again (feat. 제나 of RESCENE)｜야외녹음실｜Beyond the Studio｜LIVE",
-        "channel": "1theK Live - 원더케이 라이브",
-        "official": true,
-        "relation": "Live resmi “Love Again” (lagu ini) di kanal 1theK Live"
       }
     }
   ],
