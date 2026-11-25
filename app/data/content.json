@@ -4,9 +4,40 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-25T16:28+07:00",
+  "updatedAt": "2026-11-25T19:11+07:00",
   "todayLabel": "Rabu, 25 Nov 2026",
   "news": [
+    {
+      "id": "n-kiof-greedy-release",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "KISS OF LIFE",
+      "color": "#C45B2A",
+      "initial": "KL",
+      "title": "KISS OF LIFE rilis “Greedy”, lagu musim dingin pertama sejak debut",
+      "hook": "Single digital “Greedy” dirilis 25 November pukul 18.00 KST (16.00 WIB), lengkap dengan MV resminya.",
+      "body": [
+        "KISS OF LIFE merilis single digital “Greedy” pada 25 November pukul 18.00 KST (16.00 WIB). Ini lagu musim dingin pertama mereka sejak debut.",
+        "Lagu utama “Greedy” bergenre pop mid-tempo bertema debar-debar menjelang Natal, dan single ini berisi 3 lagu bersama “December Glow” dan “Imperfect Christmas”.",
+        "Kata Unnie: Setelah “Sticky” dan “SWEAT” yang serba musim panas, akhirnya ada lagu KIOF buat playlist Natal."
+      ],
+      "sourceName": "Yonhap News; Singlelist",
+      "sourceUrl": "https://www.yna.co.kr/view/AKR20261125097100005",
+      "time": "25 Nov 2026",
+      "publishedAt": "2026-11-25",
+      "image": {
+        "url": "https://cdn.slist.kr/news/photo/202611/784539_1197770_78.jpg",
+        "credit": "Singlelist",
+        "source": "https://www.slist.kr/news/articleView.html?idxno=784539"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=9AzCkUyVmdE",
+        "title": "KISS OF LIFE (키스오브라이프) 'Greedy' Official Music Video",
+        "channel": "KISS OF LIFE",
+        "official": true,
+        "relation": "MV resmi “Greedy” (lagu di berita ini)"
+      }
+    },
     {
       "id": "n-heo-youngji-dsp-media-return",
       "badge": "resmi",
@@ -354,38 +385,6 @@
         "channel": "OH MY GIRL",
         "official": true,
         "relation": "MV resmi OH MY GIRL “Classified” (bukan cuplikan acara ini)"
-      }
-    },
-    {
-      "id": "n-jennie-ai-deepfake-legal",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "JENNIE",
-      "color": "#E86A92",
-      "initial": "JN",
-      "title": "Agensi Jennie laporkan banyak akun ke polisi atas video palsu buatan AI",
-      "hook": "OA Entertainment mengumumkan update langkah hukum pada 24 November; penyelidikan sedang berjalan.",
-      "body": [
-        "OA Entertainment, agensi Jennie BLACKPINK, mengumumkan lewat kanal resminya pada 24 November bahwa mereka sudah melaporkan banyak akun secara pidana atas video palsu berbasis AI yang memakai wajah Jennie, editan jahat, serta unggahan yang mencemarkan nama baik.",
-        "Bukti dikumpulkan dari laporan fans dan pemantauan internal, dan saat ini penyidik sedang bekerja serta meminta data dari platform untuk mengidentifikasi pemilik akun.",
-        "Agensi juga mengingatkan bahwa menurut hukum Korea, bukan hanya membuat dan menyebarkan, tapi menyimpan, membeli, atau menonton video palsu AI semacam itu juga bisa dikenai tanggung jawab hukum.",
-        "Kata Unnie: Kalau nemu konten palsu soal Jennie, jangan dibagikan atau dibuka — cukup laporkan, itu cara paling aman buat dukung dia."
-      ],
-      "sourceName": "Sports Seoul",
-      "sourceUrl": "https://www.sportsseoul.com/news/read/1651976",
-      "time": "24 Nov 2026",
-      "publishedAt": "2026-11-24",
-      "image": {
-        "url": "https://file.sportsseoul.com/news/cms/2026/11/24/news-p.v1.20261124.b7be95e223324406885ae06aba369553_T1.png",
-        "credit": "SNS JENNIE via Sports Seoul",
-        "source": "https://www.sportsseoul.com/news/read/1651976"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=JSFG-IE8n_c",
-        "title": "JENNIE - like JENNIE (Official Video)",
-        "channel": "JennieRubyJaneVEVO",
-        "official": true,
-        "relation": "MV resmi JENNIE “like JENNIE” (bukan video tentang kasus ini)"
       }
     }
   ],
