@@ -4,9 +4,41 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-25T13:11+07:00",
+  "updatedAt": "2026-11-25T16:28+07:00",
   "todayLabel": "Rabu, 25 Nov 2026",
   "news": [
+    {
+      "id": "n-heo-youngji-dsp-media-return",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "KARA",
+      "color": "#F4A6C1",
+      "initial": "KR",
+      "title": "Heo Young-ji KARA kembali ke DSP Media, agensi tempat ia debut",
+      "hook": "DSP Media pada 25 November mengumumkan sudah menandatangani kontrak eksklusif baru dengan Heo Young-ji.",
+      "body": [
+        "DSP Media menyatakan kembali bekerja sama dengan Heo Young-ji atas dasar kepercayaan yang lama terbangun, dan berjanji memberi dukungan penuh untuk kegiatannya di berbagai bidang.",
+        "Heo Young-ji debut pada 2014 sebagai member baru KARA di bawah DSP Media, lalu kontraknya dengan agensi itu berakhir pada September 2024.",
+        "Dengan kontrak ini, ia kembali ke agensi lamanya setelah sekitar dua tahun, dan akan lanjut aktif di musik, akting, serta variety show.",
+        "Kata Unnie: Pulang ke rumah lama memang selalu terasa hangat — semoga ini juga jadi kabar baik buat aktivitas KARA ke depan."
+      ],
+      "sourceName": "Yonhap; News1; Newspim",
+      "sourceUrl": "https://www.yna.co.kr/view/AKR20261125123000005",
+      "time": "25 Nov 2026",
+      "publishedAt": "2026-11-25",
+      "image": {
+        "url": "https://img.newspim.com/news/2026/11/25/2611251353591230_664_tc.jpg",
+        "credit": "DSP Media via Newspim",
+        "source": "https://www.newspim.com/news/view/20261125000818"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=nlN3f6hCAuQ",
+        "title": "KARA (카라) 「 I Do I Do 」 Official MV",
+        "channel": "KARA Official",
+        "official": true,
+        "relation": "MV resmi terbaru KARA “I Do I Do” (2024), bukan video pengumuman kontrak ini"
+      }
+    },
     {
       "id": "n-jisoo-village-barber-2-part-timer",
       "badge": "resmi",
@@ -354,38 +386,6 @@
         "channel": "JennieRubyJaneVEVO",
         "official": true,
         "relation": "MV resmi JENNIE “like JENNIE” (bukan video tentang kasus ini)"
-      }
-    },
-    {
-      "id": "n-suzy-portraits-of-delusion",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "SUZY",
-      "color": "#B0304A",
-      "initial": "SZ",
-      "title": "Suzy jadi vampir di poster karakter drakor Disney+ “Portraits of Delusion”, tayang 6 Januari 2027",
-      "hook": "Suzy mengunggah poster karakter Song Jeong-hwa di SNS-nya pada 24 November.",
-      "body": [
-        "Suzy membagikan poster karakter serial original Disney+ “Portraits of Delusion” (judul Korea: Hyeonhok) di SNS pribadinya pada 24 November, memperlihatkan dirinya sebagai vampir bermata biru dengan taring tajam.",
-        "Diadaptasi dari webtoon dengan judul sama, ceritanya berlatar Gyeongseong tahun 1935: Suzy memerankan Song Jeong-hwa, perempuan misterius yang tak keluar rumah selama lebih dari setengah abad, dan Kim Seon-ho memerankan pelukis Yoon Yi-ho yang diminta melukis potretnya.",
-        "Serial ini dijadwalkan tayang di Disney+ pada 6 Januari 2027.",
-        "Kata Unnie: Suzy versi vampir era 1930-an? Catat 6 Januari, ini bisa jadi tontonan pembuka tahun yang seru."
-      ],
-      "sourceName": "Sports Seoul",
-      "sourceUrl": "https://www.sportsseoul.com/news/read/1651922",
-      "time": "24 Nov 2026",
-      "publishedAt": "2026-11-24",
-      "image": {
-        "url": "https://dimg.donga.com/wps/NEWS/IMAGE/2026/11/24/135078846.1.jpg",
-        "credit": "Disney+ Korea via Dong-A Ilbo (News1)",
-        "source": "https://www.donga.com/news/home/article/all/20261124/135078845/1"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=5ypQRgGvVnA",
-        "title": "현혹 | 모션 포스터 | 디즈니+",
-        "channel": "Disney Plus Korea 디즈니 플러스 코리아",
-        "official": true,
-        "relation": "Motion poster resmi “Portraits of Delusion” dari Disney+ Korea"
       }
     }
   ],
