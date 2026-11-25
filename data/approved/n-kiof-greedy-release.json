@@ -1,0 +1,31 @@
+{
+  "id": "n-kiof-greedy-release",
+  "badge": "resmi",
+  "badgeLabel": "Sumber resmi",
+  "group": "KISS OF LIFE",
+  "color": "#C45B2A",
+  "initial": "KL",
+  "title": "KISS OF LIFE rilis “Greedy”, lagu musim dingin pertama sejak debut",
+  "hook": "Single digital “Greedy” dirilis 25 November pukul 18.00 KST (16.00 WIB), lengkap dengan MV resminya.",
+  "body": [
+    "KISS OF LIFE merilis single digital “Greedy” pada 25 November pukul 18.00 KST (16.00 WIB). Ini lagu musim dingin pertama mereka sejak debut.",
+    "Lagu utama “Greedy” bergenre pop mid-tempo bertema debar-debar menjelang Natal, dan single ini berisi 3 lagu bersama “December Glow” dan “Imperfect Christmas”.",
+    "Kata Unnie: Setelah “Sticky” dan “SWEAT” yang serba musim panas, akhirnya ada lagu KIOF buat playlist Natal."
+  ],
+  "sourceName": "Yonhap News; Singlelist",
+  "sourceUrl": "https://www.yna.co.kr/view/AKR20261125097100005",
+  "time": "25 Nov 2026",
+  "publishedAt": "2026-11-25",
+  "image": {
+    "url": "https://cdn.slist.kr/news/photo/202611/784539_1197770_78.jpg",
+    "credit": "Singlelist",
+    "source": "https://www.slist.kr/news/articleView.html?idxno=784539"
+  },
+  "video": {
+    "url": "https://www.youtube.com/watch?v=9AzCkUyVmdE",
+    "title": "KISS OF LIFE (키스오브라이프) 'Greedy' Official Music Video",
+    "channel": "KISS OF LIFE",
+    "official": true,
+    "relation": "MV resmi “Greedy” (lagu di berita ini)"
+  }
+}
