@@ -4,9 +4,71 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-25T06:57+07:00",
+  "updatedAt": "2026-11-25T09:09+07:00",
   "todayLabel": "Rabu, 25 Nov 2026",
   "news": [
+    {
+      "id": "n-izna-iwaly-2nd-anniversary",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "izna",
+      "color": "#6A5ACD",
+      "initial": "IZ",
+      "title": "izna rilis single spesial “IWALY” di hari ulang tahun debut ke-2, 25 November 18.00 KST (16.00 WIB)",
+      "hook": "izna merayakan 2 tahun debut hari ini dengan merilis single digital spesial “IWALY (Sarang-euro Namgil)”.",
+      "body": [
+        "“IWALY” adalah singkatan dari “I Will Always Love You”; menurut media Korea, lagu ini diaransemen ulang dengan suara synth yang lebih dreamy, ritme gitar dan drum baru, serta paduan suara keenam member di bagian akhir.",
+        "Rilisnya pukul 18.00 KST (16.00 WIB) di platform musik online, bersamaan dengan kampanye ulang tahun “Sarang-euro Namgil” berisi medley koreografi versi jas, pameran gratis, dan konten “2izna-ui Bang” di YouTube resmi izna.",
+        "Kata Unnie: 16.00 WIB pas jam pulang sekolah — buat yang ikut I-LAND2 dari awal, versi baru ini rasanya kayak nostalgia."
+      ],
+      "sourceName": "OSEN; JTBC (Korea)",
+      "sourceUrl": "https://www.osen.co.kr/article/G1112914609",
+      "time": "25 Nov 2026",
+      "publishedAt": "2026-11-25",
+      "image": {
+        "url": "https://photo.jtbc.co.kr/news/jam_photo/202611/25/13f061a9-6af4-4738-891f-5f2f8d1da638.jpg",
+        "credit": "JTBC",
+        "source": "https://news.jtbc.co.kr/article/NB12329690"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=EGevwfcRRtU",
+        "title": "[2즈나의 방] 2주년을 얼마나 기다려 왔는지 감도 안 옴🙄 이즈나잘알 이즈나의 폭로전&진대타임🗣️💫 | EP. 2",
+        "channel": "izna (이즈나)",
+        "official": true,
+        "relation": "Konten resmi izna “2izna-ui Bang” EP.2, bagian kampanye ulang tahun ke-2 (bukan MV “IWALY”)"
+      }
+    },
+    {
+      "id": "n-katseye-edinburgh-summer-sessions-2027",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "KATSEYE",
+      "color": "#2E8B57",
+      "initial": "KE",
+      "title": "KATSEYE jadi headliner Edinburgh Summer Sessions 24 Agustus 2027, konser pertama di Skotlandia",
+      "hook": "KATSEYE mengumumkan lewat SNS resmi dan Weverse bahwa mereka akan jadi headliner Edinburgh Summer Sessions di Royal Highland Showground, Edinburgh, pada 24 Agustus 2027.",
+      "body": [
+        "Ini akan jadi penampilan pertama KATSEYE di Skotlandia; festival yang dimulai tahun 2018 ini sebelumnya menampilkan headliner seperti Chappell Roan, Lorde, dan The Cure.",
+        "Menurut STV News, presale tiket dibuka 26 November pukul 17.00 waktu Inggris (27 November 00.00 WIB) dan penjualan umum 27 November pukul 17.00 waktu Inggris (28 November 00.00 WIB); line-up pendukung diumumkan nanti.",
+        "Kata Unnie: Masih jauh di 2027 dan belum ada kabar soal Indonesia, tapi buat fans yang lagi di Inggris, catat jam presale-nya tengah malam WIB."
+      ],
+      "sourceName": "Topstarnews (Korea); STV News",
+      "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16285533",
+      "time": "25 Nov 2026",
+      "publishedAt": "2026-11-25",
+      "image": {
+        "url": "https://cdn.topstarnews.net/news/photo/202611/16285533_2098469_1147_crop.jpg",
+        "credit": "HYBE–Geffen Records via Topstarnews",
+        "source": "https://www.topstarnews.net/news/articleView.html?idxno=16285533"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=m7k9UMcHbr0",
+        "title": "KATSEYE (캣츠아이) \"Animal\" Official MV",
+        "channel": "HYBE LABELS",
+        "official": true,
+        "relation": "MV resmi KATSEYE “Animal” (bukan rekaman festival ini)"
+      }
+    },
     {
       "id": "n-rescene-with-disney-hexed",
       "badge": "resmi",
@@ -325,69 +387,6 @@
         "channel": "TUIDE",
         "official": true,
         "relation": "Teaser resmi “pov: TUIDE” (seri ini)"
-      }
-    },
-    {
-      "id": "n-hyolyn-my-santa",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "HYOLYN",
-      "color": "#C0392B",
-      "initial": "HY",
-      "title": "Hyolyn (SISTAR) rilis lagu Natal “My Santa” 30 November, 18.00 KST (16.00 WIB)",
-      "hook": "Single digital ini diumumkan lewat SNS resmi Hyolyn sejak 16 November.",
-      "body": [
-        "Hyolyn akan merilis single digital bernuansa Natal “My Santa” pada 30 November pukul 18.00 KST (16.00 WIB).",
-        "Sejak 16 November ia membagikan teaser, potongan lagu dengan lirik “Ring ring it’s snowin’ the night”, serta foto konsep bertema Santa dan kado Natal; foto terbaru dirilis 20 dan 23 November.",
-        "Kata Unnie: Si ‘summer queen’ SISTAR kini coba jadi ‘winter queen’—16.00 WIB pas buat diputar sepulang kerja."
-      ],
-      "sourceName": "Topstarnews (Korea)",
-      "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16284462",
-      "time": "24 Nov 2026",
-      "publishedAt": "2026-11-24",
-      "image": {
-        "url": "https://cdn.topstarnews.net/news/photo/202611/16284462_2097254_3234_crop.jpg",
-        "credit": "ReH Entertainment via Topstarnews",
-        "source": "https://www.topstarnews.net/news/articleView.html?idxno=16284462"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=QJa8TKXNavc",
-        "title": "HYOLYN (효린) 'ChecK' MV",
-        "channel": "HYOLYN 효린",
-        "official": true,
-        "relation": "MV resmi Hyolyn “ChecK” (bukan lagu “My Santa”)"
-      }
-    },
-    {
-      "id": "n-jisoo-sun-showers-angry-birds",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "JISOO",
-      "color": "#E86A92",
-      "initial": "JS",
-      "title": "Jisoo BLACKPINK isi OST “The Angry Birds Movie 3”, karakter buatannya “Shumon” muncul di MV",
-      "hook": "MV “Sun Showers” dirilis 20 November; filmnya tayang di bioskop Korea mulai 24 Desember.",
-      "body": [
-        "Jisoo ikut menulis lirik dan menyanyikan “Sun Showers”, lagu synth-pop ceria untuk film animasi “The Angry Birds Movie 3”.",
-        "Di MV-nya, Shumon—karakter gumpalan debu yang Jisoo gambar sendiri waktu SMP—tampil di panggung stadion, dan ada spanduk dukungan untuk Jisoo di bangku penonton.",
-        "Film ini dipastikan tayang di bioskop Korea mulai 24 Desember.",
-        "Kata Unnie: Lagunya cerah banget buat playlist akhir tahun—tonton MV-nya dan cari Shumon di atas panggung."
-      ],
-      "sourceName": "Sports Donga (Korea); Singlelist",
-      "sourceUrl": "https://sports.donga.com/ent/article/all/20261124/135078330/1",
-      "time": "24 Nov 2026",
-      "publishedAt": "2026-11-24",
-      "image": {
-        "url": "https://dimg.donga.com/wps/SPORTS/IMAGE/2026/11/24/135078343.1.jpg",
-        "credit": "Dior · Lotte Entertainment via Sports Donga",
-        "source": "https://sports.donga.com/ent/article/all/20261124/135078330/1"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=REUpBcmDbTE",
-        "title": "JISOO - SUN SHOWERS from THE ANGRY BIRDS MOVIE 3 (Official MV)",
-        "channel": "JISOO",
-        "official": true,
-        "relation": "MV resmi “Sun Showers” (lagu ini)"
       }
     }
   ],
