@@ -4,9 +4,41 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-25T09:09+07:00",
+  "updatedAt": "2026-11-25T12:20+07:00",
   "todayLabel": "Rabu, 25 Nov 2026",
   "news": [
+    {
+      "id": "n-ive-pubg-the-squad-renegade",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "IVE",
+      "color": "#C45B7A",
+      "initial": "IV",
+      "title": "IVE jadi artis pertama proyek musik PUBG “THE SQUAD”, lagu baru “Renegade” rilis 2 Desember",
+      "hook": "KRAFTON mengumumkan IVE membawakan lagu orisinal “Renegade” beserta MV untuk PUBG: BATTLEGROUNDS dan PUBG MOBILE.",
+      "body": [
+        "KRAFTON pada 25 November mengumumkan “THE SQUAD”, proyek musik musiman PUBG: BATTLEGROUNDS dan PUBG MOBILE yang tiap musim menggandeng artis berbeda untuk membuat lagu orisinal bertema game ini, dan IVE jadi artis pertamanya.",
+        "Teaser MV dirilis 25 November di YouTube resmi PUBG, lalu MV lengkap “Renegade” tayang 2 Desember; item bertema lagu ini masuk ke game mulai 2 Desember di PC, 7 Desember di mobile, dan 10 Desember di konsol.",
+        "Pada 2 Desember juga digelar pop-up store dan “listening party” bersama IVE di PUBG Seongsu, Seoul.",
+        "Kata Unnie: Buat DIVE yang juga main PUBG Mobile, catat 7 Desember — itemnya baru masuk versi mobile hari itu."
+      ],
+      "sourceName": "Yonhap News; Newspim",
+      "sourceUrl": "https://www.yna.co.kr/view/AKR20261125051500017",
+      "time": "25 Nov 2026",
+      "publishedAt": "2026-11-25",
+      "image": {
+        "url": "https://img.newspim.com/news/2026/11/25/2611250930335380_t1.jpg",
+        "credit": "KRAFTON via Newspim",
+        "source": "https://www.newspim.com/news/view/20261125000289"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=4lA9n7ejDi4",
+        "title": "PUBG x IVE Collaboration Trailer (LOVE DIVE - PUBG Mashup) | PUBG",
+        "channel": "PUBG: BATTLEGROUNDS",
+        "official": true,
+        "relation": "Trailer resmi kolaborasi PUBG x IVE “LOVE DIVE”, bukan MV “Renegade”"
+      }
+    },
     {
       "id": "n-izna-iwaly-2nd-anniversary",
       "badge": "resmi",
@@ -355,38 +387,6 @@
         "channel": "HYBE LABELS",
         "official": true,
         "relation": "MV resmi KATSEYE “Hootie Frutti” (bukan rekaman tur ini)"
-      }
-    },
-    {
-      "id": "n-tuide-pov-series",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "TUIDE",
-      "color": "#E8A33D",
-      "initial": "TU",
-      "title": "TUIDE, girl group baru HYBE, rilis teaser seri harian “pov: TUIDE”; episode 1 tayang 26 November",
-      "hook": "Teaser diunggah di kanal YouTube resmi TUIDE pada 23 November.",
-      "body": [
-        "TUIDE (Seohee, Seoyeon, Elena, Jia, Saki, Sea, Lee Hanee) merilis teaser “pov: TUIDE”, seri konten pertama mereka tentang keseharian di luar panggung, lewat kanal YouTube resmi pada 23 November.",
-        "Episode pertama tayang 26 November pukul 22.00 KST (20.00 WIB).",
-        "Di tahun debutnya, TUIDE sudah mengantongi 4 trofi, termasuk Best New Artist dan Fans’ Choice Female Top 10 di 2026 MAMA, dan dijadwalkan hadir di AAA 2026 pada 6 Desember.",
-        "Kata Unnie: Rookie HYBE ini masih jarang dibahas di sini—episode 1 tayang 20.00 WIB, pas buat kenalan sama ketujuh membernya."
-      ],
-      "sourceName": "Topstarnews; bntnews (Korea)",
-      "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16284608",
-      "time": "24 Nov 2026",
-      "publishedAt": "2026-11-24",
-      "image": {
-        "url": "https://cdn.topstarnews.net/news/photo/202611/16284608_2097514_381_crop.jpg",
-        "credit": "ABD via Topstarnews",
-        "source": "https://www.topstarnews.net/news/articleView.html?idxno=16284608"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=CxxbnP50Vu8",
-        "title": "everything from TUIDE’s point of viewㅣpov: TUIDE",
-        "channel": "TUIDE",
-        "official": true,
-        "relation": "Teaser resmi “pov: TUIDE” (seri ini)"
       }
     }
   ],
