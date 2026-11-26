@@ -4,9 +4,41 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-26T16:24+07:00",
+  "updatedAt": "2026-11-26T19:09+07:00",
   "todayLabel": "Kamis, 26 Nov 2026",
   "news": [
+    {
+      "id": "n-rescene-aespa-melon-global-k-report",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "RESCENE",
+      "color": "#D4708F",
+      "initial": "RS",
+      "title": "Laporan Melon “Global-K Chart”: RESCENE paling sering No.1 di Korea, aespa di China",
+      "hook": "RESCENE memuncaki Melon selama 61 hari berkat lonjakan ulang “LOVE ATTACK”.",
+      "body": [
+        "Melon merilis laporan data “Global-K Chart” (gabungan Melon Korea, Tencent Music China, dan LINE MUSIC Jepang) pada 26 November; dari chart harian 11 Mei–30 September, artis yang paling sering No.1 adalah RESCENE di Melon, aespa di Tencent Music, dan BTS di LINE MUSIC.",
+        "RESCENE naik dari peringkat 90 (13 Mei) ke peringkat 4 (9 Juli) lewat “LOVE ATTACK” yang kembali viral, lalu menjadi artis dengan No.1 terbanyak di Melon, yaitu 61 hari.",
+        "Di chart gabungan, aespa (bersama BTS) bertahan di Top 10 selama seluruh 143 hari, disusul IVE 135 hari; girl group mengisi 16 dari 42 artis yang pernah masuk Top 10.",
+        "Kata Unnie: Lagu lama yang naik lagi sampai No.1 — bukti lagu bagus selalu punya jalan sendiri. Yuk putar ulang “LOVE ATTACK”!"
+      ],
+      "sourceName": "Yonhap News; SBS News",
+      "sourceUrl": "https://www.yna.co.kr/view/AKR20261126086700005",
+      "time": "26 Nov 2026",
+      "publishedAt": "2026-11-26",
+      "image": {
+        "url": "https://img.sbs.co.kr/newimg/news/20261126/202244629_1280.jpg",
+        "credit": "Yonhap via SBS News",
+        "source": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008865635"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=9XttLI0oH0I",
+        "title": "RESCENE (리센느) ‘LOVE ATTACK’ Official MV",
+        "channel": "RESCENE",
+        "official": true,
+        "relation": "MV resmi RESCENE “LOVE ATTACK” (lagu yang disebut dalam laporan ini)"
+      }
+    },
     {
       "id": "n-illit-its-me-riaj-platinum",
       "badge": "resmi",
@@ -354,37 +386,6 @@
         "channel": "PUBG: BATTLEGROUNDS",
         "official": true,
         "relation": "Trailer resmi kolaborasi PUBG x IVE “LOVE DIVE”, bukan MV “Renegade”"
-      }
-    },
-    {
-      "id": "n-izna-iwaly-2nd-anniversary",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "izna",
-      "color": "#6A5ACD",
-      "initial": "IZ",
-      "title": "izna rilis single spesial “IWALY” di hari ulang tahun debut ke-2, 25 November 18.00 KST (16.00 WIB)",
-      "hook": "izna merayakan 2 tahun debut hari ini dengan merilis single digital spesial “IWALY (Sarang-euro Namgil)”.",
-      "body": [
-        "“IWALY” adalah singkatan dari “I Will Always Love You”; menurut media Korea, lagu ini diaransemen ulang dengan suara synth yang lebih dreamy, ritme gitar dan drum baru, serta paduan suara keenam member di bagian akhir.",
-        "Rilisnya pukul 18.00 KST (16.00 WIB) di platform musik online, bersamaan dengan kampanye ulang tahun “Sarang-euro Namgil” berisi medley koreografi versi jas, pameran gratis, dan konten “2izna-ui Bang” di YouTube resmi izna.",
-        "Kata Unnie: 16.00 WIB pas jam pulang sekolah — buat yang ikut I-LAND2 dari awal, versi baru ini rasanya kayak nostalgia."
-      ],
-      "sourceName": "OSEN; JTBC (Korea)",
-      "sourceUrl": "https://www.osen.co.kr/article/G1112914609",
-      "time": "25 Nov 2026",
-      "publishedAt": "2026-11-25",
-      "image": {
-        "url": "https://photo.jtbc.co.kr/news/jam_photo/202611/25/13f061a9-6af4-4738-891f-5f2f8d1da638.jpg",
-        "credit": "JTBC",
-        "source": "https://news.jtbc.co.kr/article/NB12329690"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=EGevwfcRRtU",
-        "title": "[2즈나의 방] 2주년을 얼마나 기다려 왔는지 감도 안 옴🙄 이즈나잘알 이즈나의 폭로전&진대타임🗣️💫 | EP. 2",
-        "channel": "izna (이즈나)",
-        "official": true,
-        "relation": "Konten resmi izna “2izna-ui Bang” EP.2, bagian kampanye ulang tahun ke-2 (bukan MV “IWALY”)"
       }
     }
   ],
