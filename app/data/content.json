@@ -4,9 +4,41 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-26T09:07+07:00",
+  "updatedAt": "2026-11-26T12:22+07:00",
   "todayLabel": "Kamis, 26 Nov 2026",
   "news": [
+    {
+      "id": "n-everglow-seaworld-concert-series-2027",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "EVERGLOW",
+      "color": "#3E6FB8",
+      "initial": "EV",
+      "title": "EVERGLOW tampil di “2027 SeaWorld Concert Series” di Orlando, AS, 20 Maret 2027",
+      "hook": "Satu panggung lineup dengan Flo Rida, Soulja Boy, Daya, dan Shaggy.",
+      "body": [
+        "Menurut agensi Cheetah Company (23/11), EVERGLOW akan tampil pada 20 Maret 2027 (waktu setempat) di “2027 SeaWorld Concert Series” di SeaWorld Orlando, Florida, Amerika Serikat.",
+        "Seri konser yang digelar SeaWorld ini berlangsung Januari–Mei 2027, dan EVERGLOW masuk daftar headliner bersama Flo Rida, Soulja Boy, Daya, serta Shaggy.",
+        "Agensi juga menyebut EVERGLOW sedang menyiapkan album baru yang ditargetkan rilis tahun depan.",
+        "Kata Unnie: Forever, siap-siap — EVERGLOW bawa bendera K-pop ke panggung taman hiburan raksasa di Amerika!"
+      ],
+      "sourceName": "Sports Donga; Yonhap",
+      "sourceUrl": "https://sports.donga.com/ent/article/all/20261123/135074295/1",
+      "time": "23 Nov 2026",
+      "publishedAt": "2026-11-23",
+      "image": {
+        "url": "https://dimg.donga.com/wps/SPORTS/IMAGE/2026/11/23/135074293.1.jpg",
+        "credit": "Poster SeaWorld Orlando via Sports Donga",
+        "source": "https://sports.donga.com/ent/article/all/20261123/135074295/1"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=pe3EWBY7SIc",
+        "title": "EVERGLOW (에버글로우) 'CODE' Official MV",
+        "channel": "EVERGLOW (에버글로우)",
+        "official": true,
+        "relation": "MV resmi EVERGLOW “CODE” (bukan dari konser ini)"
+      }
+    },
     {
       "id": "n-viviz-contract-lawsuit-win",
       "badge": "resmi",
@@ -352,38 +384,6 @@
         "channel": "Disney Korea",
         "official": true,
         "relation": "MV resmi “With” versi film “Hexed” dari Disney Korea"
-      }
-    },
-    {
-      "id": "n-jisoo-hi-seulgi-counseling",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "JISOO · SEULGI",
-      "color": "#E86A92",
-      "initial": "JS",
-      "title": "Jisoo BLACKPINK jadi tamu “Hi Seulgi”, buka sesi curhat fans bareng Seulgi Red Velvet",
-      "hook": "Episode di channel YouTube resmi Seulgi ini diunggah 20 November pukul 19.00 KST (17.00 WIB).",
-      "body": [
-        "Di channel YouTube “Hi Seulgi” milik Seulgi Red Velvet, Jisoo BLACKPINK jadi tamu sambil makan tteokbokki dan menjawab curhat fans soal hidup, pertemanan, dan cinta.",
-        "Soal gampang menangis, Jisoo bilang dia suka “menjadwalkan” tangisan setelah menahannya seminggu, tapi saat harinya tiba sering batal dan malah pesan makanan enak.",
-        "Di akhir video, keduanya berjanji akan liburan bareng lain kali.",
-        "Kata Unnie: Duo T dan F ini beda banget gayanya, tapi justru itu yang bikin sesi curhatnya seru ditonton."
-      ],
-      "sourceName": "Tenasia (Korea); YouTube Hi Seulgi",
-      "sourceUrl": "https://www.tenasia.co.kr/article/2026112478234",
-      "time": "24 Nov 2026",
-      "publishedAt": "2026-11-24",
-      "image": {
-        "url": "https://img.tenasia.co.kr/photo/202611/BF.46532503.1.jpg",
-        "credit": "YouTube Hi Seulgi via Tenasia",
-        "source": "https://www.tenasia.co.kr/article/2026112478234"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=lkwLBvApuSw",
-        "title": "T원한 여자 지수의 시원통쾌한 고민 상담소🩷슬기는 거들 뿐",
-        "channel": "하이슬기 Hi Seulgi",
-        "official": true,
-        "relation": "Video resmi episode ini di channel Seulgi"
       }
     }
   ],
