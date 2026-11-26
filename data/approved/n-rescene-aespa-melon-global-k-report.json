@@ -1,0 +1,32 @@
+{
+  "id": "n-rescene-aespa-melon-global-k-report",
+  "badge": "resmi",
+  "badgeLabel": "Sumber resmi",
+  "group": "RESCENE",
+  "color": "#D4708F",
+  "initial": "RS",
+  "title": "Laporan Melon “Global-K Chart”: RESCENE paling sering No.1 di Korea, aespa di China",
+  "hook": "RESCENE memuncaki Melon selama 61 hari berkat lonjakan ulang “LOVE ATTACK”.",
+  "body": [
+    "Melon merilis laporan data “Global-K Chart” (gabungan Melon Korea, Tencent Music China, dan LINE MUSIC Jepang) pada 26 November; dari chart harian 11 Mei–30 September, artis yang paling sering No.1 adalah RESCENE di Melon, aespa di Tencent Music, dan BTS di LINE MUSIC.",
+    "RESCENE naik dari peringkat 90 (13 Mei) ke peringkat 4 (9 Juli) lewat “LOVE ATTACK” yang kembali viral, lalu menjadi artis dengan No.1 terbanyak di Melon, yaitu 61 hari.",
+    "Di chart gabungan, aespa (bersama BTS) bertahan di Top 10 selama seluruh 143 hari, disusul IVE 135 hari; girl group mengisi 16 dari 42 artis yang pernah masuk Top 10.",
+    "Kata Unnie: Lagu lama yang naik lagi sampai No.1 — bukti lagu bagus selalu punya jalan sendiri. Yuk putar ulang “LOVE ATTACK”!"
+  ],
+  "sourceName": "Yonhap News; SBS News",
+  "sourceUrl": "https://www.yna.co.kr/view/AKR20261126086700005",
+  "time": "26 Nov 2026",
+  "publishedAt": "2026-11-26",
+  "image": {
+    "url": "https://img.sbs.co.kr/newimg/news/20261126/202244629_1280.jpg",
+    "credit": "Yonhap via SBS News",
+    "source": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008865635"
+  },
+  "video": {
+    "url": "https://www.youtube.com/watch?v=9XttLI0oH0I",
+    "title": "RESCENE (리센느) ‘LOVE ATTACK’ Official MV",
+    "channel": "RESCENE",
+    "official": true,
+    "relation": "MV resmi RESCENE “LOVE ATTACK” (lagu yang disebut dalam laporan ini)"
+  }
+}
