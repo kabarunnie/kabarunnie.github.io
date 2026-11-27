@@ -1,0 +1,31 @@
+{
+  "id": "n-rescene-remine-rice-donation-single-mothers",
+  "badge": "resmi",
+  "badgeLabel": "Sumber resmi",
+  "group": "RESCENE",
+  "color": "#D4708F",
+  "initial": "RS",
+  "title": "RESCENE dan fandom REMINE donasikan 10 ton beras untuk 1.000 keluarga ibu tunggal",
+  "hook": "Serah terima donasi tahap pertama digelar 25 November di Korean Unwed Mothers’ Families Association, Seoul.",
+  "body": [
+    "Atas nama RESCENE dan fandom resminya REMINE, perusahaan beras Grain On bersama agensi The Muze Entertainment menyumbangkan 10 ton beras organik untuk 1.000 keluarga ibu tunggal, masing-masing 10 kg, lewat Korean Unwed Mothers’ Families Association.",
+    "Ini tahap pertama dari rencana total 30 ton dalam tiga kali donasi. Para member ikut lewat pesan video dan bilang ingin membagikan dukungan yang mereka terima dari REMINE tahun ini atas nama fandom.",
+    "Kata Unnie: Dukungan fans berubah jadi beras di meja 1.000 keluarga — cara keren buat merayakan tahun suksesnya RESCENE."
+  ],
+  "sourceName": "Datanet; AP Sinmun",
+  "sourceUrl": "https://www.datanet.co.kr/news/articleView.html?idxno=300598",
+  "time": "26 Nov 2026",
+  "publishedAt": "2026-11-26",
+  "image": {
+    "url": "https://cdn.datanet.co.kr/news/photo/202611/300598_200578_1836.jpg",
+    "credit": "Grain On via Datanet",
+    "source": "https://www.datanet.co.kr/news/articleView.html?idxno=300598"
+  },
+  "video": {
+    "url": "https://www.youtube.com/watch?v=pey3E47eSc8",
+    "title": "RESCENE (리센느) 'With' Official MV",
+    "channel": "RESCENE",
+    "official": true,
+    "relation": "MV resmi terbaru RESCENE “With” dari mini album PULSE (bukan video acara donasi ini)"
+  }
+}
