@@ -4,9 +4,41 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-27T19:04+07:00",
+  "updatedAt": "2026-11-27T19:52+07:00",
   "todayLabel": "Jumat, 27 Nov 2026",
   "news": [
+    {
+      "id": "n-finkl-rebloom-first-video",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "Fin.K.L",
+      "color": "#E87FA5",
+      "initial": "FK",
+      "title": "Fin.K.L reuni setelah 21 tahun, unggah video pertama “Hello FINKY” di akun resmi",
+      "hook": "Proyek reuni “FIN.K.L RE:BLOOM” direncanakan berjalan sekitar 2 tahun hingga ulang tahun debut ke-30 pada 2028.",
+      "body": [
+        "Pada 27 November, akun media sosial resmi Fin.K.L yang baru dibuka mengunggah video pertama “Hello FINKY”, berisi Lee Hyori, Ok Joo-hyun, Lee Jin, dan Sung Yu-ri membacakan lirik lagu hit “To My Boyfriend” untuk fandom FINKY.",
+        "Ini aktivitas resmi pertama keempatnya dengan nama Fin.K.L sejak single digital “Forever Fin.K.L” pada 2005, atau 21 tahun lalu.",
+        "Menurut media Korea, proyek “FIN.K.L RE:BLOOM” akan menghadirkan lagu baru, konser, dokumenter, variety, pameran, dan merchandise resmi hingga 2028.",
+        "Kata Unnie: Generasi pertama girl group balik lengkap berempat, siap-siap nostalgia sampai 2028!"
+      ],
+      "sourceName": "Sports Kyunghyang; Star News",
+      "sourceUrl": "https://sports.khan.co.kr/article/202611271927003",
+      "time": "27 Nov 2026",
+      "publishedAt": "2026-11-27",
+      "image": {
+        "url": "https://image.starnewskorea.com/21/2026/11/2026112720080973126_1.jpg",
+        "credit": "SNS resmi Fin.K.L via Star News",
+        "source": "https://www.starnewskorea.com/star/2026/11/27/2026112720080973126"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=oVZN84cEPac",
+        "title": "[MV] Fin.K.L(핑클) _ Now",
+        "channel": "1theK (원더케이)",
+        "official": true,
+        "relation": "MV resmi lama Fin.K.L “Now” (bukan video reuni ini)"
+      }
+    },
     {
       "id": "n-babymonster-choom-singapore",
       "badge": "resmi",
@@ -348,38 +380,6 @@
         "channel": "HYBE LABELS",
         "official": true,
         "relation": "MV resmi ILLIT “It’s Me” (lagu yang meraih sertifikasi ini)"
-      }
-    },
-    {
-      "id": "n-udtt-winter-special-album-2026",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "UDTT",
-      "color": "#5B8FD6",
-      "initial": "UD",
-      "title": "UDTT rilis album spesial musim dingin “우당탕탕 소녀단의 겨울이야기” pada 17 Desember",
-      "hook": "Album ini berisi remake dua lagu hit musim dingin era 1990-an Korea.",
-      "body": [
-        "UDTT (Lisako, Han Chae-hee, Gu Han-na, Woojung, Kwon Ye-jin) akan merilis winter special album “우당탕탕 소녀단의 겨울이야기” pada 17 Desember 2026.",
-        "Album ini memuat remake “하얀 겨울” milik Mr.2 dan “겨울 이야기” milik DJ DOC; versi “겨울 이야기” dibawakan unit tiga member Han Chae-hee, Gu Han-na, dan Kwon Ye-jin.",
-        "Produksi album dipimpin komposer Yoon Il-sang, pencipta lagu asli “겨울 이야기”.",
-        "Kata Unnie: Lagu musim dingin Korea versi baru — cocok buat playlist akhir tahun, walau di Indonesia lagi musim hujan!"
-      ],
-      "sourceName": "SPOTV News; TV Daily",
-      "sourceUrl": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1022033",
-      "time": "26 Nov 2026",
-      "publishedAt": "2026-11-26",
-      "image": {
-        "url": "https://7lgigmttrjuyfehsudec15072.edge.naverncp.com/news/photo/202611/1022033_2046903_9808.png",
-        "credit": "TT Music via SPOTV News",
-        "source": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1022033"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=6WvnYSV13w0",
-        "title": "UDTT 우당탕탕 소녀단 'VIPER' MV",
-        "channel": "UDTT",
-        "official": true,
-        "relation": "MV resmi UDTT “VIPER” (bukan dari album musim dingin ini)"
       }
     }
   ],
