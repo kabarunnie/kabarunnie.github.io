@@ -1,0 +1,32 @@
+{
+  "id": "n-finkl-rebloom-first-video",
+  "badge": "resmi",
+  "badgeLabel": "Sumber resmi",
+  "group": "Fin.K.L",
+  "color": "#E87FA5",
+  "initial": "FK",
+  "title": "Fin.K.L reuni setelah 21 tahun, unggah video pertama “Hello FINKY” di akun resmi",
+  "hook": "Proyek reuni “FIN.K.L RE:BLOOM” direncanakan berjalan sekitar 2 tahun hingga ulang tahun debut ke-30 pada 2028.",
+  "body": [
+    "Pada 27 November, akun media sosial resmi Fin.K.L yang baru dibuka mengunggah video pertama “Hello FINKY”, berisi Lee Hyori, Ok Joo-hyun, Lee Jin, dan Sung Yu-ri membacakan lirik lagu hit “To My Boyfriend” untuk fandom FINKY.",
+    "Ini aktivitas resmi pertama keempatnya dengan nama Fin.K.L sejak single digital “Forever Fin.K.L” pada 2005, atau 21 tahun lalu.",
+    "Menurut media Korea, proyek “FIN.K.L RE:BLOOM” akan menghadirkan lagu baru, konser, dokumenter, variety, pameran, dan merchandise resmi hingga 2028.",
+    "Kata Unnie: Generasi pertama girl group balik lengkap berempat, siap-siap nostalgia sampai 2028!"
+  ],
+  "sourceName": "Sports Kyunghyang; Star News",
+  "sourceUrl": "https://sports.khan.co.kr/article/202611271927003",
+  "time": "27 Nov 2026",
+  "publishedAt": "2026-11-27",
+  "image": {
+    "url": "https://image.starnewskorea.com/21/2026/11/2026112720080973126_1.jpg",
+    "credit": "SNS resmi Fin.K.L via Star News",
+    "source": "https://www.starnewskorea.com/star/2026/11/27/2026112720080973126"
+  },
+  "video": {
+    "url": "https://www.youtube.com/watch?v=oVZN84cEPac",
+    "title": "[MV] Fin.K.L(핑클) _ Now",
+    "channel": "1theK (원더케이)",
+    "official": true,
+    "relation": "MV resmi lama Fin.K.L “Now” (bukan video reuni ini)"
+  }
+}
