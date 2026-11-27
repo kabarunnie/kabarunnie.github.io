@@ -4,9 +4,40 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-27T07:06+07:00",
+  "updatedAt": "2026-11-27T09:11+07:00",
   "todayLabel": "Jumat, 27 Nov 2026",
   "news": [
+    {
+      "id": "n-nayeon-boy-mv-kim-jaewon",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "TWICE",
+      "color": "#FF5FA2",
+      "initial": "TW",
+      "title": "Nayeon rilis MV “BOY” dari single NA-sty, dibintangi aktor Kim Jae-won",
+      "hook": "MV lagu ketiga NA-sty dirilis 26 November lewat SNS resmi Nayeon, lalu JYP membagikan foto behind pada 27 November.",
+      "body": [
+        "Nayeon TWICE merilis MV “BOY”, track ketiga single NA-sty, pada 26 November lewat kanal resmi. Aktor Kim Jae-won (drama Lady Dua, Yumi's Cells 3) ikut tampil, dan pada 27 November pagi JYP Entertainment membagikan foto behind the scenes keduanya.",
+        "Nayeon merilis NA-sty dengan lagu utama “BABY ANGEL” pada 20 November, dan mulai tampil di program musik lewat Music Bank KBS 2TV pada 27 November.",
+        "Kata Unnie: Kalau “BABY ANGEL” sisi ceria Nayeon, “BOY” ini sisi kalemnya — cocok diputar sambil santai akhir pekan."
+      ],
+      "sourceName": "Sports Seoul",
+      "sourceUrl": "https://www.sportsseoul.com/news/read/1652683",
+      "time": "27 Nov 2026",
+      "publishedAt": "2026-11-27",
+      "image": {
+        "url": "https://file.sportsseoul.com/news/cms/2026/11/27/news-p.v1.20261127.8ff7892f17df4274b139a7d334f7afa2_P1.jpg",
+        "credit": "JYP Entertainment via Sports Seoul",
+        "source": "https://www.sportsseoul.com/news/read/1652683"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=QrxDetnioXA",
+        "title": "NAYEON “BOY” M/V",
+        "channel": "JYP Entertainment",
+        "official": true,
+        "relation": "MV resmi “BOY” (lagu yang dibahas di berita ini)"
+      }
+    },
     {
       "id": "n-jisoo-bisojin-sbs-guest",
       "badge": "resmi",
@@ -353,38 +384,6 @@
         "channel": "tvN D ENT",
         "official": true,
         "relation": "Klip resmi tvN tentang Jisoo di “Bogum Magical 2”"
-      }
-    },
-    {
-      "id": "n-nayeon-kbs-entertainment-awards-mc-2026",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "TWICE",
-      "color": "#FF5FA2",
-      "initial": "TW",
-      "title": "Nayeon TWICE jadi MC “2026 KBS Entertainment Awards” bareng Shin Dong-yup dan Sung Si-kyung",
-      "hook": "KBS pada 25 November mengonfirmasi Nayeon sebagai salah satu MC ajang penghargaan KBS Entertainment Awards ke-40.",
-      "body": [
-        "KBS mengumumkan Shin Dong-yup, Sung Si-kyung, dan Nayeon TWICE sebagai MC “2026 KBS Entertainment Awards”, yang tahun ini memasuki usia ke-40.",
-        "Ini pertama kalinya Nayeon memandu acara penghargaan; sebelumnya ia pernah jadi MC spesial di “Inkigayo” SBS dan “Show! Music Core” MBC.",
-        "Acaranya digelar Sabtu, 26 Desember pukul 21.20 KST (19.20 WIB) di KBS Hall, Yeouido, Seoul, dan disiarkan langsung di KBS2.",
-        "Kata Unnie: Catat 26 Desember jam 19.20 WIB — malam libur Natal, pas buat nonton Nayeon pegang mik MC pertama kalinya."
-      ],
-      "sourceName": "Topstarnews; Tenasia",
-      "sourceUrl": "https://www.topstarnews.net/news/articleView.html?idxno=16285788",
-      "time": "25 Nov 2026",
-      "publishedAt": "2026-11-25",
-      "image": {
-        "url": "https://cdn.topstarnews.net/news/photo/202611/16285788_2098738_1030_crop.jpg",
-        "credit": "KBS via Topstarnews",
-        "source": "https://www.topstarnews.net/news/articleView.html?idxno=16285788"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=0JQ9k6kcKVs",
-        "title": "NAYEON “BABY ANGEL” M/V",
-        "channel": "JYP Entertainment",
-        "official": true,
-        "relation": "MV resmi terbaru NAYEON “BABY ANGEL” (bukan dari acara KBS ini)"
       }
     }
   ],
