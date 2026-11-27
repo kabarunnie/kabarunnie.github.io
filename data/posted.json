@@ -20,6 +20,7 @@
     "n-izna-iwaly-2nd-anniversary",
     "n-jennie-ai-deepfake-legal",
     "n-jeongyeon-sinbyeong-movie",
+    "n-jisoo-bisojin-sbs-guest",
     "n-jisoo-hi-seulgi-counseling",
     "n-jisoo-sun-showers-angry-birds",
     "n-jisoo-village-barber-2-part-timer",
@@ -74,6 +75,14 @@
       "type": "quiz",
       "question": "Pada tahun berapa BLACKPINK debut?",
       "message_id": 50,
+      "followup_id": null
+    },
+    {
+      "id": "quiz-2026-11-27-1",
+      "date": "2026-11-27",
+      "type": "quiz",
+      "question": "aespa berada di agensi mana?",
+      "message_id": 57,
       "followup_id": null
     }
   ]
