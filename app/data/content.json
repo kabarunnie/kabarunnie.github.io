@@ -4,9 +4,41 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-28T07:00+07:00",
+  "updatedAt": "2026-11-28T09:06+07:00",
   "todayLabel": "Sabtu, 28 Nov 2026",
   "news": [
+    {
+      "id": "n-jihyo-vina-del-mar-2027",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "TWICE",
+      "color": "#FF5FA2",
+      "initial": "TW",
+      "title": "Jihyo TWICE tampil di Festival Viña del Mar 2027 di Chile, solois K-pop pertama di festival itu",
+      "hook": "Menurut agensinya, EMITHAUS, Jihyo dijadwalkan naik panggung pada 26 Februari 2027 waktu setempat.",
+      "body": [
+        "Agensi Jihyo, EMITHAUS, mengumumkan pada 28 November bahwa Jihyo akan tampil di Festival de Viña del Mar 2027 yang digelar 22–27 Februari 2027 di Viña del Mar, Chile.",
+        "Media Korea menyebut ini pertama kalinya solois K-pop diundang resmi ke festival musik Amerika Latin yang dimulai sejak 1960 itu; Jihyo tampil pada 26 Februari waktu setempat.",
+        "Ia akan membawakan lagu utama “Killin' Me Good” dan lagu “Room” dari mini album solo pertamanya, ZONE.",
+        "Kata Unnie: ONCE Indonesia, jamnya pakai waktu Chile, jadi tunggu jadwal resmi dulu sebelum pasang alarm, ya."
+      ],
+      "sourceName": "Sports Kyunghyang; Newsis",
+      "sourceUrl": "https://sports.khan.co.kr/article/202611280942003",
+      "time": "28 Nov 2026",
+      "publishedAt": "2026-11-28",
+      "image": {
+        "url": "https://images.khan.co.kr/article/2026/11/28/news-p.v1.20261128.30f6158df1184c5ea877f666c055efea_P1.png",
+        "credit": "Festival de Viña del Mar via Sports Kyunghyang",
+        "source": "https://sports.khan.co.kr/article/202611280942003"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=jyw_vrI4ySg",
+        "title": "JIHYO \"Killin' Me Good\" M/V",
+        "channel": "JYP Entertainment",
+        "official": true,
+        "relation": "MV resmi Jihyo “Killin' Me Good” (lagu yang akan dibawakan, bukan rekaman festival ini)"
+      }
+    },
     {
       "id": "n-bol4-korea360-jakarta-fanmeeting",
       "badge": "resmi",
@@ -350,37 +382,6 @@
         "channel": "JYP Entertainment",
         "official": true,
         "relation": "MV resmi NMIXX “Blue Valentine” (bukan rekaman konser ini)"
-      }
-    },
-    {
-      "id": "n-nayeon-boy-mv-kim-jaewon",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "TWICE",
-      "color": "#FF5FA2",
-      "initial": "TW",
-      "title": "Nayeon rilis MV “BOY” dari single NA-sty, dibintangi aktor Kim Jae-won",
-      "hook": "MV lagu ketiga NA-sty dirilis 26 November lewat SNS resmi Nayeon, lalu JYP membagikan foto behind pada 27 November.",
-      "body": [
-        "Nayeon TWICE merilis MV “BOY”, track ketiga single NA-sty, pada 26 November lewat kanal resmi. Aktor Kim Jae-won (drama Lady Dua, Yumi's Cells 3) ikut tampil, dan pada 27 November pagi JYP Entertainment membagikan foto behind the scenes keduanya.",
-        "Nayeon merilis NA-sty dengan lagu utama “BABY ANGEL” pada 20 November, dan mulai tampil di program musik lewat Music Bank KBS 2TV pada 27 November.",
-        "Kata Unnie: Kalau “BABY ANGEL” sisi ceria Nayeon, “BOY” ini sisi kalemnya — cocok diputar sambil santai akhir pekan."
-      ],
-      "sourceName": "Sports Seoul",
-      "sourceUrl": "https://www.sportsseoul.com/news/read/1652683",
-      "time": "27 Nov 2026",
-      "publishedAt": "2026-11-27",
-      "image": {
-        "url": "https://cdn.topstarnews.net/news/photo/202611/16287578_2101044_2033_crop.jpg",
-        "credit": "JYP Entertainment via Topstarnews",
-        "source": "https://www.topstarnews.net/news/articleView.html?idxno=16287578"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=QrxDetnioXA",
-        "title": "NAYEON “BOY” M/V",
-        "channel": "JYP Entertainment",
-        "official": true,
-        "relation": "MV resmi “BOY” (lagu yang dibahas di berita ini)"
       }
     }
   ],
