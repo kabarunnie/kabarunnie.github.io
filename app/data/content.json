@@ -4,9 +4,41 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-28T09:06+07:00",
+  "updatedAt": "2026-11-28T12:11+07:00",
   "todayLabel": "Sabtu, 28 Nov 2026",
   "news": [
+    {
+      "id": "n-jisoo-meet-and-click-jakarta",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "JISOO",
+      "color": "#E86A92",
+      "initial": "JS",
+      "title": "Hari ini: Jisoo BLACKPINK sapa fan Jakarta di “Meet & Click”, Gandaria City",
+      "hook": "Acara digelar 28 November di Main Atrium Gandaria City, bagian dari Pop-Up Store CLICK JISOO hosted by Blibli.",
+      "body": [
+        "Jisoo dijadwalkan bertemu penggemar dalam acara “Meet & Click” pada Sabtu, 28 November 2026, di Main Atrium Gandaria City, Jakarta Selatan.",
+        "Akses ke area dekat panggung hanya untuk pemenang lucky draw pembelian merchandise CLICK JISOO; gelang (wristband) pemenang akan dipindai ulang sebelum masuk.",
+        "Pop-Up Store CLICK JISOO hosted by Blibli di lokasi yang sama buka sampai 29 November 2026.",
+        "Kata Unnie: Yang ke Gandaria City hari ini, jaga ketertiban dan saling kasih ruang ya, biar momennya indah buat semua BLINK."
+      ],
+      "sourceName": "Blibli (Media Info); CNN Indonesia; Tempo",
+      "sourceUrl": "https://asset-about.blibli.com/2026/11/Media-Info-Akhirnya-Pop-Up-Store-CLICK-JISOO-Hosted-by-Blibli-hadir-di-Main-Atrium-Gandaria-City-12-29-November-2026-.pdf",
+      "time": "28 Nov 2026",
+      "publishedAt": "2026-11-28",
+      "image": {
+        "url": "https://akcdn.detik.net.id/visual/2026/11/18/jisoo-blackpink-1794991449099_169.jpeg?w=1200",
+        "credit": "BLISSOO Entertainment via CNN Indonesia",
+        "source": "https://www.cnnindonesia.com/hiburan/20261118155247-234-1428601/jisoo-blackpink-bersiap-ketemu-fan-di-jakarta-28-november"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=sf02ugzPFE4",
+        "title": "JISOO - CLICK (Official MV)",
+        "channel": "JISOO",
+        "official": true,
+        "relation": "MV resmi Jisoo “CLICK” (lagu yang jadi tema pop-up ini, bukan rekaman acara)"
+      }
+    },
     {
       "id": "n-jihyo-vina-del-mar-2027",
       "badge": "resmi",
@@ -351,37 +383,6 @@
         "channel": "HYBE LABELS",
         "official": true,
         "relation": "MV resmi ILLIT “NOT CUTE ANYMORE” dengan 5 member (bukan video kabar ini)"
-      }
-    },
-    {
-      "id": "n-nmixx-zero-frontier-encore-incheon",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "NMIXX",
-      "color": "#3E6FB0",
-      "initial": "NM",
-      "title": "NMIXX tutup world tour pertama dengan konser encore di Incheon, 27–29 November",
-      "hook": "Encore EPISODE 1: ZERO FRONTIER digelar tiga hari di Inspire Arena, tempat tur ini dimulai setahun lalu.",
-      "body": [
-        "NMIXX menggelar konser encore world tour pertama EPISODE 1: ZERO FRONTIER di Inspire Arena, Incheon, pada 27–29 November, setelah 21 konser di 17 kota Eropa, Amerika Utara, dan Asia.",
-        "Menurut JYP Entertainment, konser hari terakhir (29 November) disiarkan live viewing di bioskop 24 negara lewat format SCREENX LIVE. NMIXX juga akan merilis album best debut Jepang N=MIXX pada 9 Desember.",
-        "Kata Unnie: Satu tahun keliling dunia lalu pulang ke panggung pertama — finalnya pasti emosional buat NSWER."
-      ],
-      "sourceName": "Newsis",
-      "sourceUrl": "https://www.newsis.com/view/NISX20261127_0003885587",
-      "time": "27 Nov 2026",
-      "publishedAt": "2026-11-27",
-      "image": {
-        "url": "https://img1.newsis.com/2026/11/27/NISI20261127_0002304223_web.jpg",
-        "credit": "JYP Entertainment via Newsis",
-        "source": "https://www.newsis.com/view/NISX20261127_0003885587"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=EmeW6li6bbo",
-        "title": "NMIXX(엔믹스) “Blue Valentine” M/V",
-        "channel": "JYP Entertainment",
-        "official": true,
-        "relation": "MV resmi NMIXX “Blue Valentine” (bukan rekaman konser ini)"
       }
     }
   ],
