@@ -94,6 +94,14 @@
       "question": "aespa berada di agensi mana?",
       "message_id": 57,
       "followup_id": null
+    },
+    {
+      "id": "quiz-2026-11-28-2",
+      "date": "2026-11-28",
+      "type": "quiz",
+      "question": "Berapa jumlah member IVE saat debut?",
+      "message_id": 68,
+      "followup_id": null
     }
   ]
 }
