@@ -4,9 +4,41 @@
   "channelUrl": "https://t.me/kabarunnie",
   "channelStatus": "live",
   "disclaimer": "Dikelola secara independen. Bukan media resmi agensi.",
-  "updatedAt": "2026-11-28T12:11+07:00",
+  "updatedAt": "2026-11-28T13:12+07:00",
   "todayLabel": "Sabtu, 28 Nov 2026",
   "news": [
+    {
+      "id": "n-kailing-play-or-not-debut",
+      "badge": "resmi",
+      "badgeLabel": "Sumber resmi",
+      "group": "Kai Ling",
+      "color": "#7A5CC4",
+      "initial": "KL",
+      "title": "Kai Ling (Khánh Linh), solois K-pop perempuan asal Vietnam, debut resmi 4 Desember lewat “PLAY OR NOT”",
+      "hook": "Lagu pra-rilis “Dangerous Girl” sudah keluar 23 November; menurut agensinya ia solois perempuan K-pop pertama berkewarganegaraan Vietnam.",
+      "body": [
+        "Kai Ling (Khánh Linh), mantan model runway asal Vietnam, merilis single pra-debut “Dangerous Girl” pada 23 November dan akan merilis single debut resmi “PLAY OR NOT” pada 4 Desember 2026 pukul 18.00 KST (16.00 WIB).",
+        "Menurut agensinya, ia adalah penyanyi solo perempuan K-pop pertama berkewarganegaraan Vietnam; ia ikut menulis lirik kedua lagu.",
+        "“PLAY OR NOT” adalah lagu dance R&B disko, dengan koreografi dari koreografer Choi Young-jun dan tim Team Same, yang pernah bekerja dengan BTS dan SEVENTEEN.",
+        "Kata Unnie: Wakil Asia Tenggara bertambah di K-pop! Yuk dengar dulu “Dangerous Girl” sebelum 4 Desember."
+      ],
+      "sourceName": "Sports Seoul; Hankook Sports Economy",
+      "sourceUrl": "https://www.sportsseoul.com/news/read/1651610",
+      "time": "23 Nov 2026",
+      "publishedAt": "2026-11-23",
+      "image": {
+        "url": "https://file.sportsseoul.com/news/cms/2026/11/23/news-p.v1.20261123.5f62a513816343b49bb6ef06942af179_T1.jpg",
+        "credit": "Agensi via Sports Seoul",
+        "source": "https://www.sportsseoul.com/news/read/1651610"
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=XDqA8x8bDHY",
+        "title": "Khánh Linh (카이링)   'DANGEROUS GIRL'   [ 가사 ㅣ Lyrics ver. ]",
+        "channel": "k12company",
+        "official": true,
+        "relation": "Video lirik resmi “Dangerous Girl” (lagu pra-rilis, bukan “PLAY OR NOT”)"
+      }
+    },
     {
       "id": "n-jisoo-meet-and-click-jakarta",
       "badge": "resmi",
@@ -352,37 +384,6 @@
         "channel": "1theK (원더케이)",
         "official": true,
         "relation": "MV resmi BESTie “Love Options” (lagu yang dibahas di berita ini)"
-      }
-    },
-    {
-      "id": "n-illit-moka-return-weverse",
-      "badge": "resmi",
-      "badgeLabel": "Sumber resmi",
-      "group": "ILLIT",
-      "color": "#7A4CA0",
-      "initial": "IL",
-      "title": "Moka ILLIT umumkan akan kembali beraktivitas setelah sekitar 5 bulan rehat",
-      "hook": "Lewat Weverse pada 27 November, Moka bilang akan mulai aktif lagi bersama member secara bertahap.",
-      "body": [
-        "Pada 27 November, Moka ILLIT mengunggah surat dan foto terbaru di Weverse, berterima kasih kepada GLLIT yang sudah menunggu dan menyampaikan bahwa ia akan kembali beraktivitas.",
-        "Ia menulis akan berusaha tampil lagi bersama member sedikit demi sedikit, dan meminta fans menunggu dengan sabar. Selama Moka rehat sejak Juni, ILLIT tampil berempat, termasuk saat promosi mini album kelima BREAK EVEN.",
-        "Kata Unnie: Pelan-pelan saja, Moka — kabar kecil ini sudah cukup bikin GLLIT lega."
-      ],
-      "sourceName": "Dispatch; Sports Seoul",
-      "sourceUrl": "https://www.dispatch.co.kr/2351450",
-      "time": "27 Nov 2026",
-      "publishedAt": "2026-11-27",
-      "image": {
-        "url": "https://dispatch.cdnser.be/cms-content/uploads/2026/11/27/fc99e48a-fe1b-48d0-8790-9fb813d87ac0.jpg",
-        "credit": "Dispatch",
-        "source": "https://www.dispatch.co.kr/2351450"
-      },
-      "video": {
-        "url": "https://www.youtube.com/watch?v=x_RYZsOfpKY",
-        "title": "ILLIT (아일릿) 'NOT CUTE ANYMORE’ Official MV",
-        "channel": "HYBE LABELS",
-        "official": true,
-        "relation": "MV resmi ILLIT “NOT CUTE ANYMORE” dengan 5 member (bukan video kabar ini)"
       }
     }
   ],
